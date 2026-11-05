@@ -1,0 +1,1292 @@
+<!doctype html><html lang="tr"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ankara Metrosu 2053</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Türkçe sürüm. Layout: a planning sheet. Masthead with key figures, the schematic network diagram as the hero, then line register, station directory, build order and sources. */
+:root {
+  --bg: #F1F3F2;
+  --paper: #FFFFFF;
+  --ink: #16201E;
+  --muted: #5B6764;
+  --rule: #D5DBD9;
+  --accent: #0F8C82;
+  --l-r: #D62839;
+  --l-a: #0F8C82;
+  --l-m4: #1F86C9;
+  --l-m5: #D9A300;
+  --l-m6: #5E9F12;
+  --l-m7: #1D4E89;
+  --l-m8: #D2467F;
+  --l-m9: #EE7A2A;
+  --l-m10: #7B4FB8;
+  --l-b1: #6B7280;
+  --l-b2: #9C6B3C;
+  --l-b3: #5F7F95;
+  --l-b4: #8C5E7A;
+  --l-b5: #A4512F;
+  --l-m11: #8A8200;
+  --l-m12: #8E2470;
+  --l-t1: #6FA632;
+  --l-t2: #1E9BD7;
+  --l-t3: #E8604C;
+      --l-t4: #0E9488;
+  --l-x: #2A2F2E;
+  --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111716; --paper: #182120; --ink: #E6ECEA; --muted: #9AA8A4; --rule: #2C3836; --accent: #3CC0B3;
+    --l-a: #33B5A8; --l-m4: #3FB8E8; --l-m7: #7A86FF; --l-m10: #A786E2; --l-b1: #9AA1AD; --l-b2: #C8935F; --l-b3: #8FB3CC; --l-b4: #C493B2; --l-b5: #DB8A66; --l-m11: #C9C14A; --l-m12: #D46BB8; --l-t1: #95CC5A; --l-t2: #5BC0EE; --l-t3: #F28B7A;
+      --l-t4: #3CC4B5; --l-x: #DDE3E1;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111716; --paper: #182120; --ink: #E6ECEA; --muted: #9AA8A4; --rule: #2C3836; --accent: #3CC0B3;
+  --l-a: #33B5A8; --l-m4: #3FB8E8; --l-m7: #7A86FF; --l-m10: #A786E2; --l-b1: #9AA1AD; --l-b2: #C8935F; --l-b3: #8FB3CC; --l-b4: #C493B2; --l-b5: #DB8A66; --l-m11: #C9C14A; --l-m12: #D46BB8; --l-t1: #95CC5A; --l-t2: #5BC0EE; --l-t3: #F28B7A;
+      --l-t4: #3CC4B5; --l-x: #DDE3E1;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 15px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1180px; margin: 0 auto; padding-block: 28px 56px; display: grid; gap: 44px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing: 0.01em; text-wrap: balance; margin: 0; line-height: 1.05; }
+h1 { font-size: clamp(40px, 7vw, 68px); }
+h2 { font-size: 30px; }
+h3 { font-size: 21px; }
+p { margin: 0; max-width: 70ch; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.mast { display: grid; gap: 16px; }
+.lede { font-size: 17px; }
+#figs { display: grid; gap: 18px; }
+.figrow { display: grid; gap: 8px; padding-top: 10px; border-top: 1px solid var(--rule); }
+.figs { display: flex; flex-wrap: wrap; gap: 12px 40px; }
+.fig { display: grid; gap: 2px; min-width: 0; }
+.fig b { font-family: var(--font-display); font-size: 34px; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1; }
+.fig span { font-size: 13px; color: var(--muted); }
+section { display: grid; gap: 14px; min-width: 0; }
+.head { display: grid; gap: 6px; }
+.note { font-size: 13px; color: var(--muted); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-flex; align-items: center; gap: 8px; padding: 5px 10px 5px 6px; border: 1px solid var(--rule); border-radius: 4px; background: var(--paper); color: var(--ink); font: 500 13px var(--font-body); cursor: pointer; }
+.chip:hover { border-color: var(--muted); }
+.chip:focus-visible, .tool:focus-visible, tr.row:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.chip[aria-pressed="true"] { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.badge { display: inline-grid; place-items: center; min-width: 30px; height: 22px; padding: 0 6px; border-radius: 3px; color: #fff; font: 700 13px var(--font-display); letter-spacing: 0.02em; white-space: nowrap; }
+.badge.sm { min-width: 0; height: 18px; padding: 0 5px; font-size: 12px; }
+.keys { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 13px; color: var(--muted); align-items: center; }
+.keys span { display: inline-flex; align-items: center; gap: 8px; }
+.mapcard { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; display: grid; min-width: 0; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid var(--rule); }
+.tools { display: flex; gap: 6px; }
+.tool { min-width: 36px; height: 32px; padding: 0 10px; border: 1px solid var(--rule); border-radius: 4px; background: var(--paper); color: var(--ink); font: 500 14px var(--font-body); cursor: pointer; }
+.tool:hover { border-color: var(--muted); }
+.mapscroll { overflow: auto; max-height: 82vh; cursor: grab; touch-action: pan-x pan-y; }
+.mapscroll.drag { cursor: grabbing; user-select: none; }
+.mapscroll svg { display: block; }
+svg text { font-family: var(--font-body); }
+.lbl { font-size: 13px; fill: var(--ink); stroke: var(--paper); stroke-width: 4px; paint-order: stroke; stroke-linejoin: round; }
+.lbl.x { font-weight: 600; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.lbl.i { font-style: italic; }
+.area { font: 600 22px var(--font-display); letter-spacing: 0.18em; fill: var(--muted); opacity: 0.35; }
+.tablebox { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.register table { min-width: 920px; }
+.phasetable table { min-width: 640px; }
+tr.linehead td { background: color-mix(in srgb, var(--ink) 4%, transparent); border-top: 2px solid var(--rule); }
+td.secl { padding-left: 22px; }
+tr.phasehead td { background: color-mix(in srgb, var(--ink) 4%, transparent); border-top: 3px solid var(--ink); }
+tr.phasehead .when { font: 500 12px var(--font-mono); color: var(--muted); letter-spacing: 0.04em; }
+tr.phasehead b { font: 600 19px var(--font-display); }
+.levers { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; }
+.lever { border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); padding: 14px 16px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.lever ul { margin: 0; padding-left: 18px; display: grid; gap: 5px; }
+.lever .eff { font-size: 13px; border-top: 1px solid var(--rule); padding-top: 8px; }
+.lever .eff b { font-family: var(--font-mono); font-weight: 500; }
+.ride table { min-width: 560px; }
+.lrtable table { min-width: 1040px; }
+td.nw { white-space: nowrap; }
+tr.subrow td { font-weight: 500; border-top: 1px solid var(--rule); }
+.lrtable td.hl, .lrtable th.hl { background: color-mix(in srgb, var(--accent) 9%, transparent); }
+th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font: 500 12px var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+td.num, th.num { white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; font-family: var(--font-mono); }
+tr.row { cursor: pointer; }
+tr.row:hover td { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+tfoot td { font-weight: 600; border-bottom: none; }
+tbody tr:last-child td { border-bottom: none; }
+.status { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; white-space: nowrap; }
+.dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex: none; }
+.s-op { background: var(--ink); }
+.s-uc { background: transparent; border: 2px solid var(--ink); }
+.s-pl { background: color-mix(in srgb, var(--ink) 45%, transparent); }
+.s-pr { background: var(--accent); }
+.dir { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 500px), 1fr)); gap: 18px; align-items: start; }
+.card { border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); min-width: 0; overflow: hidden; }
+.card header { display: flex; gap: 10px; align-items: center; padding: 10px 12px; border-bottom: 3px solid var(--c); }
+.card header div { display: grid; min-width: 0; }
+.card header b { font-family: var(--font-display); font-size: 19px; font-weight: 600; line-height: 1.1; }
+.card header span { font-size: 12.5px; color: var(--muted); }
+.card table { font-size: 13.5px; }
+.card td { padding: 6px 6px; }
+.card th { padding-left: 6px; padding-right: 6px; }
+.card td.num { white-space: nowrap; }
+.card td:first-child { width: 30px; color: var(--muted); font-family: var(--font-mono); font-size: 12px; text-align: right; }
+.card .stn { font-weight: 500; }
+.card .stn.i { font-style: italic; font-weight: 400; }
+.card .xfer { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.card .sub { font-size: 12px; color: var(--muted); }
+.phases { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; }
+.phase { border-top: 3px solid var(--ink); padding-top: 10px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.phase ul, .two ul { margin: 0; padding-left: 18px; display: grid; gap: 5px; }
+.phase .when { font: 500 13px var(--font-mono); color: var(--muted); }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px 40px; }
+.two > div { display: grid; gap: 8px; align-content: start; min-width: 0; }
+a { color: var(--accent); }
+.sources { font-size: 13px; color: var(--muted); display: grid; gap: 4px; }
+.cite { font-size: 0.8em; text-decoration: none; margin-left: 1px; }
+@media (prefers-reduced-motion: no-preference) { .ln, .st, .lbl { transition: opacity .2s; } }
+</style><style>.sitenav{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap;max-width:1200px;margin:0 auto;padding:10px 16px 0;font:500 13px/1 var(--font-body,"IBM Plex Sans",system-ui,sans-serif)}.sitenav a{color:var(--ink);text-decoration:none;border:1px solid var(--rule);background:var(--paper);border-radius:999px;padding:7px 12px}.sitenav a:hover{border-color:var(--accent);color:var(--accent)}</style><nav class="sitenav" aria-label="Site"><a href="harita.html">Sokak haritası</a><a href="index.html" lang="en" hreflang="en">English</a></nav>
+
+<div class="wrap" lang="tr">
+  <header class="mast">
+    <div class="eyebrow">Ağ planı · Ankara metropoliten alanı · hedef yıl 2053</div>
+    <h1>Ankara Metrosu 2053</h1>
+    <p class="lede">İşletmedeki, yapımı süren ya da resmi olarak planlanan tüm hatlar 2053'e kadar dört aşamada tamamlanır; bunlara bu planda önerilen hatlar eklenir: Etlik, Keçiören ve Altındağ'dan geçen M5 halka hattı, Hacettepe, Bilkent ve ODTÜ yerleşkelerinden Mamak'a M6, İvedik OSB'den Söğütözü'ne ve Gölbaşı'na M8 çapraz hattı, Keçiören'den geçen kuzey M9 hattı, dört hafif raylı hat, Havalimanı Ekspresi, Gölbaşı–Beynam hattı ve Kahramankazan'a ve Elmadağ'a uzanan Başkentray. Tek hat olarak çalışacak hatlar aynı numarayı taşır.</p>
+    <div class="figs" id="figs"></div>
+  </header>
+
+  <section aria-labelledby="map-h">
+    <div class="head">
+      <h2 id="map-h">Ağ şeması</h2>
+      <p class="note">Şematik harita, kuzey yukarıda: hatlar gerçek yönlerini, istasyonlar gerçek sıralarını korur, mesafeler sadeleştirilmiştir. Etiketler her hattın bittiği yeri gösterir. Bir hattı öne çıkarmak için seçin; gezinmek için sürükleyin ya da kaydırın.</p>
+      <p class="note">Hat numaraları: M1, bugünkü M1, M2 ve M3'ü tek hatta birleştirir; M2, bugünkü M4'ü planlanan Kızılay–Dikmen hattına bağlar; M3 planlanan Bağlıca–Eryaman–Devlet Mahallesi hattı, M4 yapımı süren Gar–Esenboğa hattı, M7 planlanan Gar–Etlik–Ovacık hattı, T1 planlanan Çubuk hafif raylısı, F1 planlanan Kuğulu–Atakule–Yıldız füniküleridir. M5, M8, M9, M6'nın büyük bölümü, T2–T6 hafif raylı hatları ve fünikülerin Sancak bağlantısı bu planda önerilir; kapalı G1 (Yenimahalle–Şentepe) ve G2 (Keçiören) teleferikleri yeniden açılır.</p>
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="keys">
+      <span><svg width="40" height="12" aria-hidden="true"><line x1="3" y1="6" x2="37" y2="6" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>İşletmede</span>
+      <span><svg width="40" height="12" aria-hidden="true"><line x1="3" y1="6" x2="37" y2="6" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><line x1="3" y1="6" x2="37" y2="6" stroke="var(--paper)" stroke-width="2.2" stroke-dasharray="5 4"/></svg>Yapım aşamasında</span>
+      <span><svg width="40" height="12" aria-hidden="true"><line x1="3" y1="6" x2="37" y2="6" stroke="currentColor" stroke-width="5" stroke-dasharray="9 5"/></svg>Planlanan (ABB / bakanlık)</span>
+      <span><svg width="40" height="12" aria-hidden="true"><line x1="4" y1="6" x2="37" y2="6" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-dasharray="0.1 9"/></svg>Bu planda önerilen</span>
+      <span><svg width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="var(--paper)" stroke="currentColor" stroke-width="2.5"/></svg>Aktarma istasyonu</span>
+      <span><svg width="40" height="12" aria-hidden="true"><line x1="3" y1="6" x2="37" y2="6" stroke="currentColor" stroke-width="3.4"/></svg>Havalimanı Ekspresi: M4'ün yanında çizilir, halkalı istasyonlarda durur</span>
+      <span><svg width="40" height="12" aria-hidden="true"><line x1="3" y1="6" x2="37" y2="6" stroke="var(--l-m5)" stroke-width="3.4"/></svg>Halka: M5 ve M6'nın dışında çizilir, halka üzerindeki her istasyonda durur</span>
+      <span><span class="badge sm" style="background:var(--l-r);color:#fff">M1</span> Hat sonu</span>
+      <span><em>İtalik ad</em> = geçici ya da önerilen</span>
+    </div>
+    <div class="mapcard">
+      <div class="toolbar">
+        <span class="note" id="zoomlabel">Yakınlaştırma</span>
+        <div class="tools">
+          <button class="tool" type="button" id="zout" aria-label="Uzaklaştır">−</button>
+          <button class="tool" type="button" id="zin" aria-label="Yakınlaştır">+</button>
+          <button class="tool" type="button" id="zfit">Sığdır</button>
+        </div>
+      </div>
+      <div class="mapscroll" id="mapscroll"><svg id="map" role="img" aria-labelledby="map-t"><title id="map-t">Ankara metro ağının 2053 yılındaki tüm istasyonlarıyla şematik haritası</title></svg></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="lines-h" class="register">
+    <div class="head"><h2 id="lines-h">Hat listesi ve uzunluklar</h2><p class="note">Her kesimin güzergâh uzunluğu, istasyonları, yapım aşaması ve tahmini maliyeti. Bir satırı seçerek o hattı şemada öne çıkarabilirsiniz.</p></div>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Hat</th><th>Kesim</th><th>Durum</th><th class="num">km</th><th class="num">İstasyon</th><th>Uzunluk kaynağı</th><th>Aşama</th><th class="num">Maliyet</th></tr></thead>
+        <tbody id="rows"></tbody>
+        <tfoot id="foot"></tfoot>
+      </table>
+    </div>
+    <p class="note">Yayımlanmış uzunluklar EGO, ABB, Ulaştırma ve Altyapı Bakanlığı ve planlarına ilişkin basın haberlerinden alınmıştır <a class="cite" href="#src1">[1]</a><a class="cite" href="#src2">[2]</a><a class="cite" href="#src3">[3]</a><a class="cite" href="#src4">[4]</a><a class="cite" href="#src5">[5]</a><a class="cite" href="#src6">[6]</a><a class="cite" href="#src7">[7]</a><a class="cite" href="#src8">[8]</a><a class="cite" href="#src9">[9]</a><a class="cite" href="#src10">[10]</a>. Önerilen kesimler istasyon konumları arasında ölçülüp kurplar için %15 eklenerek hesaplanmıştır; bu, Ankara hatlarında yayımlanmış uzunluklarla istasyonlar arası uzunluklar arasındaki olağan farktır. Bugünkü M1 (46,88 km), EGO'nun Kızılay–Koru, Kızılay–Batıkent ve Batıkent–OSB-Törekent hatlarıdır <a class="cite" href="#src2">[2]</a>. Hat toplam satırlarındaki istasyon sayıları aktarma istasyonlarını da içerir; Havalimanı Ekspresi ve Halka başka hatların rayları üzerinde çalışır.</p>
+    <p class="note">Maliyetler 2026 fiyatlarıyla inşaat, sistemler ve trenleri kapsar: tünelli metro için km başına 100–150 milyon $, kısmen tünel kısmen yüzey ya da viyadük için (M4'ün Kuyubaşı sonrası, M8'in Söğütözü'nün güneyi, M9) 65–95 milyon $, hafif raylı sistem ve füniküler için 30–50 milyon $, yüzeyde banliyö için 25–45 milyon $, yeni teleferik için 15–30 milyon $ ve Elmadağ'a giden demiryolunun iyileştirilmesi için 6–14 milyon $; kapalı her teleferiğin yenilenmesi 50–100 milyon $ tutar. Yapımı süren kesimler tam maliyetleriyle gösterilir.</p>
+  </section>
+
+  <section aria-labelledby="train-h" class="register">
+    <div class="head"><h2 id="train-h">Trenler, hızlar ve kapasite</h2><p class="note">2053 için trenler, zirve sıklıkları ve kapasite. Kapasite, m² başına 4 ayakta yolcuyla saatte tek yönde taşınan yolcudur; en yoğun saat, her hattın en yoğun kesiminde, ekim–aralık arasındaki bir okul dönemi hafta içi gününün zirve saatindeki tek yön yüküdür: orta tahmin – yüksek durum, kapasiteye oranıyla.</p></div>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Hat</th><th>Trenler</th><th>Peronlar</th><th class="num">En yüksek hız, km/sa</th><th class="num">Zirve sıklığı</th><th class="num">Kapasite, saatte tek yön</th><th class="num">En yoğun saat, orta – yüksek</th><th class="num">Uçtan uca, dk</th><th class="num">Ortalama hız, km/sa</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge" style="background:var(--l-a);color:#fff">A</span></td><td class="nw">3 vagon, 90 m</td><td>90 m</td><td class="num">80</td><td class="num">2 dk</td><td class="num">20.400</td><td class="num">12.500–16.800 (%61–82)</td><td class="num">44</td><td class="num">34</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-r);color:#fff">M1</span></td><td class="nw">6 vagon, 150 m</td><td>150 m</td><td class="num">80</td><td class="num">3 dk</td><td class="num">24.800</td><td class="num">15.300–20.600 (%62–83)</td><td class="num">82</td><td class="num">41</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-m4);color:#fff">M2</span></td><td class="nw">6 vagon, 150 m</td><td>150 m</td><td class="num">80</td><td class="num">3 dk</td><td class="num">24.800</td><td class="num">15.500–20.700 (%63–83)</td><td class="num">65</td><td class="num">41</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-m6);color:#fff">M3</span></td><td class="nw">6 vagon, 150 m</td><td>150 m</td><td class="num">100</td><td class="num">5 dk</td><td class="num">14.900</td><td class="num">8.500–10.900 (%57–73)</td><td class="num">33</td><td class="num">55</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-m7);color:#fff">M4</span></td><td class="nw">6 vagon, 150 m</td><td>150 m</td><td class="num">100 / 140</td><td class="num">6 dk</td><td class="num">12.400</td><td class="num">9.200–12.200 (%74–98)</td><td class="num">31</td><td class="num">70</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-x);color:var(--paper)">Havalimanı Ekspresi</span></td><td class="nw">2 vagon, bagaj raflı, 50 m</td><td>M4 peronları, 150 m</td><td class="num">140</td><td class="num">7,5 dk</td><td class="num">3.300</td><td class="num">2.000–2.500 (%61–76)</td><td class="num">19</td><td class="num">98</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-m8);color:#fff">M5</span></td><td class="nw">6 vagon, 150 m</td><td>150 m</td><td class="num">100</td><td class="num">5 dk, halkada 2,5</td><td class="num">halkada 29.900, dışında 14.900</td><td class="num">21.300–28.600 (%71–96)</td><td class="num">59</td><td class="num">48</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-m9);color:#fff">M6</span></td><td class="nw">4 vagon, 100 m</td><td>150 m</td><td class="num">100</td><td class="num">5 dk, halkada 2,5</td><td class="num">halkada 24.900, dışında 10.000</td><td class="num">14.300–19.200 (%57–77)</td><td class="num">58</td><td class="num">50</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-m5);color:#16201E">Halka</span></td><td class="nw">6 vagon, 150 m</td><td>150 m</td><td class="num">100</td><td class="num">her yönde 5 dk</td><td class="num">her yönde 14.900, M5 ya da M6 ile 29.900</td><td class="num">13.100–17.500</td><td class="num">tur başına 89</td><td class="num">47</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-m11);color:#fff">M7</span></td><td class="nw">4 vagon, 100 m</td><td>150 m</td><td class="num">80</td><td class="num">4 dk</td><td class="num">12.400</td><td class="num">9.200–12.100 (%74–98)</td><td class="num">25</td><td class="num">41</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-m10);color:#fff">M8</span></td><td class="nw">4 vagon, 100 m</td><td>150 m</td><td class="num">100</td><td class="num">5 dk</td><td class="num">10.000</td><td class="num">6.800–8.900 (%68–89)</td><td class="num">38</td><td class="num">48</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-m12);color:#fff">M9</span></td><td class="nw">4 vagon, 100 m</td><td>150 m</td><td class="num">80</td><td class="num">4 dk</td><td class="num">12.400</td><td class="num">7.200–9.300 (%58–75)</td><td class="num">31</td><td class="num">45</td></tr><tr><td><span class="badge" style="background:var(--l-b2);color:#fff">T1</span></td><td class="nw">1 hafif raylı araç, yaklaşık 35 m</td><td>75 m</td><td class="num">90</td><td class="num">6 dk</td><td class="num">2.600</td><td class="num">1.000–1.200 (%38–46)</td><td class="num">16</td><td class="num">58</td></tr><tr><td><span class="badge" style="background:var(--l-t1);color:#fff">T2</span></td><td class="nw">2 bağlı hafif raylı araç, yaklaşık 70 m</td><td>75 m</td><td class="num">70</td><td class="num">2 dk</td><td class="num">15.800</td><td class="num">10.000–12.800 (%63–81)</td><td class="num">29</td><td class="num">39</td></tr><tr><td><span class="badge" style="background:var(--l-b3);color:#fff">T3</span></td><td class="nw">1 hafif raylı araç, yaklaşık 35 m</td><td>75 m</td><td class="num">90</td><td class="num">4 dk</td><td class="num">3.900</td><td class="num">2.800–3.300 (%72–85)</td><td class="num">27</td><td class="num">59</td></tr><tr><td><span class="badge" style="background:var(--l-t2);color:#fff">T4</span></td><td class="nw">1 hafif raylı araç, yaklaşık 35 m</td><td>75 m</td><td class="num">70</td><td class="num">4 dk</td><td class="num">3.900</td><td class="num">2.400–2.900 (%62–74)</td><td class="num">16</td><td class="num">37</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-t3);color:#fff">T5</span></td><td class="nw">2 bağlı hafif raylı araç, yaklaşık 70 m</td><td>75 m</td><td class="num">70</td><td class="num">2 dk</td><td class="num">15.800</td><td class="num">10.400–13.100 (%66–83)</td><td class="num">24</td><td class="num">41</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-t4);color:#fff">T6</span></td><td class="nw">1 hafif raylı araç, yaklaşık 35 m</td><td>75 m</td><td class="num">70</td><td class="num">7,5 dk</td><td class="num">2.100</td><td class="num">600–700 (%29–33)</td><td class="num">15</td><td class="num">54</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-b1);color:#fff">B1</span></td><td class="nw">27,8 m'lik 3–6 vagon (83–167 m), zirvede 6</td><td>mevcut</td><td class="num">100</td><td class="num">4 dk (hizmet başına 12)</td><td class="num">16.600</td><td class="num">10.400–13.400 (%63–81)</td><td class="num">86</td><td class="num">53</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-b4);color:#fff">F1</span></td><td class="nw">2 vagonlu tren, 250 yolcu</td><td>50 m</td><td class="num">36</td><td class="num">5 dk</td><td class="num">3.000</td><td class="num">900–1.200 (%30–40)</td><td class="num">11</td><td class="num">26</td></tr><tr><td><span class="badge" style="background:var(--l-b5);color:#fff">G1</span></td><td class="nw">10 kişilik kabin</td><td>kabin istasyonları</td><td class="num">20</td><td class="num">15 sn'de bir kabin</td><td class="num">2.400</td><td class="num">1.700–2.200 (%71–92)</td><td class="num">14</td><td class="num">15</td></tr><tr><td><span class="badge" style="background:var(--l-b5);color:#fff">G2</span></td><td class="nw">10 kişilik kabin</td><td>kabin istasyonları</td><td class="num">20</td><td class="num">15 sn'de bir kabin</td><td class="num">2.400</td><td class="num">200 (%8)</td><td class="num">11</td><td class="num">16</td></tr></tbody>
+      </table>
+    </div>
+    <p class="note">Ankaray, 90 m'lik istasyonları için 3 vagonlu trenlerle kalır ve zirvede 2 dakikada bir çalışır; sinyalizasyonu 90 saniyede bir trene izin verir. Yeni metro hatları 150 m peronlarla yapılır; M1, M2, M3, M4 ve M5 6, M6, M7, M8 ve M9 4 vagonla, Havalimanı Ekspresi bagaj raflı 2 vagonla çalışır. Metro trenleri 2 vagonlu dizilerden oluşur; bir dizi eklenerek ya da çıkarılarak uzatılıp kısaltılabilir. Kapasitesi boş kalan hatlar, uzun trenleri seyrek değil kısa trenleri sık çalıştırır: Çubuk, Gölbaşı, Çayyolu ve Akyurt hafif raylıları, iki araca göre yapılmış peronlarda tek araçla sırasıyla 6, 4, 4 ve 7,5 dakikada bir; Sincan ve Altındağ hatları iki araçla 2 dakikada bir çalışır. Hatlar, ekim–aralık arasında bir okul dönemi hafta içi gününün zirve saatine göre boyutlandırılır: 2025 sayımlarında bu aylar yılın günlük ortalamasının yaklaşık %17 üstündeydi, hafta içi günler ortalama bir günün yaklaşık %19 üstündedir ve zirve saat bir yönün günlük yolcusunun %12'sini taşır. Tüm varsayımlar üst uçtayken bile her hat kapasitenin içinde kalır; en çok M5, M7 ve M4 yaklaşır (%96–98); bu yüzden yolcu daha yüksek gelirse ilk adımlar M4'te 5 dakikada bir tren, M7'de 6 vagonlu trenler ve döngüde 2 dakikada bir trendir. Hafif raylı hatlar kendi yollarında, kavşaklarda öncelikle saatte 70 km'ye kadar hızla çalışır. M3, M5, M6 ve M8 saatte 100 km'ye, M4 Kuyubaşı sonrasında 140 km'ye göre yapılır; böylece Havalimanı Ekspresi Gar'dan Esenboğa'ya yaklaşık 19 dakikada gider. Süreler 1 m/s² hızlanma ve frenleme, 30 saniyelik duruş (banliyöde 40) ve %8 pay varsayar. Başkentray zirvede 3 vagonlu dizilerini çift (6 vagon) çalıştırır. Füniküler 250 kişilik 2 vagonlu trenlerle, teleferikler 15 saniyede bir 10 kişilik kabinle çalışır.</p>
+    <h3>Tarifeler</h3>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Hat</th><th class="num">Zirve</th><th class="num">Yaz zirvesi</th><th class="num">Gündüz</th><th class="num">Akşam</th><th class="num">Gece, 00:00–06:00</th><th class="num">Zirvede tren</th></tr></thead>
+        <tbody><tr><td><span class="badge sm" style="background:var(--l-a);color:#fff">A</span></td><td class="num">2 dk</td><td class="num">2,5 dk</td><td class="num">3 dk</td><td class="num">4 dk</td><td class="num">15 dk, cuma–cmt</td><td class="num">48</td></tr><tr><td><span class="badge sm" style="background:var(--l-r);color:#fff">M1</span></td><td class="num">3 dk</td><td class="num">4 vagon</td><td class="num">4 dk</td><td class="num">5 dk</td><td class="num">15 dk, cuma–cmt</td><td class="num">58</td></tr><tr><td><span class="badge sm" style="background:var(--l-m4);color:#fff">M2</span></td><td class="num">3 dk</td><td class="num">4 vagon</td><td class="num">4 dk</td><td class="num">5 dk</td><td class="num">15 dk, cuma–cmt</td><td class="num">46</td></tr><tr><td><span class="badge sm" style="background:var(--l-m6);color:#fff">M3</span></td><td class="num">5 dk</td><td class="num">4 vagon</td><td class="num">7,5 dk</td><td class="num">10 dk</td><td class="num">yok</td><td class="num">15</td></tr><tr><td><span class="badge sm" style="background:var(--l-m7);color:#fff">M4</span></td><td class="num">6 dk</td><td class="num">4 vagon</td><td class="num">10 dk</td><td class="num">10 dk</td><td class="num">yok</td><td class="num">12</td></tr><tr><td><span class="badge sm" style="background:var(--l-x);color:var(--paper)">Havalimanı Ekspresi</span></td><td class="num">7,5 dk</td><td class="num">aynı</td><td class="num">10 dk</td><td class="num">15 dk</td><td class="num">30 dk, her gece</td><td class="num">7</td></tr><tr><td><span class="badge sm" style="background:var(--l-m8);color:#fff">M5</span></td><td class="num">5 dk</td><td class="num">aynı</td><td class="num">7,5 dk</td><td class="num">10 dk</td><td class="num">yok</td><td class="num">26</td></tr><tr><td><span class="badge sm" style="background:var(--l-m9);color:#fff">M6</span></td><td class="num">5 dk</td><td class="num">2 vagon</td><td class="num">7,5 dk</td><td class="num">10 dk</td><td class="num">yok</td><td class="num">25</td></tr><tr><td><span class="badge sm" style="background:var(--l-m5);color:#16201E">Halka</span></td><td class="num">5 dk</td><td class="num">aynı</td><td class="num">7,5 dk</td><td class="num">10 dk</td><td class="num">15 dk, cuma–cmt</td><td class="num">36</td></tr><tr><td><span class="badge sm" style="background:var(--l-m11);color:#fff">M7</span></td><td class="num">4 dk</td><td class="num">aynı</td><td class="num">6 dk</td><td class="num">7,5 dk</td><td class="num">yok</td><td class="num">15</td></tr><tr><td><span class="badge sm" style="background:var(--l-m10);color:#fff">M8</span></td><td class="num">5 dk</td><td class="num">aynı</td><td class="num">7,5 dk</td><td class="num">10 dk</td><td class="num">yok</td><td class="num">17</td></tr><tr><td><span class="badge sm" style="background:var(--l-m12);color:#fff">M9</span></td><td class="num">4 dk</td><td class="num">aynı</td><td class="num">6 dk</td><td class="num">7,5 dk</td><td class="num">yok</td><td class="num">18</td></tr><tr><td><span class="badge sm" style="background:var(--l-b2);color:#fff">T1</span></td><td class="num">6 dk</td><td class="num">aynı</td><td class="num">10 dk</td><td class="num">10 dk</td><td class="num">yok</td><td class="num">7</td></tr><tr><td><span class="badge sm" style="background:var(--l-t1);color:#fff">T2</span></td><td class="num">2 dk</td><td class="num">aynı</td><td class="num">3 dk</td><td class="num">4 dk</td><td class="num">yok</td><td class="num">33</td></tr><tr><td><span class="badge sm" style="background:var(--l-b3);color:#fff">T3</span></td><td class="num">4 dk</td><td class="num">aynı</td><td class="num">6 dk</td><td class="num">7,5 dk</td><td class="num">yok</td><td class="num">16</td></tr><tr><td><span class="badge sm" style="background:var(--l-t2);color:#fff">T4</span></td><td class="num">4 dk</td><td class="num">aynı</td><td class="num">6 dk</td><td class="num">7,5 dk</td><td class="num">yok</td><td class="num">11</td></tr><tr><td><span class="badge sm" style="background:var(--l-t3);color:#fff">T5</span></td><td class="num">2 dk</td><td class="num">aynı</td><td class="num">3 dk</td><td class="num">4 dk</td><td class="num">yok</td><td class="num">29</td></tr><tr><td><span class="badge sm" style="background:var(--l-t4);color:#fff">T6</span></td><td class="num">7,5 dk</td><td class="num">aynı</td><td class="num">10 dk</td><td class="num">15 dk</td><td class="num">yok</td><td class="num">5</td></tr><tr><td><span class="badge sm" style="background:var(--l-b1);color:#fff">B1</span></td><td class="num">4 dk</td><td class="num">5 dk (hizmet başına 15)</td><td class="num">6,7 dk</td><td class="num">6,7 dk</td><td class="num">yok</td><td class="num">45</td></tr><tr><td><span class="badge sm" style="background:var(--l-b4);color:#fff">F1</span></td><td class="num">5 dk</td><td class="num">aynı</td><td class="num">7,5 dk</td><td class="num">10 dk</td><td class="num">yok</td><td class="num">6</td></tr><tr><td><span class="badge sm" style="background:var(--l-b5);color:#fff">G1</span></td><td class="num">15 sn</td><td class="num">20 sn</td><td class="num">30 sn</td><td class="num">1 dk</td><td class="num">yok</td><td class="num">120 kabin</td></tr><tr><td><span class="badge sm" style="background:var(--l-b5);color:#fff">G2</span></td><td class="num">15 sn</td><td class="num">30 sn</td><td class="num">30 sn</td><td class="num">1 dk</td><td class="num">yok</td><td class="num">95 kabin</td></tr></tbody>
+        <tfoot><tr><td colspan="6">Füniküler ve teleferikler dışında tüm hatlar</td><td class="num">469</td></tr></tfoot>
+      </table>
+    </div>
+    <p class="note">Sıklıklar yön başınadır. Zirve hafta içi 07:00–09:30 ve 16:00–19:30; gündüz günün geri kalanı 22:00'ye kadar; akşam sabah erken ve gece geç saatlerdir. Her hattın zirve sıklığı, harcanan paraya karşı yolcuya ve kente en fazlasını verecek şekilde seçildi: kısalan bekleme ve getirdiği yolculuklar (saati 10 $, yolculuk başına ücret ve azalan araç kullanımı için 1,20 $) ile işletme maliyeti (araba-km başına 3,50 $) ve ek trenler karşılaştırıldı. Sınırlar: hiçbir hat bugünkünden seyrek çalışmaz, hiçbir kent içi hatta zirvede iki tren arası 7,5 dakikayı aşmaz, hafif raylı en sık 2 dakikada bir çalışır ve tüm varsayımlar üst uçtayken bile her hattın en yoğun kesimi kapasitenin içinde kalır.</p>
+    <p class="note">M5, M6 ve Halka 5 dakikada bir çalışır, böylece döngüde 2,5 dakikada bir tren geçer. Ankaray 2, M1 ve M2 3, M7 ve M9 4, M3 ve M8 5, M4 6 dakikada birdir. Sincan ve Altındağ hafif raylıları 2, Gölbaşı ve Çayyolu hatları 4, Çubuk hattı 6, Akyurt hattı 7,5 dakikada bir çalışır. Havalimanı Ekspresi 7,5, füniküler 5 dakikada birdir. Başkentray'ın her hizmeti 12 dakikada birdir; böylece Sincan ile Kayaş arasında 4 dakikada bir tren geçer. Hatlar 06:00–00:00 arası çalışır; cuma ve cumartesi geceleri Ankaray, M1, M2 ve Halka 15 dakikada bir, Havalimanı Ekspresi her gece 30 dakikada bir çalışır.</p>
+    <p class="note">Mevsimler. 2025'te metro ve Ankaray 173,2 milyon yolcu taşıdı. Model tüm yılın sayımlarına göre ayarlandığından yıllık rakamlar mevsimleri zaten içerir. Kullanım akademik takvimi izler, çünkü öğrenciler en sık binen yolcular arasındadır: ekim–aralık yılın günlük ortalamasının yaklaşık %17 üstünde, haziran–ağustos ise öğrenciler ayrılıp birçok kişi sahile gittiği için yaklaşık %20 altında kaldı; bayram tatillerinde de düşüş olur. 2025 boyunca görülen artışın bir kısmı büyümeden de kaynaklanıyor olabilir. Bu yüzden yukarıdaki tarife eylülden haziran ortasına kadar geçerlidir; haziran ortasından eylül başına kadar ve tatil haftalarında yaz tarifesi uygulanır. Yaz tarifesi Ankaray (2,5 dakikada bir) ve Başkentray (hizmet başına 15 dakikada bir) dışında tüm sıklıkları korur ve yüksek durum hâlâ sığıyorsa kısa trenler çalıştırır: M1, M2, M3 ve M4'te 4, M6'da 2 vagon, teleferiklerde daha az kabin. Böylece zirvede 2.004 yerine yaklaşık 1.617 vagon gerekir ve işletme maliyetinden yılda yaklaşık 67 milyon $ tasarruf edilir.</p>
+    <p class="note">Bu tarife zirvede 469 tren ve yaklaşık 2.000 vagon gerektirir; işletme maliyeti yılda yaklaşık 1,40 milyar $, filo maliyeti 0,44 milyar $'dır. M1 ve M2'yi 2,5 dakikada bir çalıştırmak 489 tren ve yılda yaklaşık 0,05 milyar $ fazlası ister; karşılığında günde yaklaşık 37.000 yolculuk ekler.</p>
+  </section>
+
+  <section aria-labelledby="bk-h" class="register">
+    <div class="head"><h2 id="bk-h">Başkentray hizmetleri</h2><p class="note">Başkentray, iki batı ucu (Kahramankazan ve Kazan Soda Fabrikası) ve Elmadağ'a aktarmasız trenleriyle tek hat olarak işletilir. Zirvede 12, gündüz ve akşam 20 dakikada bir çalışan üç hizmet, Sincan ile Kayaş arasında zirvede 4, gündüz 6–7 dakikada bir tren sağlar. Bugün bu kesimde trenler 15 dakikada birdir; sık tren ve metroyla aktarmalar Başkentray'ı banliyö hattının yanında bir aktarma hattına dönüştürür.</p></div>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Hat</th><th>Hizmet</th><th>Başlıca duraklar</th><th class="num">Zirve</th><th class="num">Gündüz</th><th class="num">km</th><th class="num">İstasyon</th><th class="num">Uçtan uca, dk</th><th class="num">Zirvede tren</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge" style="background:var(--l-b1);color:#fff">B1</span></td><td class="nw"><b>Kahramankazan – Kayaş</b></td><td class="note">Kahramankazan, Yıldırımbeyazıt, Bitik, TUSAŞ, Akıncı, Sincan Cezaevi, Sincan OSB, Sincan, Eryaman YHT, Gar, Yenişehir, Mamak, Kayaş</td><td class="num">12 dk</td><td class="num">20 dk</td><td class="num">75,21</td><td class="num">31</td><td class="num">86</td><td class="num">16</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-b1);color:#fff">B1</span></td><td class="nw"><b>Kazan Soda Fabrikası – Kayaş</b></td><td class="note">Kazan Soda Fabrikası, Akçaören, Yenikent, Sincan OSB, Sincan, Eryaman YHT, Gar, Yenişehir, Mamak, Kayaş</td><td class="num">12 dk</td><td class="num">20 dk</td><td class="num">58,12</td><td class="num">29</td><td class="num">73</td><td class="num">14</td></tr>
+          <tr><td><span class="badge" style="background:var(--l-b1);color:#fff">B1</span></td><td class="nw"><b>Sincan – Elmadağ</b></td><td class="note">Sincan, Eryaman YHT, Gar, Yenişehir, Mamak, Kayaş, Lalahan, Hasanoğlan, Roketsan, Elmadağ</td><td class="num">12 dk</td><td class="num">20 dk</td><td class="num">68,02</td><td class="num">30</td><td class="num">80</td><td class="num">15</td></tr>
+        </tbody>
+        <tfoot><tr><td></td><td colspan="2">Sincan – Kayaş, üç hizmet birlikte</td><td class="num">4 dk</td><td class="num">6,7 dk</td><td></td><td></td><td></td><td class="num">45</td></tr></tfoot>
+      </table>
+    </div>
+    <h3>Yolculuk süreleri</h3>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Yolculuk</th><th class="num">Birleşmeden önce, dk</th><th>Önceki hatlar</th><th class="num">Başkentray ile, dk</th><th class="num">Kazanç, dk</th></tr></thead>
+        <tbody>
+          <tr><td>Kahramankazan – TUSAŞ</td><td class="num">14</td><td class="note">Kahramankazan hattı</td><td class="num">15</td><td class="num">−1</td></tr>
+          <tr><td>Kahramankazan – Sincan OSB</td><td class="num">45</td><td class="note">Kahramankazan hattı, M3, M1</td><td class="num">29</td><td class="num">16</td></tr>
+          <tr><td>Kahramankazan – Sincan</td><td class="num">42</td><td class="note">Kahramankazan hattı, M3, M5</td><td class="num">33</td><td class="num">9</td></tr>
+          <tr><td>Kahramankazan – Eryaman YHT</td><td class="num">38</td><td class="note">Kahramankazan hattı, M3</td><td class="num">41</td><td class="num">−3</td></tr>
+          <tr><td>Kahramankazan – Gar</td><td class="num">68</td><td class="note">Kahramankazan hattı, M3, Başkentray</td><td class="num">65</td><td class="num">3</td></tr>
+          <tr><td>Kahramankazan – Yenişehir</td><td class="num">71</td><td class="note">Kahramankazan hattı, M3, Başkentray</td><td class="num">68</td><td class="num">3</td></tr>
+          <tr><td>Sincan – TUSAŞ</td><td class="num">25</td><td class="note">M5, M3</td><td class="num">17</td><td class="num">8</td></tr>
+          <tr><td>Sincan OSB – TUSAŞ</td><td class="num">28</td><td class="note">M1, M3</td><td class="num">13</td><td class="num">15</td></tr>
+          <tr><td>TUSAŞ – Gar</td><td class="num">51</td><td class="note">M3, Başkentray</td><td class="num">50</td><td class="num">1</td></tr>
+          <tr><td>Akıncı – Sincan</td><td class="num">–</td><td class="note">raylı sistem yok</td><td class="num">13</td><td class="num">–</td></tr>
+          <tr><td>Elmadağ – Mamak</td><td class="num">38</td><td class="note">Elmadağ hattı, Başkentray</td><td class="num">35</td><td class="num">3</td></tr>
+          <tr><td>Elmadağ – Yenişehir</td><td class="num">48</td><td class="note">Elmadağ hattı, Başkentray</td><td class="num">45</td><td class="num">3</td></tr>
+          <tr><td>Elmadağ – Gar</td><td class="num">51</td><td class="note">Elmadağ hattı, Başkentray</td><td class="num">47</td><td class="num">4</td></tr>
+          <tr><td>Elmadağ – Sincan</td><td class="num">83</td><td class="note">Elmadağ hattı, Başkentray</td><td class="num">80</td><td class="num">3</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Süreler yukarıdaki hız profiliyle, aktarma 4 dakika (Eryaman YHT'de 5) sayılarak hesaplanmıştır. Kahramankazan – TUSAŞ bir dakika uzar, çünkü Başkentray ayrı hat için planlanan 120 yerine 100 km/sa ile çalışır; Kahramankazan – Eryaman YHT M3 ile daha hızlı kalır. Üç hizmet zirvede 45 tren gerektirir.</p>
+    <p class="note">Elmadağ kesimi tek hatlıdır ve yük trenleriyle paylaşılır. Her yönde 12 dakikada bir tren için Gökçeyurt, Lalahan ve Hasanoğlan'da makas ve bekleme hatları gerekir; geciken trenler Kayaş'ta dönebilir, böylece gecikme ana kesime yansımaz.</p>
+  </section>
+
+  <section aria-labelledby="phase-h">
+    <div class="head"><h2 id="phase-h">Yapım sırası ve maliyet</h2><p class="note">Henüz işletmede olmayan tüm kesimler, aşamalara göre; maliyet esası hat listesinin altında açıklanmıştır. Her aşama, hatlarının açılışıyla biter: 2032, 2038, 2046 ve 2053.</p></div>
+    <div class="tablebox phasetable">
+      <table>
+        <thead><tr><th>Hat</th><th>Kesim</th><th>Durum</th><th class="num">km</th><th class="num">Maliyet</th></tr></thead>
+        <tbody id="phasebody"></tbody>
+        <tfoot id="phasefoot"></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="ride-h" class="ride">
+    <div class="head">
+      <h2 id="ride-h">Yolcu sayısı</h2>
+      <p class="note">Yolculuklar, kaç hat kullanılırsa kullanılsın, bir kez sayılır.</p>
+    </div>
+
+    <h3>Bugün (2025)</h3>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Hizmet</th><th class="num">Güzergâh km</th><th class="num">2025'te yolculuk</th><th class="num">Günlük</th><th class="num">km başına günlük</th></tr></thead>
+        <tbody>
+          <tr><td>Metro M1, M2 ve M3 (bugünkü numaralar; bu planda M1)</td><td class="num">46,88</td><td class="num">117,9 milyon</td><td class="num">323.000</td><td class="num">6.890</td></tr>
+          <tr><td>Keçiören metrosu M4 (bu planda M2)</td><td class="num">12,23</td><td class="num">17,9 milyon</td><td class="num">49.000</td><td class="num">4.010</td></tr>
+          <tr><td>Ankaray</td><td class="num">8,53</td><td class="num">38,0 milyon</td><td class="num">104.100</td><td class="num">12.210</td></tr>
+          <tr><td>Başkentray</td><td class="num">37,47</td><td class="num">27,7 milyon</td><td class="num">75.900</td><td class="num">2.030</td></tr>
+        </tbody>
+        <tfoot><tr><td>Tüm kentsel raylı sistem</td><td class="num">105,11</td><td class="num">201,5 milyon</td><td class="num">552.000</td><td class="num">5.250</td></tr></tfoot>
+      </table>
+    </div>
+    <div class="two">
+      <div><p>Bugünkü istasyonların 1 km (15 dakikalık yürüme) çevresinde yaklaşık 1,40 milyon kişi yaşar; bunların 0,95 milyonu metroya yakındır <a class="cite" href="#src1">[1]</a><a class="cite" href="#src13">[13]</a>. Bu, kişi başına günde 0,39 raylı yolculuk eder; Ankara büyüklüğünde bir kent için düşüktür, çünkü hatlar çoğunlukla Kızılay'a ayrı ayrı uzanan ışınsal hatlardır.</p></div>
+      <div><p>Ankaray, km başına M1'in neredeyse iki katı yolcu taşır: Kızılay, Bahçelievler ve AŞTİ arasında kısa ve yoğundur. Keçiören hattı, çevresindeki konut yoğunluğunun düşündürdüğünden çok daha az yolcu taşır, çünkü otobüs ve dolmuşlar Keçiören'den doğrudan Ulus'a ve Kızılay'a gider. Başkentray'da trenler 15 dakikada birdir ve istasyonlarının çoğu konutlara uzaktır.</p></div>
+    </div>
+
+    <h3>2053'e kadar nüfus ve büyüme</h3>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Aşama sonu</th><th class="num">Ankara nüfusu</th><th class="num">Bir istasyona 15 dakikalık yürüme mesafesinde</th><th class="num">Günlük yolculuk, orta</th></tr></thead>
+        <tbody>
+          <tr><td>2025, bugün</td><td class="num">5,91 milyon</td><td class="num">1,40 milyon</td><td class="num">0,55 milyon</td></tr>
+          <tr><td>2032, 1. aşama</td><td class="num">6,13 milyon</td><td class="num">2,27 milyon</td><td class="num">1,49 milyon</td></tr>
+          <tr><td>2038, 2. aşama</td><td class="num">6,32 milyon</td><td class="num">3,03 milyon</td><td class="num">1,95 milyon</td></tr>
+          <tr><td>2046, 3. aşama</td><td class="num">6,50 milyon</td><td class="num">4,11 milyon</td><td class="num">2,73 milyon</td></tr>
+          <tr><td>2053, 4. aşama</td><td class="num">6,57 milyon</td><td class="num">4,47 milyon</td><td class="num">3,20 milyon</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Ankara, TÜİK projeksiyonuna göre 2025'teki 5,91 milyondan 2030'da 6,06 milyona çıkar <a class="cite" href="#src12">[12]</a>, sonra Türkiye nüfusu 2050 dolayında zirve yaptıkça daha yavaş büyür <a class="cite" href="#src12">[12]</a>: 2053'te 6,57 milyon, bugünden %11 fazla. Büyüme dengesizdir. Her ilçe, 2017–2025 eğilimini kentin geneline göre, zamanla azalarak sürdürür <a class="cite" href="#src12">[12]</a>: 2053'e kadar Akyurt yaklaşık %73, Gölbaşı %53, Kahramankazan %32, Pursaklar %27, Sincan %22, Altındağ ve Çubuk %17, Etimesgut %16, Yenimahalle %12, Mamak %10 büyür; Çankaya, Keçiören ve Elmadağ yaklaşık yerinde kalır. Yeni konut alanları önce dolar: Dodurga ve Alacaatlı (yaklaşık 50 bin kişi) ve OYAK'ın Yapracık'taki 6.214 konutu (yaklaşık 23 bin kişi) 2030'ların başına kadar <a class="cite" href="#src14">[14]</a>; her ilçenin kalan büyümesi ya da azalması mevcut mahallelerine yayılır. Çubuk ve Gölbaşı hafif raylı hatları boyunca planlanan yapılaşma, bu ilçelerin eğilim büyümesinin dörtte üçüyle sınırlanır: planların öngördüğü 230 bin yerine 2053'e kadar yaklaşık 70 bin kişi. İş yerleri ve öğrenciler nüfusla birlikte, sanayi ve savunma alanları (Ostim, İvedik, Sincan OSB, Saray, TUSAŞ, ASELSAN, Çubuk ve Akyurt sanayisi ve Teknokent) yaklaşık %35 büyür.</p>
+
+    <h3>2053 tahmini</h3>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Senaryo</th><th class="num">Günlük ortalama</th><th class="num">Hafta içi günlük</th><th class="num">Yıllık</th></tr></thead>
+        <tbody>
+          <tr><td>Bugünkü otobüs ağı ve sefer sıklıklarıyla 2053 ağı</td><td class="num">2,12 milyon</td><td class="num">2,53 milyon</td><td class="num">775 milyon</td></tr>
+          <tr><td>+ yukarıdaki tarife: zirvede 2–7,5 dk arayla trenler, 4 dakikada bir Başkentray</td><td class="num">+0,90 milyon</td><td class="num">+1,07 milyon</td><td class="num">+328 milyon</td></tr>
+          <tr><td>+ trenlere göre saatlenmiş besleyici otobüsler, park et devam et ve tek ücret</td><td class="num">+0,18 milyon</td><td class="num">+0,21 milyon</td><td class="num">+64 milyon</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Orta tahmin</td><td class="num">3,20 milyon</td><td class="num">3,81 milyon</td><td class="num">1.167 milyon</td></tr>
+          <tr><td style="font-weight:400">Düşük – yüksek</td><td class="num" style="font-weight:400">2,64–3,79 milyon</td><td class="num" style="font-weight:400">3,14–4,51 milyon</td><td class="num" style="font-weight:400">963–1.384 milyon</td></tr>
+        </tfoot>
+      </table>
+    </div>
+    <p class="note">Tahmin yöntemi: her istasyonun 1 km çevresinde yaşayanlar TÜİK'in mahalle nüfuslarından <a class="cite" href="#src13">[13]</a> hesaplanır; her mahalle haritadaki alanına yayılır (sanayi alanları ve parklar hariç), yukarıdaki gibi büyütülür ve en yakın istasyonda sayılır (hem raylı sistem hem teleferik ya da füniküler istasyonuna yakın oturanlar raylı sistem istasyonunda sayılır): 2053 ağının çevresinde 4,47 milyon kişi. Bir istasyona 1–5 km uzaklıkta yaşayan 1,52 milyon kişi o istasyonun besleme alanıdır: bunların %80'i, bugünkü yaklaşık 0,11'e karşı, saatlenmiş besleyici otobüsle kişi başına günde 0,18 yolculuk yapar (0,14–0,25). Dış ve yeni konut alanlarındaki 22 istasyonda toplam yaklaşık 9.000 araçlık park et devam et, araç yeri başına günde yaklaşık 3 yolculuk getirir. Esenboğa'nın 2025'teki 14 milyon yolcudan 2053'te yaklaşık 37 milyona çıkacağı, bunların %25'inin (%20–30) ve karşılayanlarının raylı sistemi kullanacağı varsayılır.</p>
+    <p class="note">İstasyondan istasyona bir model, her istasyondan trende geçen süre, bekleme, yürüme ve her aktarma için 5 dakika sayılarak kaç sakine, iş yerine ve öğrenciye ulaşılabildiğini ölçer. Kişi başına yolculuk, başka kentlerde toplu taşıma kullanımının hizmete verdiği tepkiyle uyumlu olarak bu erişimin 0,5'inci kuvvetiyle (0,35–0,65) artar ve 2025 her hattın sayımına uyacak şekilde ayarlanır <a class="cite" href="#src1">[1]</a>. Yoğunlukla da artar: istasyon çevresindeki sakin, iş yeri ve öğrenci sayısının bugünkü ortalamaya göre 0,25'inci kuvvetiyle (0,7–1,4 kat), çünkü yoğun bölgelerde otopark azdır ve yürüme mesafesinde daha çok şey vardır. Çoğunlukla otobüsten ya da arabadan aktarma için kullanılan istasyonlar bu yolcuları tam olarak korur, ama az sayıdaki yürüyerek gelen yolcuları raylı sistemi daha az kullanır. Kullanım, zirvede kapıdan kapıya raylı sistemin otomobille karşılaştırmasını da izler: otomobile ulaşmak 3 dakika sürer, düz çizgi uzaklığın 1,32 katı yol kısa kent içi yolculuklarda saatte 20 km'den uzun yolculuklarda 45 km'ye çıkan hızla gidilir ve varış yerinin yoğunluğuna göre park etmek 2–12 dakika sürer; raylı sistemde güzergâh modelinin süresine 12 dakika yürüme eklenir. Kullanım bu süre oranıyla, bugünkü ortalamaya göre orantılı değişir (0,7–1,4 kat); böylece havalimanına M4 ve Gölbaşı hafif raylısı gibi trafiği aşan hatlar daha iyi sonuç verir. Bekleme dahil tipik yolculuk süresindeki her %1 artış yolculuğu %1 azaltır. Her yolculuk bir istasyona, oradakilerle ve ne kadar çabuk ulaşıldığıyla orantılı olarak gider ve yolcular neredeyse eşit güzergâhlara dağılır. Hafta içi günler günlük ortalamanın %19 üzerindedir. Yolculuklar bugünkü 7,4 km'ye karşı ortalama 12,1 km ve 1,65 biniştir; her biniş sayılırsa yılda yaklaşık 1,93 milyar biniş (1,59–2,28 milyar), km başına günde 5.410 yolculuk eder (bugünkü tarifelerle 3.590). İstasyon listesi her istasyonun nüfusunu, besleme alanını ve giriş sayısını verir.</p>
+    <p class="note"><b>Pazar sınaması.</b> 2025'te Ankara'da otobüsler 264,6 milyon, kentsel raylı sistem 201,5 milyon yolcu taşıdı <a class="cite" href="#src1">[1]</a>: kişi başına yılda yaklaşık 39 raylı yolculuk. Raylı sistemi büyük ölçekte kuran kentler çok daha fazlasını taşır: Madrid metrosu kişi başına yılda yaklaşık 100, Stockholm metrosu 200'e yakın yolculuk taşır; 2000'de Ankara'nınkinden küçük olan İstanbul metrosu 2022'de 758 milyon yolculuğa ulaştı <a class="cite" href="#src11">[11]</a>. Ankara'daki düşük kullanım, raylı sistemin kentin ne kadar küçük bir bölümüne ulaştığını yansıtır: raylı sistem yolcularının yarısından fazlasını taşıyan M1 bile otobüs ya da aktarma olmadan az yere gider. Bugünkü istasyonların kişi başına kullanımı birlikte M1'inkine göre yaklaşık %72 düzeyindedir. Ağ büyüdükçe her istasyon bugünkü kendi oranından, yeni istasyonlar ise bu ortalamadan 2053'te tüm ağın ortalaması bugünkü M1 oranının yaklaşık %110'u olacak düzeye (denemelerde %95–125) çıkar; artış zaman içinde doğrusal ilerler: 2032'ye kadar yolun yaklaşık dörtte biri, 2038'e kadar yarısına yakını, 2046'ya kadar %75'i. Bugün M1'e göre yaklaşık %17 düzeyindeki Keçiören ve %49 düzeyindeki Başkentray istasyonları, bağlantılar açıldıkça en çok artanlardır. Bundan sonra kullanım yalnızca istasyonun hizmet ettiği yere ve raylı sistemin otomobille karşılaştırmasına bağlıdır. Bu, 2053'te yılda 1.167 milyon yolculuk, kişi başına yaklaşık 178 eder (147–211): Madrid ve Stockholm metroları arasında.</p>
+
+    <h3>Hatlara göre yolcu sayısı</h3>
+    <div class="tablebox lrtable">
+      <table>
+        <thead><tr><th>Hat</th><th class="num">2053 km</th><th class="num">2025</th><th class="num">2032</th><th class="num">2038</th><th class="num">2046</th><th class="num">2053 temel</th><th class="num">+ sıklık</th><th class="num hl">Orta</th><th class="num">Düşük</th><th class="num">Yüksek</th><th class="num">Km başına günlük (orta)</th><th class="num">Yıllık, milyon (orta)</th></tr></thead>
+        <tbody id="lrbody"></tbody>
+        <tfoot id="lrfoot"></tfoot>
+      </table>
+    </div>
+    <p class="note">Günlük ortalama biniş, bin olarak; iki hat kullanan bir yolculuk ikisinde de sayılır. <b>2025</b>, her hattın sayımına göre ayarlanmıştır. <b>2032</b>, <b>2038</b> ve <b>2046</b>, yukarıdaki tarife, besleyici otobüsler ve park et devam et ile 1., 2. ve 3. aşamalardan sonraki ağdır. <b>2053 temel</b>, yaklaşık yarı sıklıkta trenler ve bugünkü otobüslerle; <b>+ sıklık</b> yukarıdaki tarifeyi, <b>orta</b> besleyicileri, park et devam et ve tek ücreti ekler. Düşük ve yüksek, her biri ayrı yürütülen üç denemeyi birleştirir: yolculuğun erişimle ne kadar arttığı (0,35–0,65), 2053 ağ ortalaması (bugünkü M1 oranının %95–125'i) ve besleyici otobüs, park et devam et ile havalimanı payı. Bunlar birbirinden bağımsız sayılır; aralık, etkilerin karelerinin toplamının kareköküdür. Kapasite, üçü birden üst uçtayken sınanır. Tire, hattın henüz açılmadığını gösterir. Parantez içindeki Havalimanı Ekspresi ve Halka uzunlukları M4 ve M5–M6 rayları üzerindedir ve toplamlara eklenmez.</p>
+    <p class="note">Ağ her aşamada büyür: günde 552 bin yolculuktan 2032'de 1,49 milyona, 2038'de 1,95 milyona, 2046'da 2,73 milyona ve 2053'te 3,20 milyona; bu sırada bazı hatlar yolcularını yeni paralel hatlarla paylaşır: M5 ve M8 M1'den, M5 M7'den, M9 M2 ve M4'ten, Sincan hafif raylısı Başkentray'dan yolcu alır. Bugünkü Ankaray istasyonları, AŞTİ, Kızılay ve Gazi yerleşkesine otobüsle gelenler nedeniyle etki alanlarının, yoğunluklarının ve yol sürelerinin öngördüğünün yaklaşık 1,8 katını taşır; yalnızca Başkentray'ın uğradığı istasyonlar yaklaşık yarısını, bugünkü Keçiören hattı yaklaşık altıda birini. Üçü de ağ ve besleyici otobüsleri büyüdükçe ağın geri kalanıyla birlikte yükselir. Döngüde yolcular M5, M6 ya da Halka trenlerine bindiği için aralarındaki dağılım yaklaşıktır. Zirve yükleri, bir yönün günlük yolcusunun %12–16'sının zirve saatinde olduğunu varsayar.</p>
+    <p class="note">2053'te öne çıkanlar: en yoğun hat, günde yaklaşık 720.000 biniş ve Akköprü ile İvedik arasında saatte 11.000–14.600 yolcuyla M1'dir. M5, Keçiören, Altındağ ve Mamak'ın yoğun konutlarından geçerek yaklaşık 650.000 biniş ve Belediye ile İncirli arasında saatte 15.300–20.400 yolcu taşır. M2, Keçiören yolcularının bir kısmını M9 aldığı için yaklaşık 640.000, Ankaray yaklaşık 400.000 biniş taşır. Sincan ve Altındağ hafif raylıları günde yaklaşık 260.000 ve 290.000 biniş taşır; km başına çoğu metro hattından fazla. Karapürçek, Osmanlı ve Güneşevler–Solfasol'un her birinde günde 29–45 bin giriş olur. M4 havalimanıyla birlikte yaklaşık 240.000 biniş taşır: Esenboğa istasyonunda günde yaklaşık 19.900 giriş olur, Havalimanı Ekspresi yaklaşık 28.000 yolcu taşır. Çayyolu hafif raylısı yaklaşık 41.000, Gölbaşı hafif raylısı yaklaşık 65.000, Çubuk hafif raylısı yaklaşık 20.000, Akyurt hafif raylısı yaklaşık 9.000 biniş taşır.</p>
+
+    <h3>En yoğun aktarma istasyonları</h3>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>İstasyon</th><th>Hatlar</th><th class="num">Günlük aktarma, 2053 orta</th></tr></thead>
+        <tbody><tr><td>Siteler</td><td>M4, M5, T2</td><td class="num">190.000</td></tr><tr><td>Kızılay</td><td>M1, M2, A</td><td class="num">151.000</td></tr><tr><td>Gar</td><td>M2, M4, M7, Havalimanı Ekspresi, B1</td><td class="num">120.000</td></tr><tr><td>Batıkent</td><td>M1, M5, M6, Halka</td><td class="num">115.000</td></tr><tr><td>Sincan</td><td>M5, T5, B1</td><td class="num">98.000</td></tr><tr><td>Belediye</td><td>M2, M5</td><td class="num">88.000</td></tr><tr><td>Tuzluçayır</td><td>A, M6</td><td class="num">77.000</td></tr><tr><td>Etlik</td><td>M5, M7</td><td class="num">69.000</td></tr><tr><td>İvedik OSB</td><td>M5, M8, M9</td><td class="num">67.000</td></tr><tr><td>Mamak</td><td>M5, M6, Halka, B1</td><td class="num">65.000</td></tr><tr><td>Söğütözü</td><td>M1, A, M8</td><td class="num">61.000</td></tr><tr><td>Akköprü</td><td>M1, M7</td><td class="num">52.000</td></tr></tbody>
+      </table>
+    </div>
+    <p class="note">Aynı güzergâh modelinden, iki yönde hatlar arası aktarmalar: günde yaklaşık 2,08 milyon, yolculuk başına 0,65. Siteler ve Kızılay'ın her biri günde yaklaşık 150.000–190.000 aktarma karşılar; bu yüzden oradaki kısa geçişler (4. önlem) bu sayfadaki her tahmin için önemlidir.</p>
+
+    
+    <h3>Yolcu sayısı nasıl artırılır</h3>
+    <div class="levers">
+      <article class="lever">
+        <h3>1. Gün boyu sık tren</h3>
+        <ul>
+          <li>M1, M2 ve Ankaray'a CBTC sinyalizasyonu kurulsun. M3'ten M8'e kadar tüm yeni hatlar baştan sürücüsüz yapılsın.</li>
+          <li>Her hat yolcusunun gerektirdiği sıklıkta, yolcunun az olduğu yerde uzun bekleme yerine kısa trenlerle çalışsın: zirvede 2–7,5 (M5–M6 döngüsünde 2,5), gündüz 3–10, akşam 4–15 dakikada bir, yazın kısa trenlerle; Ankaray, M1, M2 ve Halka cuma ve cumartesi geceleri, Havalimanı Ekspresi her gece gece boyunca.</li>
+          <li>Başkentray kendi banliyö hatlarında zirvede 4, gündüz 6–7 dakikada bir çalışsın.</li>
+          <li>Yeni hatlar 150 m peronlarla yapılsın ve 4 vagonla açılıp talep arttıkça vagon eklensin. Ankaray, istasyonları 90 m olduğu için 3 vagonla kalsın ve zirvede 2 dakikada bir çalışsın; sinyalizasyon, yolcu tahmini aşarsa 90 saniyeye izin verir.</li>
+        </ul>
+        <p class="eff">Tahmine dahil: <b>günde +0,90 milyon yolculuk</b>; 15 dakikadan 4 dakikaya inen Başkentray'da daha fazla. Bekleme süresinin kısalması en çok kısa yolculuklarda etkili; merkezdeki yolculukların çoğu da kısa.</p>
+      </article>
+      <article class="lever">
+        <h3>2. Trenlere göre saatlenmiş besleyici otobüsler</h3>
+        <ul>
+          <li>EGO otobüs ağı ana hat ve besleyici hat olarak yeniden çizilsin. Bir metro hattına paralel olarak Kızılay'a giden otobüsler, en yakın istasyona giden besleyici hatlara dönüşsün.</li>
+          <li>Besleyici otobüsler zirvede 6–10 dakikada bir çalışsın ve dış aktarma merkezlerinde trenler kalkmadan birkaç dakika önce varacak şekilde saatlensin: Sincan OSB, Sincan, Batıkent, Koru, Yaşamkent, Dodurga, Akyurt, Gölbaşı Merkez, İlkbahar, Forum, Karakaya, Natoyolu, Kayaş, Esenboğa ve Çubuk Merkez.</li>
+          <li>Besleyiciler yalnızca aktarma merkezlerinde değil aradaki istasyonlarda da dursun; böylece her istasyon 1–5 km çevresindeki sokaklardan yolcu toplar. Dış istasyonlarda ve yeni konut alanlarındaki Yaşamkent Siteler, Alacaatlı Kümeevler, Ahmet Taner Kışlalı (Sarnıç AVM) ve Karakaya duraklarında park et devam et alanları olsun.</li>
+          <li>Otobüs durakları, yol geçmeden istasyon girişlerinde olsun; böylece aktarma 3 dakikadan kısa sürsün.</li>
+          <li>Ana bağlantı yollarında otobüs şeritleri olsun, besleyiciler tarifelerine uysun.</li>
+        </ul>
+        <p class="eff">Tahmine dahil: <b>günde +0,18 milyon yolculuk</b> besleyici otobüsler ve park et devam et ile; çoğu bir istasyona 1–5 km uzakta yaşayan 1,52 milyon kişiden ve otobüsleri M2'yi beslemeye başlayan Keçiören'den.</p>
+      </article>
+      <article class="lever">
+        <h3>3. Tüm yolculuk için tek ücret</h3>
+        <ul>
+          <li>Otobüs, metro, hafif raylı ve Başkentray arasında 90 dakika içinde ücretsiz aktarmalı, yolculuk başına tek ücret.</li>
+          <li>Günlük ve haftalık ücret tavanı; sık kullananlar hiçbir zaman abonmandan fazla ödemesin.</li>
+          <li>Her turnikede ve her otobüste AnkaraKart, banka kartı ve telefonla ödeme.</li>
+          <li>Ekspreste ayrı bir havalimanı ücreti; abonman sahipleri için ek ücretle.</li>
+        </ul>
+        <p class="eff">Besleyici hesabında varsayıldı. Bu olmadan pek çok hane için otobüs ve tren yolculuğu araba kullanmaktan pahalıya geliyor.</p>
+      </article>
+      <article class="lever">
+        <h3>4. Kısa aktarmalar</h3>
+        <ul>
+          <li>Kızılay: M1, Ankaray ve M2 arasında ek turnikesiz doğrudan geçişler.</li>
+          <li>Sıhhiye–Yenişehir: Başkentray'a kapalı bir yeraltı bağlantısı.</li>
+          <li>Gar: M2, M4, M7, Havalimanı Ekspresi, Başkentray ve YHT tek bir hol altında.</li>
+          <li>Söğütözü, Batıkent, Ehlibeyt, Mamak, ODTÜ Merkez ve Kayaş: aynı peron ya da tek hol tasarımı, peronlar arası 3 dakikadan kısa.</li>
+        </ul>
+        <p class="eff">Ayrıca hesaplanmadı. Mamak, Batıkent ve Söğütözü üçer hattı birleştiriyor; buralardaki yavaş aktarmalar yukarıdaki tüm tahminleri aşağı çeker.</p>
+      </article>
+      <article class="lever">
+        <h3>5. İstasyonlara kolay yürüyüş</h3>
+        <ul>
+          <li>Eskişehir Yolu, İstanbul Yolu ve Konya Yolu gibi geniş yolların iki yakasında asansörlü girişler.</li>
+          <li>Her istasyonun 1 km çevresinde aydınlatılmış, kesintisiz kaldırımlar ve güvenli geçitler.</li>
+          <li>İstasyonlarda kapalı bisiklet park yerleri, paylaşımlı bisiklet ve scooter.</li>
+          <li>Bugün Koru (380 araç), Milli Kütüphane ve Macunköy'de olan park et devam et, dış ve yeni konut alanlarındaki istasyonlarda toplam yaklaşık 9.000 araca çıkarılsın: OSB-Törekent, Sincan OSB, Yaşamkent, Yaşamkent Siteler, Dodurga, Alacaatlı Kümeevler, Ahmet Taner Kışlalı, Forum, Karakaya, İlkbahar, Gölbaşı, Natoyolu, Kayaş, Esenboğa Merkez, Çubuk, Beynam, Kahramankazan, Akyurt ve Elmadağ.</li>
+        </ul>
+        <p class="eff">Hesaplanmadı. İyi bir yürüyüş, her istasyonun gerçek etki alanını 1,2 km senaryosuna, yani 2053'te yaklaşık 4,9 milyon kişiye yaklaştırır.</p>
+      </article>
+      <article class="lever">
+        <h3>6. İstasyonlara yakın konut ve iş yerleri</h3>
+        <ul>
+          <li>İstasyonların 500 m çevresinde daha yüksek yoğunluk ve karma kullanım; ilk olarak M5, M6 ve M8 üzerindeki büyük alanlarda: Marşandiz garı, Ostim, Siteler ve Balgat.</li>
+          <li>Hastaneler, üniversiteler ve kamu binaları raylı sistem üzerinde; tıpkı M7 üzerindeki Etlik Şehir Hastanesi ve M6 üzerindeki Bilkent Şehir Hastanesi gibi.</li>
+          <li>İstasyonların içinde ya da yanında dükkânlar ve hizmetler.</li>
+        </ul>
+        <p class="eff">Yukarıdaki büyümenin ötesinde hesaplanmadı. 27 yıl içinde istasyonların çevresindeki yeni yapılaşma, insanların ne sıklıkla bindiğini değil, ağın hizmet ettiği kişi sayısını artırır.</p>
+      </article>
+      <article class="lever">
+        <h3>7. Merkezde otomobil yönetimi</h3>
+        <ul>
+          <li>Kızılay, Ulus ve Söğütözü'nde daha az ve daha pahalı otopark; gelir toplu taşımaya.</li>
+          <li>Besleyici yollardaki kavşaklarda otobüs önceliği.</li>
+          <li>İstasyonlara yakın yeni projelerde ofis otoparkı sınırı.</li>
+        </ul>
+        <p class="eff">Hesaplanmadı. Başka kentlerde çoğu zaman en güçlü araç, siyasi olarak da en zoru.</p>
+      </article>
+      <article class="lever">
+        <h3>8. Güvenilir bilgilendirme</h3>
+        <ul>
+          <li>İstasyonlarda, duraklarda ve otobüs, metro ve tren için tek bir uygulamada anlık varış bilgisi.</li>
+          <li>Tüm türler için tek bir ağ haritası.</li>
+          <li>Asansör ve yürüyen merdivenlerin çalışır tutulması, durumlarının uygulamada gösterilmesi.</li>
+        </ul>
+        <p class="eff">Hesaplanmadı. 4–8 arasındaki önlemler sonucu aralığın üst ucuna doğru iter.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="why-h">
+    <h2 id="why-h">Neden bu ağ</h2>
+    <div class="two">
+      <div>
+        <h3>Neyi çözüyor</h3>
+        <ul>
+          <li>Tek hat olarak çalışan hatlar aynı numarayı taşır: M1 (Dodurga–Yaşamkent–Kızılay–Batıkent–Sincan OSB) ve M2 (Forum–Keçiören–Kızılay–İlkbahar) merkezi aktarmasız geçer.</li>
+          <li>Dört çapraz hat Kızılay'a uğramaz: M5 (Sincan–Batıkent–Etlik–Siteler–Mamak–Natoyolu), M6 (Turgut Özal–Batıkent–Ümitköy–yerleşkeler–Ayrancı–Mamak), M8 (İvedik OSB–Söğütözü–Balgat–Gölbaşı) ve M9 (İvedik OSB–Şehitler–Kuzey Ankara–Başpınar). M5 ve M6, her yönde 5 dakikada bir Halka trenleriyle bir döngü oluşturur.</li>
+          <li>Dört hafif raylı hat, metronun pahalı kalacağı yerlerde metroyu besler: Altındağ çevresinde bir halka, güney Sincan'dan geçen bir hat, Ümitköy'den Çayyolu üzerinden Alacaatlı ve Dodurga'ya ve Fuar'dan Akyurt'a birer hat.</li>
+          <li>Raylı sistem olmayan bölgelere ulaşır: Altındağ ve Mamak, Şentepe ve Etlik, kuzeybatı Keçiören, Balgat ve Dikmen, Cinnah ve Aşıkpaşa, Sincan merkez ve güneyi, Çayyolu, Alacaatlı ve Dodurga, Pursaklar, Akyurt, Gölbaşı, Kahramankazan, Elmadağ ve Çubuk.</li>
+          <li>Üniversiteler, iki şehir hastanesi, adliye ve bakanlıklar ile sanayi alanları (Ostim, İvedik, Sincan OSB, Saray, TUSAŞ, ASELSAN) raylı sisteme bağlanır. Havalimanı 2031'de raylı sisteme kavuşur; Gar'dan Havalimanı Ekspresi 2038'e kadar başlar.</li>
+          <li>Başkentray 4 dakikada bir trenle kent içi bir hatta dönüşür; on bir istasyonda metroyla aktarma sağlar, Kahramankazan ve Kazan Soda kollarına ve Elmadağ'a doğrudan trenlere kavuşur.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ne kazandırıyor</h3>
+        <ul>
+          <li><b>Erişim.</b> 2053'te 4,5 milyon kişi bir istasyona 15 dakikalık yürüme mesafesinde (bugün 1,4 milyon); 1,5 milyon kişi daha besleyici otobüs ya da park et devam et ile ulaşır. İstasyona yakın tipik bir evden raylı sistemle 45 dakikada yaklaşık 3,8 milyon sakin, iş ve öğrenciye ulaşılır; bugün 1,3 milyon.</li>
+          <li><b>Yolcu.</b> 2053'te günde 3,20 milyon, yılda 1.167 milyon yolculuk, bugünün yaklaşık altı katı; 2038'de bile günde 1,95 milyon.</li>
+          <li><b>Trafik.</b> Yeni yolculukların dörtte biri ile %30'u aksi halde otomobille yapılacak olsaydı, bu her hafta içi günü 0,79–0,94 milyon daha az otomobil yolculuğu ve yılda 2,4–2,8 milyar araç-km daha az, yani kent içi sürüşün %9–13'ü eder. Hatların yanındaki yollarda, bugün sürücü başına yılda 112 saat olan zirve saat gecikmesi <a class="cite" href="#src16">[16]</a> ilk yıllarda %20–33 azalabilir.</li>
+          <li><b>Zaman.</b> Otobüsten raya geçenler yolculuk başına 15–25 dakika kazanır: yılda 135–215 milyon saat, değeri 1,3–2,1 milyar $.</li>
+          <li><b>Güvenlik.</b> Daha az sürüş, yılda 27–39 daha az trafik ölümü demek olabilir; 2025'te 290 <a class="cite" href="#src16">[16]</a>.</li>
+          <li><b>Ekonomi.</b> 27 yıl boyunca yılda 15–30 bin inşaat işi; daha çok çalışana ulaşan firmalar, kent hasılasının %0,2–1'i değerinde; istasyon çevresinde genellikle %5–20 artan arsa değerleri, bunun bir kısmı hatların finansmanına katkı sağlayabilir.</li>
+          <li><b>Paranın karşılığı.</b> 1. aşama yeni yolculuk başına 1,50–2,30 $, 2–4. aşamalar 2,85–4,40 $ yapım maliyetine mal olur. Faydalar maliyetlerin yaklaşık %80–100'ü kadardır; istasyonların çevresinde konut ve iş yerleri artarsa ve otomobil kullanımı yönetilirse daha fazladır (6. ve 7. önlemler).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="risk-h">
+    <h2 id="risk-h">Olası sorunlar</h2>
+    <div class="two">
+      <div>
+        <h3>Riskler</h3>
+        <ul>
+          <li><b>Maliyet.</b> 27 yılda 32–48 milyar $, yılda ortalama 1,2–1,8 milyar $, 2. aşamada en çok 1,3–2,0 milyar $: belediye, EGO ve ASKİ'nin 2026 toplam bütçesinin %25–38'i <a class="cite" href="#src16">[16]</a>; bu yüzden çoğu merkezi yönetimden gelmelidir. Raylı sistem projeleri ortalama %45 bütçeyi aştı <a class="cite" href="#src15">[15]</a>; bu, 46–70 milyar $ demek olur.</li>
+          <li><b>Yolcu.</b> Raylı sistemlerde yolcu sayısı ortalama tahminin %51 altında kaldı <a class="cite" href="#src15">[15]</a>. Bu tahmin her hattın 2025 sayımına ve Madrid, Stockholm ve İstanbul'a göre sınanmıştır, ama alt ucu yılda 963 milyon yolculuktur.</li>
+          <li><b>Büyüme.</b> Ankara 2053'e kadar yalnızca %11 büyür, merkez neredeyse hiç. Dış ilçeler yakın dönem eğilimlerinden yavaş büyürse en çok Gölbaşı, Çubuk, Akyurt ve Kahramankazan hatları kaybeder.</li>
+          <li><b>İşletme maliyeti.</b> Yılda 1,40 milyar $ maliyete karşı 0,47–0,68 milyar $ bilet geliri, yılda 0,7–0,9 milyar $'lık bir açık bırakır. Trenler ve sinyalizasyon avro ya da dolarla fiyatlanır; zayıf bir lira maliyeti artırır.</li>
+          <li><b>Süre.</b> Ankara'nın son metroları başlangıçtan açılışa 11–14 yıl sürdü; buradaki her aşama 6–8 yıl öngörür.</li>
+          <li><b>Yapım.</b> 486 km yeni güzergâh, istasyonların yüzeyden kazıldığı yerlerde, Mevlana Bulvarı ve Eskişehir Yolu'nda olduğu gibi, yıllarca şerit kapanması demektir.</li>
+          <li><b>Çevre.</b> ODTÜ ormanı ve Atatürk Orman Çiftliği altında tüneller. Gölbaşı Kuzey'e giden M8 ve Mogan'dan başlayan Gölbaşı hafif raylısı, Mogan Gölü çevresindeki Gölbaşı Özel Çevre Koruma Bölgesi'nin kenarından, suyun üstünden değil karadan geçer. Dış uçlara giden hatlar, planlama yapılaşmayı istasyon çevresinde tutmazsa kenti dışa doğru çekebilir.</li>
+          <li><b>Kiralar.</b> İstasyon çevresinde artan değerler, Mamak, Siteler ve Balgat gibi bölgelerde kiracıları yerinden edebilir.</li>
+          <li><b>Aktarmalar.</b> Yolculuk başına 0,65 aktarma; Siteler'de ve Kızılay'da günde yaklaşık 150.000–190.000. Otobüs ve dolmuş hatlarını istasyonları besleyecek şekilde kısaltmak işletmecilerle çatışma demektir.</li>
+          <li><b>İklim.</b> Elektrik temizlenene kadar trenlerin enerjisi, azalan araç-km'nin kazandırdığı kadar CO₂ salar.</li>
+          <li><b>Zayıf parçalar.</b> Akyurt hafif raylısı, Akyurt yaklaşık 80 bin kişiye büyüse de günde yaklaşık 7 bin yolculuk ekler: yeni yolculuk başına 11–19 $ yapım maliyeti; 2–4. aşamaların bütünü için bu 2,85–4,40 $'dır. Çubuk hafif raylısı yaklaşık 17 bin yolculuğu 6–9 $'a, Gölbaşı hafif raylısı ise planlanan yapılaşma ilçenin eğilimiyle sınırlansa da yaklaşık 44 bin yolculuğu 4–6 $'a, planın bütününden yüksek maliyetle ekler. Zayıf hatlar kanıt bekleyebilir: Çubuk hafif raylısı Bakanlık planladığı için 2. aşamada açılır, ama M4'ün sonuçlarına göre ertelenebilir. Günde yaklaşık 1.500'den az girişli istasyonlar arasında Kazan Soda, Akçaören, Bitik, Yıldırımbeyazıt, Fuar ve Atatürk Orman Çiftliği, bugünkü Köstence ile yeni Alacaatlı, Bangabandhu, Akyurt Sanayi, Büğdüz ve Mogan durakları ile Keçiören teleferiğindeki Atatürk ve Cumhuriyet vardır. Akçaören'in 1 km çevresinde neredeyse kimse yaşamaz; çevresinde konut ya da sanayi planlanırsa yapılmaya değer.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tasarım soruları</h3>
+        <ul>
+          <li>M8, Atatürk Orman Çiftliği ve Beştepe yerleşkesinin yanından, M6 üniversite arazisi ve ODTÜ ormanının altından geçer: ikisi de derin tünel ister; istasyonlar ve şaftlar arazi sahipleriyle birlikte belirlenmelidir.</li>
+          <li>M6'nın planlanan kesimi için yayımlanan 53 dakikalık süre kontrol edilmeli; 9 istasyonlu 18,6 km yaklaşık 22–25 dakika sürmelidir.</li>
+          <li>Önerilen istasyon adları geçicidir. Önerilen istasyonlar adını aldıkları mahalle ya da yerde; resmi planlardaki ama yeri henüz yayımlanmamış istasyonlar (M3, M7, M4'ün Pursaklar sonrası ve Çubuk hafif raylısı) yayımlanan sıra ve uzunluklarla uyumlu olarak adaşlarına yaklaşık 1 km mesafede yer alır. M5'in İvedik OSB ile Kaletepe arasındaki istasyonu, Karşıyaka 2,7 km uzakta olduğu için Yahyalar adını alır.</li>
+          <li>M9 daha hafif bir standartta yapılır: yalnızca Keçiören merkezinde tünel; İvedik Caddesi boyunca, Karşıyaka mezarlığının yanından ve Keçiören çevre yollarında yüzey ya da viyadük. Atapark yoğun mahallesinin ortasındadır; M2'nin Ovacık istasyonuna kuş uçuşu yaklaşık 1,2 km, yürüyerek yaklaşık 1,5 km uzaklıktadır, bu yüzden aktarma noktası değil mahalle istasyonudur; M9, M2 ile Şehitler'de, M7 ile Ovacık'ta buluşur; Teknopark Ankara, M5 ve M8 ile aktarmalı İvedik OSB istasyonunun yanındadır.</li>
+          <li>M3'te Alsancak ve Ahimesut kendi mahallelerinde, Bağlıca – Alsancak – Ahimesut sırasıyla yer alır; eskiden Ahi Evran adını taşıyan istasyon Elvan adını alır. Ahi Evran artık Sincan'ın Ahi Evran mahallesindeki hafif raylı durağıdır. Ahmet Taner Kışlalı Sarnıç AVM'nin yanında, Yaşamkent Siteler ise Yaşamkent Merkez'in yaklaşık 1,8 km güneyinde, Dodurga yolundaki yeni konutların arasındadır. M7, Bağlum'a devam etmeden Bağlum Bulvarı üzerindeki Karakaya'da biter. Elvankent durağı adından yola çıkılarak yerleştirilmiştir ve 1 km'ye kadar kayabilir.</li>
+          <li>Altındağ hafif raylısı kapalı bir halkadır: Siteler – Ulubey – Karapürçek – Altınköy – Başpınar – Hacı Bayram Veli – Yıldıztepe – Güneşevler–Solfasol – Seyfi Demirsoy – Siteler, 18,5 km; trenler halkada iki yönde döner, böylece hiçbir durak Siteler'e halkanın yarısından uzak değildir. M4 ile Siteler ve Güneşevler–Solfasol'da, M9 ile Başpınar ve Yıldıztepe'de buluşur.</li>
+          <li>Çayyolu hafif raylısı (T4), M1 ve M6 ile aktarmalı Ümitköy'den başlar; Galleria'nın yanından, Çayyolu'nun içinden ve Bangabandhu Bulvarı boyunca Ahmet Taner Kışlalı ve Dora Park'a, ardından Alacaatlı Caddesi'nden Alacaatlı, Alacaatlı Kümeevler ve Dodurga'ya iner: 9,9 km, yaklaşık 16 dakika, günde yaklaşık 41.000 biniş. Koru yerine Ümitköy'den başlamak iç Çayyolu'yu bir durağa kısa yürüme mesafesine getirir ve iki metro hattına aktarma sağlar; Koru, Bangabandhu'ya yaklaşık 600 m uzaklıktadır.</li>
+          <li>Akyurt hafif raylısı (T6), M4'ten Fuar'da ayrılır ve Çankırı yolu (Çankırı Bulvarı) boyunca 13,1 km'yi yaklaşık 15 dakikada gider: Akyurt Sanayi, Güzelhisar ve Çınar çevresindeki fabrika kuşağında; Büğdüz, köyün 1–2 km güneyindeki Büğdüz kavşağında; Akyurt ise ana yol üzerinde Beyazıt ile Yıldırım arasındadır. Akyurt'un merkezin doğusundaki Sanayi Sitesi hattın ucundan yaklaşık 1,8 km ötededir. Daha ucuz ilk adım, Çankırı yolunda bir otobüs şeridi olur; hat, Akyurt'un konutları büyümeyi sürdürürse 4. aşamada yapılır.</li>
+          <li>M2 ve M7, M2 deposunun planlandığı Forum'da buluşur; ortak bir depo arazi ve maliyet tasarrufu sağlar.</li>
+          <li>Halka turu 85 dakika sürer ve 4 dakikalık düzenin katı olan 88 dakikaya göre tarifelenir; böylece halka trenleri Batıkent ve Mamak'ta beklemez. İki istasyonun her biri yöne göre düzenlenmiş iki ada peronu ve girişlerde katlı kavşaklar ister.</li>
+          <li>M4'ün 140 km/sa'lik dış kesimi yaklaşık 1.500 m yarıçaplı kurplar ve havalimanı tipi trenler ister; 120 km/sa ile açılabilir.</li>
+          <li>Kazan Soda bağlantısı yük için yapılıyor; yolcu istasyonu ve ortak tarife gerekir. Elmadağ kesimi bekleme hatları, Kayaş'ta bağlantı ve yeni peronlar ister.</li>
+          <li>Akıncı istasyonu bir askeri hava üssünün yanında; Milli Savunma Bakanlığı onayı gerekir. Sincan Cezaevi istasyonu sonra açılabilir.</li>
+          <li>Gölbaşı ve Çubuk hafif raylı hatları, ilçe eğilimlerinin henüz göstermediği yapılaşmaya bağlıdır; koridorlarını şimdiden korumak seçeneği düşük maliyetle açık tutar ve Gölbaşı hafif raylısı önce ASELSAN'a kadar açılabilir. Bakanlığın Çubuk yolu boyunca 15,84 km'lik hafif raylı sistem olarak incelediği Çubuk hafif raylısı, Yıldırım Beyazıt Ü.'de M4 ile saatlenmiş, aynı peronda aktarma ister; Çubuk ve Esenboğa beklenenden hızlı büyürse M4 trenlerinin ileride devam edebileceği şekilde düzenlenmelidir.</li>
+          <li>M2'nin güney kesimi ihaleye hazırlanıyor <a class="cite" href="#src5">[5]</a>; M3'ün 2032'ye kadar açılması için 2027–28'de ihale gerekir.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="dir-h">
+    <div class="head">
+      <h2 id="dir-h">İstasyon rehberi</h2>
+      <p class="note">km sütunu hattın başından uzaklığı, altındaki küçük sayı önceki istasyondan uzaklığı gösterir. ● ile işaretli aralıklar EGO'nun yayımladığı istasyonlar arası mesafelerdir; yapılmış ve planlanan hatlardaki diğer aralıklar istasyon konumlarından her kesimin yayımlanmış uzunluğuna ölçeklenerek, önerilen kesimlerde istasyon konumları arasına %15 eklenerek hesaplanmıştır. Nüfus, 2053'te 1 km (15 dakikalık yürüme) çevrede yaşayanlardır; besleme alanı, en yakın istasyonu bu olan ve 1–5 km uzakta yaşayanlardır; herkes bir kez, en yakın istasyonda sayılır. Giriş, ortalama bir 2053 gününde istasyondan başlayan yolculuklardır; besleyici otobüs, park et devam et ve havalimanı yolcularını da içerir (orta tahmin). P+R park et devam et noktasıdır. 0, o alanda kimsenin yaşamadığını gösterir: sanayi alanı ya da yerleşke, ya da başka bir istasyona daha yakın sokaklar. Nokta, listedeki gibi durumu gösterir. İtalik adlar geçici ya da önerilen adlardır; Başkentray'ın Kahramankazan kolunun ayrı kartı vardır.</p>
+    </div>
+    <div class="dir" id="dir"></div>
+  </section>
+
+  <section aria-labelledby="src-h">
+    <h2 id="src-h" style="font-size:22px">Kaynaklar</h2>
+    <p class="note">Metindeki köşeli parantez içindeki numaralar bu kaynakları gösterir; kaynaklar bugünkü hat numaralarını kullanır.</p>
+    <div class="sources">
+      <span id="src1"><b>[1]</b> <a href="https://en.wikipedia.org/wiki/Ankara_Metro">Ankara Metro, Vikipedi</a>: işletmedeki hatlar, uzunluklar ve EGO istatistiklerinden 2025 yolcu sayıları (Ankaray 38,0 milyon, bugünkü M1–M3 117,9 milyon, M4 17,9 milyon, Başkentray 27,7 milyon; otobüsler 264,6 milyon).</span>
+      <span id="src2"><b>[2]</b> Bugünkü hatlar için EGO teknik sayfaları: <a href="https://www.ego.gov.tr/sayfa/2102">M1, 14.661 m</a>, <a href="https://www.ego.gov.tr/sayfa/2109">M2, 16.590 m</a>, <a href="https://www.ego.gov.tr/sayfa/2107">M3, istasyonlar arası mesafelerle 15.629,61 m</a>, <a href="https://www.ego.gov.tr/tr/sayfa/2111">M4, 12.520 m</a> ve <a href="https://www.ego.gov.tr/sayfa/2389">Ankaray, 8.527 m</a>.</span>
+      <span id="src3"><b>[3]</b> <a href="https://www.alomaliye.com/2026/05/22/ankaranin-kent-ici-ulasimina-esenboga-metrosu-mujdesi/">Alo Maliye, YHT Gar–Esenboğa, 36 km ve 12 istasyon</a> ve <a href="https://www.yeniankara.com.tr/ankara/esenboga-havalimani-metro-hatti-ihalesi-ne-zaman-iste-12-istasyonluk-guzergah-171483">Yeni Ankara, 12 istasyonlu güzergâh</a>.</span>
+      <span id="src4"><b>[4]</b> <a href="https://www.karar.com/sehir-haberleri/ankarada-metro-agina-dev-yatirim-baskentte-ulasim-kokten-degisecek-iste-1978513">Karar, Şehitler–Forum 7,69 km ve diğer planlanan hatlar</a> ve <a href="https://www.ankara.bel.tr/haberler/kecioren-metro-agi-genisliyor-sehitler-forum-hattinda-ilk-sondaj-vuruldu-16440">ABB, Şehitler–Forum hattında ilk sondaj</a>.</span>
+      <span id="src5"><b>[5]</b> <a href="https://rayhaber.com/2026/09/ankara-kizilay-dikmen-metro-hatti-icin-ihale-hazirligi-suruyor/">RayHaber, Kızılay–İlkbahar, 18,52 km ve 13 istasyon</a> ve <a href="https://www.ego.gov.tr/tr/sayfa/2284/m5-kizilaydikmen-hatti">EGO, Kızılay–Dikmen hattı</a>.</span>
+      <span id="src6"><b>[6]</b> <a href="https://www.emlaknews.com.tr/haberler/ankaraya-yeni-metro-hatti-yht-gar-etlik-ovacik-projesi-basliyor/">Emlaknews, YHT Gar–Etlik–Ovacık, 11,20 km</a> ve <a href="https://www.haberankara.com/ankara/ankaralilar-hala-bekliyor-ankara-yht-gari-etlik-sehir-hastanesi-ovacik-metrosu-ne-durumda-286056">Haber Ankara, istasyonları</a>.</span>
+      <span id="src7"><b>[7]</b> <a href="https://www.karar.com/sehir-haberleri/ankaraya-4-yeni-metro-hatti-hamlesi-2040973">Karar, Çayyolu–Sincan hattı 12,5 km ve Koru–Yaşamkent–Bağlıca 9,36 km</a>, <a href="https://www.ego.gov.tr/sayfa/2282/m2-hattinin-koruyasamkent-ve-korubaglica-rayli-sistem-uzatma-hatlari">EGO, Koru–Yaşamkent ve Koru–Bağlıca uzatmaları</a>, <a href="https://www.karar.com/sehir-haberleri/ankara-m6-metro-hatti-nereden-geciyor-baglica-metrosu-ne-zaman-bitecek-2022765">Karar, Bağlıca–Devlet Mahallesi</a> ve <a href="https://www.ego.gov.tr/haber/6120/ankaranin-ilk-ring-metro-hatti-olan-cayyolusincan-metro-hatti-projesi-icin-imzalar-atildi">EGO, Çayyolu–Sincan sözleşmesi</a>.</span>
+      <span id="src8"><b>[8]</b> <a href="https://raillynews.com/2026/08/approval-granted-for-ankara-metro-m2-m3-connection-project/">RaillyNews, Ümitköy–Batıkent, 18,62 km ve 9 istasyon</a> ve <a href="https://www.emlaknews.com.tr/haberler/ankaraya-m2-ve-m3-ile-186-kmlik-yeni-metro-baglanti-hatti-yapiliyor/">Emlaknews, aynı bağlantı</a>.</span>
+      <span id="src9"><b>[9]</b> <a href="https://www.ankara.bel.tr/haberler/abb-den-metro-atagi-hattin-hangi-duraklardan-gececegi-belli-oldu-17698">ABB, Dikimevi–Natoyolu istasyonları</a>.</span>
+      <span id="src10"><b>[10]</b> Başkentray: <a href="https://en.wikipedia.org/wiki/Ba%C5%9Fkentray">Vikipedi</a>, <a href="https://www.uab.gov.tr/haberler/600-bin-ankarali-daha-baskentray-la-bulusacak/">Ulaştırma Bakanlığı, Sincan–Yenikent uzatması</a>, <a href="https://www.takvim.com.tr/guncel/2026/07/23/baskentray-hatti-52-kilometreye-cikiyor">Takvim, Sincan–Yenikent çift hat</a>, <a href="https://www.bloomberght.com/bakan-uraloglu-sincan-osb-yenikent-kazan-soda-demiryolu-projesi-calismalarini-yerinde-inceledi-3745591">Bloomberg HT, Kazan Soda demiryolu</a>, <a href="https://www.cnbce.com/haberler/bakan-uraloglu-acikladi-cift-hatli-demir-yolunun-yuzde-95i-hazir-iste-3-yeni-istasyon-h24138">CNBC-e, 4.017 m Kazan Soda bağlantısı</a> ve <a href="https://www.raillynews.com/2020/03/kayas-irmak-kirikkale-cetinkaya-electrification-facilities-construction-tender-result/">RaillyNews, Kayaş–Irmak elektrifikasyonu</a>.</span>
+      <span id="src11"><b>[11]</b> <a href="https://www.metromadrid.es/es/nota-de-prensa/2025-01-16/la-comunidad-de-madrid-bate-el-record-historico-de-usuarios-de-metro-con-mas-de-715-millones-de-viajes-en-2024-un-incremento-del-8-respecto-al-ano-anterior">Madrid Metrosu, 2024'te 715 milyon yolculuk</a>; <a href="https://www.metro.istanbul/en/news/detail/metro-istanbul-carried-757971355-passengers-in-2022">Metro İstanbul, 2022'de 758 milyon yolcu</a> ve <a href="https://www.metro.istanbul/en/content/about-us">385 km kentsel raylı sistem</a>; Stockholm metrosu, 2019'da 105 km'de yaklaşık 460 milyon biniş.</span>
+      <span id="src12"><b>[12]</b> Nüfus: <a href="https://www.gazeteankara.com.tr/turkiye/tuik-adnks-2025-turkiye-861-milyona-ulasti-ankara-591-milyonla-ikinci-sirada-5610">Gazete Ankara, TÜİK 2025 adrese dayalı nüfus (Ankara 5.910.320)</a>, <a href="https://www.nufusu.com/ilceleri/ankara-ilceleri-nufusu">2025 ilçe nüfusları</a>, <a href="https://en.wikipedia.org/wiki/Ankara_Province">Ankara ili, Vikipedi (2017 ilçe nüfusları)</a>, <a href="https://www.birgun.net/haber/59-ilin-nufusunda-artis-bekleniyor-nufus-artisinin-en-cok-azalacagi-kent-hangisi-olacak-548930">BirGün, TÜİK'in Ankara için 2030 projeksiyonu 6.062.005</a> ve <a href="https://www.alomaliye.com/2024/07/30/nufus-projeksiyonlari-2023-2100/">TÜİK nüfus projeksiyonları 2023–2100 (Türkiye 2050'de 93,8 milyon)</a>.</span>
+      <span id="src13"><b>[13]</b> <a href="https://www.emlakjet.com/emlak-piyasasi/demografi/ankara">Emlakjet, Ankara demografisi</a>: istasyonu olan her ilçe için TÜİK mahalle nüfusları. İstasyon ve mahalle konumları harita yer verilerinden alınmıştır.</span>
+      <span id="src14"><b>[14]</b> Yeni konut: <a href="https://www.ankaramasasi.com.tr/haber/2222167/oyak-tan-ankara-ya-6-bin-214-konutluk-dev-proje">Ankara Masası, OYAK Yapracık (6.214 konut)</a>, <a href="https://www.ekonomiankara.com/ankaranin-yeni-konut-merkezi-dodurgada-buyuk-donusum-basliyor/14822">Ekonomi Ankara, Dodurga</a>, <a href="https://www.nufusune.com/1899-ankara-cankaya-alacaatli-mahallesi-nufusu">Alacaatlı yıllara göre nüfus</a>; <a href="https://en.wikipedia.org/wiki/O%C4%9Fulbey,_G%C3%B6lba%C5%9F%C4%B1">Oğulbey</a>, <a href="https://en.wikipedia.org/wiki/Karao%C4%9Flan,_G%C3%B6lba%C5%9F%C4%B1">Karaoğlan</a>, <a href="https://en.wikipedia.org/wiki/Beynam,_Bala">Beynam</a> ve <a href="https://en.wikipedia.org/wiki/B%C3%BC%C4%9Fd%C3%BCz,_Akyurt">Büğdüz (2022'de 973 kişi)</a> konumları.</span>
+      <span id="src15"><b>[15]</b> <a href="https://ppp.worldbank.org/public-private-partnership/sites/default/files/2022-05/wps3781.pdf">Flyvbjerg, Dünya Bankası çalışma raporu 3781</a>: raylı sistem projelerinde maliyet aşımı ve yolcu açığı.</span>
+      <span id="src16"><b>[16]</b> <a href="https://www.tomtom.com/traffic-index/ankara-traffic/">TomTom Trafik Endeksi, Ankara 2025</a>, <a href="https://www.24saatgazetesi.com/en-cok-trafik-kazasi-olumu-ankarada-gerceklesti-il-il-2025-verileri">24 Saat, 2025 il il trafik ölümleri</a>, <a href="https://www.capital.com.tr/haberler/tum-haberler/tuik-acikladi-2024-yilinda-gayrisafi-yurt-ici-hasiladan-en-yuksek-payi-hangi-il-aldi">Capital, TÜİK il bazında hasıla</a> ve <a href="https://www.cumhuriyet.com.tr/siyaset/ankara-buyuksehir-belediyesi-nin-2026-butcesi-205-milyar-lira-olarak-kabul-edildi-2454491">Cumhuriyet, ABB 2026 bütçesi</a>.</span>
+    </div>
+  </section>
+</div>
+
+<script>
+const LINES = {
+  A:   { badge: "A", name: "Ankaray: ODTÜ Merkez – Söğütözü – Kızılay – Natoyolu – Kayaş", short: "Ankaray", color: "--l-a" },
+  M1:  { badge: "M1", name: "Dodurga – Yaşamkent – Koru – Kızılay – Batıkent – Sincan OSB", short: "Ana hat", color: "--l-r" },
+  M2:  { badge: "M2", name: "Forum – Keçiören – Kızılay – Dikmen – İlkbahar – Kırkkonaklar", short: "Keçiören–Dikmen", color: "--l-m4" },
+  M3:  { badge: "M3", name: "Konutkent – Bağlıca – Eryaman YHT – Devlet Mahallesi – TUSAŞ", short: "Eryaman", color: "--l-m6" },
+  M4:  { badge: "M4", name: "YHT Gar – Kuyubaşı – Esenboğa Havalimanı – Yıldırım Beyazıt Ü.", short: "Havalimanı", color: "--l-m7" },
+  AX:  { badge: "Havalimanı Ekspresi", name: "Havalimanı Ekspresi: Gar – Kuyubaşı – Esenboğa Havalimanı", short: "Havalimanı Ekspresi", color: "--l-x", fg: "var(--paper)" },
+  M5:  { badge: "M5", name: "Sincan – Batıkent – Etlik – Siteler – Mamak – Natoyolu", short: "Kuzeydoğu halkası", color: "--l-m8" },
+  M6:  { badge: "M6", name: "Turgut Özal – Batıkent – Ümitköy – Ayrancı – Mamak", short: "Güney yayı", color: "--l-m9" },
+  R:   { badge: "Halka", name: "Halka: Batıkent – Etlik – Mamak – Ayrancı – ODTÜ – Ümitköy – Batıkent, M5 ve M6 hatları üzerinde", short: "Halka", color: "--l-m5", fg: "#16201E" },
+  M7:  { badge: "M7", name: "YHT Gar – Akköprü – Etlik Şehir Hastanesi – Ovacık – Forum – Karakaya", short: "Etlik", color: "--l-m11" },
+  M8:  { badge: "M8", name: "İvedik OSB – Söğütözü – Gölbaşı", short: "Çapraz hat", color: "--l-m10" },
+  M9:  { badge: "M9", name: "İvedik OSB – Yükseltepe – Şehitler – Kuzey Ankara – Başpınar", short: "Kuzey hattı", color: "--l-m12" },
+  B1:  { badge: "B1", name: "Başkentray: Kahramankazan / Kazan Soda – Sincan – Gar – Kayaş – Elmadağ", short: "Başkentray", color: "--l-b1" },
+  T1:  { badge: "T1", name: "Çubuk hafif raylı: Yıldırım Beyazıt Ü. – Çubuk", short: "Çubuk hafif raylı", color: "--l-b2" },
+  T2:  { badge: "T2", name: "Altındağ hafif raylı halkası: Siteler – Karapürçek – Altınköy – Başpınar – Yıldıztepe – Güneşevler–Solfasol – Siteler", short: "Altındağ hafif raylı", color: "--l-t1" },
+  T3:  { badge: "T3", name: "Gölbaşı hafif raylı: Mogan – Gölbaşı Kuzey – Gölbaşı Merkez – ASELSAN – Beynam", short: "Gölbaşı hafif raylı", color: "--l-b3" },
+  T4:  { badge: "T4", name: "Çayyolu hafif raylı: Ümitköy – Galleria – Çayyolu – Kışlalı – Dora Park – Alacaatlı – Dodurga", short: "Çayyolu hafif raylı", color: "--l-t2" },
+  T5:  { badge: "T5", name: "Sincan hafif raylı: Ahimesut – Elvankent – Sincan – OSB-Törekent", short: "Sincan hafif raylı", color: "--l-t3" },
+  T6:  { badge: "T6", name: "Akyurt hafif raylı: Fuar – Akyurt Sanayi – Büğdüz – Akyurt", short: "Akyurt hafif raylı", color: "--l-t4" },
+  F1:  { badge: "F1", name: "Çankaya füniküleri: Kuğulu Park – Atakule – Yıldız – Sancak", short: "Çankaya füniküleri", color: "--l-b4" },
+  G1:  { badge: "G1", name: "Yenimahalle–Şentepe teleferiği", short: "Şentepe teleferiği", color: "--l-b5" },
+  G2:  { badge: "G2", name: "Keçiören teleferiği: Atatürk – Cumhuriyet – Şehitler", short: "Keçiören teleferiği", color: "--l-b5" }
+};
+
+// Station coordinates: id: [lat, lon, name, flags]  flags: i = indicative/proposed name, y = YHT station
+// Existing stations from published coordinates where available, otherwise estimated; planned and proposed stations at the areas they serve.
+const G = {
+  yk2: [40.0316, 32.5104, "Yenikent-2"], yk1: [40.0043, 32.5254, "Yenikent-1"], sosb: [39.9788, 32.5429, "Sincan OSB"],
+  sincan: [39.9646, 32.5840, "Sincan"], lale: [39.9615, 32.5988, "Lale"], elvankent: [39.9574, 32.6156, "Elvankent"],
+  eryaman: [39.9558, 32.6303, "Eryaman YHT", "y"], ozgunes: [39.9519, 32.6490, "Özgüneş"], etimesgut: [39.9492, 32.6628, "Etimesgut"],
+  havaduragi: [39.9422, 32.6883, "Havadurağı"], yildirim: [39.9322, 32.7047, "Yıldırım"], behicbey: [39.9315, 32.7499, "Behiçbey"],
+  marsandiz: [39.9343, 32.7787, "Marşandiz"], gazi: [39.9403, 32.7956, "Gazi"], gazimh: [39.9441, 32.8128, "Gazi Mahallesi"],
+  hipodrom: [39.9451, 32.8261, "Hipodrom"], gar: [39.9352, 32.8434, "Gar", "y"],
+  sihhiye: [39.9290, 32.8551, "Sıhhiye / Yenişehir"], kurtulusb: [39.9286, 32.8679, "Kurtuluş"], cebeci: [39.9334, 32.8762, "Cebeci"],
+  demirb: [39.9399, 32.8829, "Demirlibahçe"], saimekadin: [39.9375, 32.8947, "Saimekadın"], mamak: [39.9315, 32.9113, "Mamak"],
+  bagderesi: [39.9259, 32.9233, "Bağderesi"], uregil: [39.9225, 32.9322, "Üreğil"], kostence: [39.9169, 32.9524, "Köstence"], kayas: [39.9141, 32.9658, "Kayaş"],
+
+  yasm: [39.8644, 32.6476, "Yaşamkent Merkez"], yasg: [39.8740, 32.6570, "Yaşamkent Giriş"], baglica: [39.8980, 32.6463, "Bağlıca"],
+  baskentu: [39.8885, 32.6545, "Başkent Üniversitesi"], konutkent: [39.8800, 32.6680, "Konutkent"], koru: [39.8878, 32.6859, "Koru"],
+  cayyolu: [39.8979, 32.6913, "Çayyolu"], umitkoy: [39.9053, 32.7088, "Ümitköy"], beytepe: [39.9045, 32.7331, "Beytepe"],
+  tarim: [39.9070, 32.7502, "Tarım Bakanlığı-Danıştay"], bilkent: [39.9075, 32.7654, "Bilkent"], odtu: [39.9084, 32.7847, "ODTÜ"],
+  mta: [39.9102, 32.7964, "MTA"], sogutozu: [39.9110, 32.8082, "Söğütözü"], millikut: [39.9152, 32.8270, "Millî Kütüphane"],
+  necatibey: [39.9149, 32.8441, "Necatibey"], kizilay: [39.9208, 32.8541, "Kızılay"], ulus: [39.9391, 32.8510, "Ulus"],
+  akm: [39.9430, 32.8448, "Atatürk Kültür Merkezi"], akkopru: [39.9516, 32.8342, "Akköprü"], ivedik: [39.9572, 32.8170, "İvedik"],
+  yenimahalle: [39.9613, 32.8055, "Yenimahalle"], demetevler: [39.9654, 32.7940, "Demetevler"], hastane1: [39.9691, 32.7837, "Hastane"],
+  macunkoy: [39.9719, 32.7665, "Macunköy"], ostim: [39.9707, 32.7456, "Ostim"], batikent: [39.9682, 32.7267, "Batıkent"],
+  batimerkez: [39.9678, 32.7155, "Batı Merkez"], mesa: [39.9718, 32.7031, "Mesa"], botanik: [39.9809, 32.6948, "Botanik"],
+  istanbulyolu: [39.9797, 32.6584, "İstanbul Yolu"], eryaman12: [39.9805, 32.6479, "Eryaman 1-2"], eryaman5: [39.9811, 32.6274, "Eryaman 5"],
+  devletmh: [39.9815, 32.6132, "Devlet Mahallesi"], harikalar: [39.9834, 32.5998, "Harikalar Diyarı"], fatih: [39.9840, 32.5855, "Fatih"],
+  gop: [39.9859, 32.5723, "GOP"], torekent: [39.9878, 32.5587, "OSB-Törekent"],
+
+  asti: [39.9182, 32.8131, "AŞTİ"], emek: [39.9232, 32.8149, "Emek"], bahcelievler: [39.9311, 32.8200, "Bahçelievler"],
+  besevler: [39.9324, 32.8286, "Beşevler"], anadolu: [39.9347, 32.8372, "Anadolu/Anıtkabir"], maltepe: [39.9319, 32.8429, "Maltepe"],
+  demirtepe: [39.9256, 32.8475, "Demirtepe"], kolej: [39.9235, 32.8615, "Kolej"], kurtulusa: [39.9287, 32.8697, "Kurtuluş"],
+  dikimevi: [39.9326, 32.8780, "Dikimevi"], abidinpasa: [39.9305, 32.8864, "Abidinpaşa"], asikveysel: [39.9273, 32.8932, "Aşık Veysel"],
+  tuzlucayir: [39.9235, 32.9032, "Tuzluçayır"], gzd: [39.9175, 32.9111, "General Zeki Doğan"], fahri: [39.9111, 32.9170, "Fahri Korutürk"],
+  cengizhan: [39.9011, 32.9191, "Cengizhan"], aksemsettin: [39.8956, 32.9247, "Akşemsettin"], natoyolu: [39.8914, 32.9352, "Natoyolu"],
+  uregilmb: [39.9023, 32.9440, "Üreğil Millet Bahçesi", "i"], sahap: [39.9064, 32.9538, "Şahap Gürler", "i"],
+
+  adliye: [39.9305, 32.8506, "Adliye"], aski: [39.9463, 32.8496, "ASKİ"], diskapi: [39.9554, 32.8588, "Dışkapı"],
+  meteoroloji: [39.9666, 32.8639, "Meteoroloji"], belediye: [39.9780, 32.8682, "Belediye"], mecidiye: [39.9838, 32.8755, "Mecidiye"],
+  kuyubasi: [39.9903, 32.8752, "Kuyubaşı"], dutluk: [39.9997, 32.8710, "Dutluk"], sehitler: [39.9963, 32.8613, "Şehitler"],
+  sanatoryum: [40.0060, 32.8560, "Sanatoryum"], ufuktepe: [40.0123, 32.8550, "Ufuktepe"], ovacik: [40.0180, 32.8380, "Ovacık"],
+  forum: [40.0159, 32.8248, "Forum"],
+  antares: [39.9720, 32.8270, "Antares"],
+  mavigol: [39.9220, 32.9890, "Mavi Göl", "i"], gokceyurt: [39.9516, 33.0539, "Gökçeyurt", "i"], lalahan: [39.9707, 33.1173, "Lalahan"], hasanoglan: [39.9652, 33.1590, "Hasanoğlan", "i"], roketsan: [39.9345, 33.2086, "Roketsan", "i"], elmadag: [39.9240, 33.2278, "Elmadağ"],
+  cezaevi: [40.0221, 32.5528, "Sincan Cezaevi", "i"], akinci: [40.0438, 32.5708, "Akıncı", "i"],
+  taurus: [39.8890, 32.8120, "Taurus", "i"], cigdem: [39.8812, 32.8090, "Çiğdem", "i"], gokkusagi: [39.8722, 32.8120, "Gökkuşağı", "i"],
+  aymy: [39.8445, 32.7897, "Anayasa Mahkemesi–Yargıtay", "i"], tedk: [39.8273, 32.7763, "TED Koleji", "i"], mogan: [39.7826, 32.7875, "Mogan", "i"],
+  guzelkent: [39.9900, 32.6100, "Güzelkent", "i"], seyhsamil: [39.9997, 32.6225, "Şeyh Şamil", "i"], atamh: [40.0114, 32.6136, "Ata Mahallesi", "i"], saraysb: [40.0618, 32.6072, "Saray OSB-2", "i"], tusas: [40.0753, 32.5942, "TUSAŞ", "i"],
+  bitik: [40.1152, 32.6248, "Bitik", "i"], yildirimb: [40.1795, 32.6713, "Yıldırımbeyazıt", "i"], kahramankazan: [40.2060, 32.6806, "Kahramankazan", "i"],
+  ergazi: [39.9640, 32.7060, "Ergazi", "i"], sekerfab: [39.9631, 32.6538, "Şeker Fabrikası", "i"], hipodrom75: [39.9748, 32.6829, "75. Yıl Hipodromu", "i"], optimum: [39.9659, 32.6322, "Optimum", "i"], plevne: [39.9671, 32.5981, "Plevne", "i"],
+  misket: [39.9259, 32.9170, "Misket", "i"], sahintepe: [39.9189, 32.9189, "Şahintepe", "i"], sirintepe: [39.9116, 32.9246, "Şirintepe", "i"],
+  ostimosb: [39.9790, 32.7420, "Ostim OSB", "i"], karsiyaka: [39.9890, 32.7700, "Yahyalar", "i"],
+  ovacik7: [40.0100, 32.8320, "Ovacık", "i"], kazan: [40.1030, 32.5041, "Kazan Soda Fabrikası"],
+  abb: [39.9402, 32.8381, "Ankara Büyükşehir Belediyesi"], etlikm: [39.9775, 32.8297, "Etlik"], ayvali: [39.9885, 32.8265, "Ayvalı"],
+  trt: [39.8470, 32.8410, "TRT"], ilkbahar: [39.8589, 32.8539, "İlkbahar"],
+  cansera: [39.9043, 32.8027, "Çukurambar", "i"], iscibl: [39.8934, 32.7980, "İşçi Blokları", "i"],
+  universiteler: [39.7804, 32.8149, "Üniversiteler", "i"], karaoglan: [39.7391, 32.8259, "Karaoğlan", "i"], aselsan: [39.7178, 32.8151, "ASELSAN", "i"],
+  ogulbey: [39.6871, 32.8175, "Oğulbey", "i"], beynam: [39.6830, 32.9000, "Beynam", "i"],
+
+  esat: [39.9110, 32.8635, "Esat"], kugulu: [39.9030, 32.8600, "Kuğulu Park"], dikmenvadisi: [39.8960, 32.8540, "Ayrancı"],
+  cetinemec: [39.8910, 32.8387, "Harbiye"], ovecler: [39.8859, 32.8280, "Öveçler"], dikmen: [39.8790, 32.8395, "Dikmen"],
+  malazgirt: [39.8722, 32.8326, "Malazgirt"], keklik: [39.8673, 32.8228, "Keklik Pınarı"], akpinar: [39.8620, 32.8150, "Akpınar"],
+  ataturksitesi: [39.8491, 32.8184, "Atatürk Sitesi"], oran: [39.8483, 32.8317, "Oran Şehri"],
+
+  sapka: [39.9723, 32.6086, "Şapka Devrimi"], ahielvan: [39.9450, 32.6380, "Elvan"], alsancak: [39.9230, 32.6503, "Alsancak"], ahimesut: [39.9332, 32.6362, "Ahimesut"],
+
+  hastane7: [39.9330, 32.8640, "Hastane"], siteler: [39.9599, 32.9001, "Siteler"], solfasol: [39.9820, 32.9142, "Hacı Bayram Veli", "i"],
+  kuzeyankara: [40.0053, 32.8884, "Kuzey Ankara"], pursaklar: [40.0388, 32.8985, "Pursaklar"], saraykoy: [40.0703, 32.9215, "Sarayköy"],
+  fuar: [40.0813, 32.9683, "Fuar"], esenboga: [40.1146, 32.9924, "Esenboğa Havalimanı"], ybu: [40.1333, 32.9435, "Yıldırım Beyazıt Üniversitesi"],
+  esenbogamerkez: [40.1352, 32.9911, "Esenboğa Merkez"], guldarpi: [40.1566, 33.0116, "Güldarpı"], sunlu: [40.1826, 33.0219, "Sünlü"], cubuksanayi: [40.2113, 33.0335, "Çubuk Sanayi"], cubukmerkez: [40.2380, 33.0320, "Çubuk Merkez"],
+
+  iveosb: [39.9951, 32.7535, "İvedik OSB"], kaletepe: [39.9823, 32.7860, "Kaletepe", "i"], sentepe: [39.9837, 32.8022, "Şentepe", "i"], pamuklar: [39.9805, 32.8160, "Pamuklar", "i"], sentepeGM: [39.9839, 32.8019, "Şentepe Metro"],
+  etlik: [39.9640, 32.8310, "Etlik Şehir Hastanesi"], incirli: [39.9835, 32.8400, "İncirli", "i"], aydinlikevler: [39.9615, 32.8775, "Aydınlıkevler", "i"],
+  onder: [39.9590, 32.9142, "Önder", "i"], huseyingazi: [39.9422, 32.9128, "Hüseyingazi", "i"], duralialic: [39.9030, 32.9311, "Durali Alıç", "i"],
+
+  mitmsb: [39.9107, 32.6767, "MİT–MSB Yerleşkesi"], msblojman: [39.9328, 32.6703, "MSB Lojmanları"], sasmaz: [39.9500, 32.7120, "Şaşmaz"],
+  inonu: [39.9507, 32.7266, "İnönü"], c1940: [39.9837, 32.7286, "1940. Cadde"], turgutozal: [39.9929, 32.7097, "Turgut Özal"],
+
+  serhat: [39.9832, 32.7548, "Serhat"], gimat: [39.9572, 32.7645, "GİMAT"], aoc: [39.9364, 32.7913, "Atatürk Orman Çiftliği"],
+  bestepe: [39.9223, 32.7991, "Beştepe"], 
+  balgat: [39.9044, 32.8098, "Balgat", "i"], ehlibeyt: [39.8992, 32.8164, "Ehlibeyt", "i"], 
+  ulubey: [39.9643, 32.9081, "Ulubey", "i"], seyfid: [39.9630, 32.8885, "Seyfi Demirsoy", "i"], ivedikkoy: [40.0070, 32.7730, "İvedikköy", "i"], sancak: [39.8692, 32.8681, "Sancak", "i"], birlikM: [39.8789, 32.8817, "Birlik", "i"], kirkkonaklar: [39.8881, 32.8891, "Kırkkonaklar", "i"], atakule: [39.8859, 32.8557, "Atakule", "i"], yildizF: [39.8796, 32.8614, "Yıldız", "i"], ciceklim: [39.9810, 32.8565, "Çiçekli", "i"], yayla: [39.9990, 32.8290, "Yayla", "i"], yemreG: [39.9696, 32.8083, "Yunus Emre"], antenler: [39.9742, 32.8049, "Antenler"], sentepeG: [39.9906, 32.7999, "Şentepe Teleferik"], ataturkG: [39.9689, 32.8656, "Atatürk"], cumhuriyetG: [39.9844, 32.8653, "Cumhuriyet"], saraysb1: [40.0365, 32.6105, "Saray OSB-1", "i"], 
+  golbasik: [39.8012, 32.8008, "Gölbaşı Kuzey", "i"], karsiyakag: [39.7920, 32.7940, "Karşıyaka Mahallesi", "i"], golbasim: [39.7900, 32.8060, "Gölbaşı Merkez", "i"],
+
+  mutlukent: [39.8806, 32.7115, "Beysukent", "i"], bsh: [39.9016, 32.7573, "Bilkent Şehir Hastanesi", "i"], beysukent: [39.8908, 32.7087, "Mutlukent", "i"], hacettepe: [39.8689, 32.7330, "Hacettepe Üniversitesi", "i"],
+  bilkentu: [39.8691, 32.7491, "Bilkent Üniversitesi", "i"], bilkentc: [39.8828, 32.7572, "Bilkent Center", "i"], odtutk: [39.8990, 32.7710, "ODTÜ Teknokent", "i"],
+  odtum: [39.8920, 32.7830, "ODTÜ Merkez", "i"], yuzuncuyil: [39.8962, 32.8052, "Yüzüncüyıl", "i"], sokullu: [39.8964, 32.8359, "Sokullu", "i"],
+  cinnah: [39.8915, 32.8620, "Çankaya", "i"], gopc: [39.8960, 32.8740, "Gaziosmanpaşa", "i"], byesat: [39.9015, 32.8804, "Büyükesat", "i"], asikpasa: [39.9091, 32.8832, "Aşıkpaşa", "i"], akdere: [39.9197, 32.8860, "Akdere", "i"],
+  battalgazi9: [39.9620, 32.9250, "Battalgazi", "i"],
+  ekin9: [39.9600, 32.9440, "Ekin", "i"],
+  basak9: [39.9640, 32.9560, "Başak", "i"],
+  karapurcek9: [39.9694, 32.9723, "Karapürçek", "i"],
+  altinkoy9: [39.9738, 32.9543, "Altınköy", "i"],
+  besikkaya9: [39.9793, 32.9449, "Beşikkaya", "i"],
+  baspinar9: [39.9760, 32.9270, "Başpınar", "i"],
+  karsiyakam9: [40.0079, 32.7917, "Karşıyaka Mezarlığı", "i"],
+  yukseltepe9: [40.0160, 32.8040, "Yükseltepe", "i"],
+  atapark9: [40.0110, 32.8470, "Atapark", "i"],
+  kuscagiz9: [39.9980, 32.8493, "Kuşcağız", "i"],
+  adnanm9: [39.9997, 32.8782, "Adnan Menderes", "i"],
+  yesiltepe9: [39.9974, 32.8945, "Yeşiltepe", "i"],
+  yildiztepe9: [39.9798, 32.8959, "Yıldıztepe", "i"],
+  dogantepe9: [39.9744, 32.9128, "Doğantepe", "i"],
+  kanuni7: [40.0259, 32.8569, "Kanuni", "i"],
+  kafkas7: [40.0344, 32.8504, "Kafkas", "i"],
+  karakaya7: [40.0424, 32.8416, "Karakaya", "i"],
+  gunesevler9: [39.9730, 32.8900, "Güneşevler–Solfasol"],
+  akyurtsan4: [40.0838, 33.0200, "Akyurt Sanayi", "i"],
+  bugduz4: [40.1125, 33.0548, "Büğdüz", "i"],
+  akyurt4: [40.1312, 33.0845, "Akyurt", "i"],
+  yassit1: [39.8480, 32.6490, "Yaşamkent Siteler", "i"],
+  dodurga1: [39.8369, 32.6598, "Dodurga", "i"],
+  dorapark1: [39.8687, 32.6861, "Dora Park", "i"],
+  kislali1: [39.8763, 32.6872, "Ahmet Taner Kışlalı", "i"],
+  alacaatli1: [39.8465, 32.6745, "Alacaatlı Kümeevler", "i"],
+  alacaatli2: [39.8600, 32.6800, "Alacaatlı", "i"],
+  galleria2: [39.8955, 32.7037, "Galleria", "i"],
+  cayyolumh2: [39.8867, 32.6981, "Çayyolu Mahallesi", "i"],
+  bangabandhu2: [39.8838, 32.6905, "Bangabandhu", "i"],
+  elvankentL: [39.9410, 32.6280, "Elvankent", "i"],
+  ayyildizL: [39.9426, 32.6188, "Ayyıldız", "i"],
+  oguzlarL: [39.9485, 32.6052, "Oğuzlar", "i"],
+  osmanliL: [39.9497, 32.5915, "Osmanlı", "i"],
+  andicenL: [39.9500, 32.5800, "Andiçen", "i"],
+  
+  pinarbasiL: [39.9485, 32.5690, "Pınarbaşı", "i"], malazgirtL: [39.9518, 32.5612, "Malazgirt", "i"], ataturkL: [39.9588, 32.5728, "Atatürk", "i"], ahievranL: [39.9696, 32.5757, "Ahi Evran", "i"],
+  sdhL: [39.9829, 32.5704, "Sincan Devlet Hastanesi", "i"],
+  akcaoren: [40.0526, 32.4994, "Akçaören"],
+  ybati: [39.9691, 32.6951, "Yeni Batı"]
+};
+const XY = {"cezaevi":[0,520],"akinci":[90,430],"kizilay":[1300,1100],"sihhiye":[1300,990],"ulus":[1300,910],"akm":[1190,910],"gar":[1190,990],"adliye":[1245,1045],"aski":[1190,850],"diskapi":[1190,810],"meteoroloji":[1190,770],"belediye":[1190,730],"mecidiye":[1190,680],"kuyubasi":[1190,630],"dutluk":[1190,580],"sehitler":[1190,530],"sanatoryum":[1190,480],"ufuktepe":[1190,430],"ovacik":[1190,380],"forum":[1190,330],"akkopru":[1150,870],"ivedik":[1110,830],"yenimahalle":[1055,790],"demetevler":[1010,790],"hastane1":[945,790],"macunkoy":[890,790],"ostim":[750,790],"batikent":[610,790],"batimerkez":[570,750],"mesa":[530,710],"botanik":[490,670],"istanbulyolu":[420,670],"eryaman12":[350,670],"eryaman5":[285,670],"devletmh":[220,670],"harikalar":[160,670],"fatih":[100,670],"gop":[40,670],"torekent":[-30,670],"iveosb":[750,650],"kaletepe":[860,650],"sentepe":[935,650],"etlik":[1095,755],"incirli":[1090,650],"aydinlikevler":[1355,780],"siteler":[1540,780],"onder":[1665,780],"huseyingazi":[1700,870],"mamak":[1700,990],"duralialic":[1865,1165],"natoyolu":[1865,1260],"serhat":[820,720],"gimat":[890,890],"aoc":[890,1060],"bestepe":[890,1130],"sogutozu":[890,1200],"balgat":[970,1240],"ehlibeyt":[1000,1310],"golbasik":[1000,1840],"golbasim":[1000,1900],"asti":[940,1150],"emek":[1040,1100],"bahcelievler":[1090,1100],"besevler":[1140,1100],"anadolu":[1185,1100],"maltepe":[1225,1100],"demirtepe":[1262,1100],"necatibey":[1175,1200],"millikut":[1010,1200],"mta":[835,1200],"odtu":[775,1260],"bilkent":[720,1260],"tarim":[665,1260],"beytepe":[580,1260],"umitkoy":[500,1260],"cayyolu":[435,1260],"koru":[370,1260],"konutkent":[330,1300],"baskentu":[275,1300],"baglica":[220,1300],"yasg":[330,1370],"yasm":[330,1440],"sapka":[220,790],"eryaman":[220,990],"ahielvan":[220,1065],"alsancak":[220,1215],"ahimesut":[220,1140],"inonu":[570,830],"sasmaz":[505,895],"havaduragi":[500,990],"msblojman":[500,1080],"mitmsb":[500,1170],"c1940":[610,680],"turgutozal":[610,600],"mutlukent":[540,1370],"beysukent":[500,1330],"hacettepe":[580,1410],"bilkentu":[650,1410],"bilkentc":[683,1377],"bsh":[717,1343],"odtutk":[790,1310],"odtum":[890,1310],"sokullu":[1150,1310],"esat":[1300,1170],"kugulu":[1300,1240],"dikmenvadisi":[1300,1310],"cetinemec":[1260,1350],"ovecler":[1220,1390],"dikmen":[1220,1450],"malazgirt":[1220,1510],"keklik":[1220,1570],"akpinar":[1160,1630],"ataturksitesi":[1190,1690],"oran":[1280,1690],"etimesgut":[405,990],"ozgunes":[310,990],"yildirim":[630,990],"behicbey":[760,990],"marsandiz":[890,990],"gazi":[960,990],"gazimh":[1030,990],"hipodrom":[1110,990],"elvankent":[170,940],"lale":[120,890],"sincan":[70,840],"sosb":[-90,610],"yk1":[-140,560],"yk2":[-190,510],"kurtulusb":[1380,990],"cebeci":[1460,990],"demirb":[1540,935],"saimekadin":[1620,990],"bagderesi":[1770,990],"uregil":[1840,990],"kostence":[1910,990],"kayas":[1980,990],"kolej":[1340,1060],"kurtulusa":[1420,1060],"dikimevi":[1490,1060],"abidinpasa":[1550,1060],"asikveysel":[1610,1060],"tuzlucayir":[1665,1060],"gzd":[1705,1100],"fahri":[1745,1140],"cengizhan":[1785,1180],"aksemsettin":[1825,1220],"hastane7":[1355,935],"solfasol":[1500,520],"kuzeyankara":[1240,580],"pursaklar":[1300,520],"saraykoy":[1360,460],"fuar":[1420,400],"esenboga":[1480,340],"ybu":[1540,280],"akdere":[1600,1125],"cinnah":[1380,1310],"gopc":[1435,1290],"byesat":[1480,1245],"asikpasa":[1540,1185],"esenbogamerkez":[1540,238],"guldarpi":[1540,196],"sunlu":[1540,154],"cubuksanayi":[1540,112],"cubukmerkez":[1540,70],"uregilmb":[1940,1185],"sahap":[1980,1090],"cansera":[890,1237],"iscibl":[890,1273],"trt":[1340,1690],"ilkbahar":[1400,1690],"abb":[1150,950],"etlikm":[1040,650],"ayvali":[1040,605],"universiteler":[1000,1960],"karaoglan":[1000,2020],"aselsan":[1000,2080],"ogulbey":[1020,2140],"beynam":[1100,2140],"kazan":[-260,440],"ovacik7":[1040,530],"antares":[1060,720],"mavigol":[2045,990],"gokceyurt":[2110,990],"lalahan":[2185,945],"hasanoglan":[2270,930],"roketsan":[2340,970],"elmadag":[2410,970],"guzelkent":[220,600],"seyhsamil":[220,540],"atamh":[220,480],"saraysb":[220,400],"tusas":[220,360],"bitik":[265,315],"yildirimb":[310,270],"kahramankazan":[355,225],"ergazi":[545,790],"sekerfab":[350,790],"hipodrom75":[415,790],"optimum":[285,790],"plevne":[150,790],"misket":[1735,1025],"sahintepe":[1770,1060],"sirintepe":[1805,1095],"ostimosb":[680,720],"karsiyaka":[800,650],"taurus":[1000,1370],"cigdem":[1005,1475],"gokkusagi":[1080,1550],"aymy":[1120,1670],"tedk":[1080,1710],"mogan":[850,1840],"yuzuncuyil":[945,1310],"battalgazi9":[1640,740],"ekin9":[1685,740],"basak9":[1725,740],"karapurcek9":[1760,680],"altinkoy9":[1760,620],"besikkaya9":[1685,580],"baspinar9":[1590,580],"karsiyakam9":[830,570],"yukseltepe9":[930,530],"atapark9":[1090,530],"kuscagiz9":[1140,530],"adnanm9":[1205,545],"yesiltepe9":[1300,580],"yildiztepe9":[1370,580],"dogantepe9":[1480,580],"kanuni7":[1240,280],"kafkas7":[1240,220],"karakaya7":[1190,170],"yassit1":[330,1510],"dodurga1":[330,1580],"dorapark1":[420,1410],"kislali1":[420,1370],"alacaatli1":[375,1535],"elvankentL":[160,1140],"ayyildizL":[100,1140],"oguzlarL":[40,1140],"osmanliL":[-10,1090],"andicenL":[-77,1090],"ahievranL":[70,780],"sdhL":[20,730],"gunesevler9":[1465,705],"akyurtsan4":[1520,400],"bugduz4":[1610,400],"akyurt4":[1670,340],"galleria2":[480,1280],"cayyolumh2":[455,1305],"bangabandhu2":[430,1330],"alacaatli2":[420,1450],"akcaoren":[-225,475],"ybati":[480,790],"karsiyakag":[925,1840],"pinarbasiL":[-143,1090],"malazgirtL":[-210,1090],"ataturkL":[-85,965],"ulubey":[1595,740],"seyfid":[1517,727],"ivedikkoy":[790,610],"sancak":[1460,1690],"birlikM":[1520,1630],"kirkkonaklar":[1580,1570],"atakule":[1320,1420],"yildizF":[1320,1520],"ciceklim":[1140,680],"yayla":[1040,567],"yemreG":[1015,750],"antenler":[975,710],"sentepeG":[935,580],"ataturkG":[1168,770],"cumhuriyetG":[1150,570],"saraysb1":[220,440],"pamuklar":[990,650],"sentepeGM":[935,690]};
+const N = {};
+Object.keys(G).forEach(id => { const [lat, lon, name, flags] = G[id]; if (XY[id]) N[id] = [XY[id][0], XY[id][1], name, null, flags || ""]; });
+const LINKS = [["meteoroloji", "ataturkG"], ["sentepe", "sentepeGM"]];
+
+// Drawn sections: line, status (op | uc | pl | pr), stations in order
+const PATHS = [
+  ["B1", "op", ["sincan","lale","elvankent","eryaman","ozgunes","etimesgut","havaduragi","yildirim","behicbey","marsandiz","gazi","gazimh","hipodrom","gar","sihhiye","kurtulusb","cebeci",[1485,990],"demirb",[1595,990],"saimekadin","mamak","bagderesi","uregil","kostence","kayas"]],
+  ["B1", "uc", ["kazan","akcaoren","yk2","yk1","sosb",[-90,680],"sincan"]],
+  ["T1", "pl", ["ybu","esenbogamerkez","guldarpi","sunlu","cubuksanayi","cubukmerkez"]],
+  ["B1", "pr", ["kayas","mavigol","gokceyurt",[2140,990],"lalahan",[2200,930],"hasanoglan",[2300,930],"roketsan","elmadag"]],
+  ["T3", "pr", ["mogan","karsiyakag","golbasik","golbasim","universiteler","karaoglan","aselsan",[1000,2140],"ogulbey","beynam"]],
+  ["AX", "pr", ["gar",[1245,935],[1400,935],[1540,935],[1540,780],[1465,705],[1390,630],"kuyubasi",[1240,580],[1300,520],[1360,460],[1420,400],"esenboga"], { off: 8 }],
+  ["M3", "pl", ["devletmh","sapka","eryaman","ahielvan","ahimesut","alsancak","baglica","baskentu","konutkent"]],
+  ["M3", "pr", ["devletmh","guzelkent","seyhsamil","atamh","saraysb1","saraysb","tusas"]],
+  ["B1", "pr", ["sosb","cezaevi","akinci",[160,360],"tusas","bitik","yildirimb","kahramankazan"]],
+  ["M5", "pr", ["batikent","ergazi","ybati","hipodrom75","sekerfab","optimum","sapka","plevne",[120,790],"sincan"]],
+  ["M6", "pl", ["umitkoy","mitmsb","msblojman","havaduragi",[500,900],"sasmaz","inonu","batikent","c1940","turgutozal"]],
+  ["M1", "op", ["torekent","gop","fatih","harikalar","devletmh","eryaman5","eryaman12","istanbulyolu","botanik","mesa","batimerkez","batikent","ostim","macunkoy","hastane1","demetevler","yenimahalle",[1070,790],"ivedik","akkopru","akm","ulus","sihhiye","kizilay",[1200,1200],"necatibey","millikut","sogutozu","mta","odtu","bilkent","tarim","beytepe","umitkoy","cayyolu","koru"]],
+  ["M1", "pl", ["koru","konutkent","yasg","yasm"]],
+  ["M1", "pr", ["torekent","sosb"]],
+  ["M1", "pr", ["yasm","yassit1","dodurga1"]],
+  ["M7", "pr", ["forum","kanuni7","kafkas7","karakaya7"]],
+  ["M9", "pr", ["iveosb","ivedikkoy","karsiyakam9",[870,530],"yukseltepe9","ovacik7","atapark9","kuscagiz9","sehitler","adnanm9","kuzeyankara","yesiltepe9","yildiztepe9","dogantepe9","baspinar9"]],
+  ["T2", "pr", ["siteler",[1580,740],"ulubey","battalgazi9","ekin9","basak9",[1760,705],"karapurcek9","altinkoy9",[1720,580],"besikkaya9","baspinar9",[1590,520],"solfasol",[1400,520],[1370,550],"yildiztepe9",[1465,675],"gunesevler9",[1495,705],"seyfid",[1540,750],"siteler"]],
+  ["T4", "pr", ["umitkoy","galleria2","cayyolumh2","bangabandhu2",[420,1340],"kislali1","dorapark1","alacaatli2",[420,1490],"alacaatli1","dodurga1"]],
+  ["T5", "pr", ["ahimesut","elvankentL","ayyildizL","oguzlarL","osmanliL","andicenL","pinarbasiL","malazgirtL","ataturkL",[40,840],"sincan","ahievranL","sdhL",[-30,680],"torekent"]],
+  ["T6", "pr", ["fuar","akyurtsan4","bugduz4","akyurt4"]],
+  ["M4", "uc", ["gar",[1245,935],"hastane7","demirb","siteler",[1540,780],"gunesevler9",[1390,630],"kuyubasi","kuzeyankara","pursaklar","saraykoy","fuar","esenboga","ybu"]],
+  ["M2", "op", ["kizilay","adliye","gar","akm","aski","diskapi","meteoroloji","belediye","mecidiye","kuyubasi","dutluk","sehitler"]],
+  ["M2", "pl", ["sehitler","sanatoryum","ufuktepe","ovacik","forum"]],
+  ["M2", "pl", ["kizilay","esat","kugulu","dikmenvadisi","cetinemec","ovecler","dikmen","malazgirt","keklik","akpinar",[1160,1690],"ataturksitesi","oran","trt","ilkbahar"]],
+  ["M2", "pr", ["ilkbahar","sancak","birlikM","kirkkonaklar"]],
+  ["F1", "pl", ["kugulu",[1320,1240],"atakule","yildizF"]],
+  ["F1", "pr", ["yildizF",[1460,1660],"sancak"]],
+  ["G1", "pr", ["yenimahalle","yemreG","antenler",[955,690],"sentepeGM","sentepe","sentepeG"]],
+  ["G2", "pr", ["ataturkG",[1168,648],[1120,600],"cumhuriyetG","sehitler"]],
+  ["M7", "pl", ["gar","abb","akkopru",[1150,810],"etlik","antares",[1040,700],"etlikm","ayvali","yayla","ovacik7",[1040,480],"forum"]],
+  ["A", "op", ["asti",[990,1100],"emek","bahcelievler","besevler","anadolu","maltepe","demirtepe","kizilay","kolej","kurtulusa","dikimevi"]],
+  ["A", "uc", ["sogutozu","asti"]],
+  ["A", "pr", ["odtum","iscibl","cansera","sogutozu"]],
+  ["A", "uc", ["dikimevi","abidinpasa","asikveysel","tuzlucayir","gzd","fahri","cengizhan","aksemsettin","natoyolu"]],
+  ["A", "pr", ["natoyolu","uregilmb",[1980,1145],"sahap","kayas"]],
+  ["M8", "pr", ["iveosb","serhat","macunkoy","gimat","marsandiz","aoc","bestepe","sogutozu",[930,1240],"balgat",[1000,1240],"ehlibeyt","taurus",[1000,1470],"cigdem","gokkusagi","akpinar","aymy","tedk",[1080,1760],"golbasik"]],
+  ["M6", "pr", ["umitkoy","beysukent","mutlukent","hacettepe","bilkentu","bilkentc","bsh",[750,1310],"odtutk","odtum","yuzuncuyil","ehlibeyt","sokullu","dikmenvadisi","cinnah",[1415,1310],"gopc","byesat","asikpasa","akdere","tuzlucayir",[1665,1025],"mamak"]],
+  ["M5", "pr", ["batikent","ostimosb","iveosb","karsiyaka","kaletepe","sentepe","pamuklar","etlikm","incirli",[1110,650],"ciceklim","belediye",[1270,730],[1320,780],"aydinlikevler","siteler","onder",[1700,780],"huseyingazi","mamak","misket","sahintepe","sirintepe",[1865,1155],"duralialic","natoyolu"]]
+];
+
+// Ring trains: drawn along M5 (Batıkent–Mamak) and M6 (Mamak–Ümitköy–Batıkent); only the two junction stations are marked as ring stations
+{ const part = (line, st, a, b) => { const p = PATHS.find(x => x[0] === line && x[1] === st && x[2].includes(a) && x[2].includes(b))[2]; const i = p.indexOf(a), j = p.indexOf(b); return i < j ? p.slice(i, j + 1) : p.slice(j, i + 1).reverse(); };
+  const r = [...part("M5", "pr", "batikent", "mamak"), ...part("M6", "pr", "mamak", "umitkoy").slice(1), ...part("M6", "pl", "umitkoy", "batikent").slice(1)];
+  PATHS.push(["R", "pr", r.map(p => Array.isArray(p) || p === "batikent" || p === "mamak" ? p : XY[p]), { off: -9 }]); }
+
+// Station order for the directory, with notes
+const ORDER = {
+  A: ["odtum","iscibl","cansera","sogutozu","asti","emek","bahcelievler","besevler","anadolu","maltepe","demirtepe","kizilay","kolej","kurtulusa","dikimevi","abidinpasa","asikveysel","tuzlucayir","gzd","fahri","cengizhan","aksemsettin","natoyolu","uregilmb","sahap","kayas"],
+  M1: ["dodurga1","yassit1","yasm","yasg","konutkent","koru","cayyolu","umitkoy","beytepe","tarim","bilkent","odtu","mta","sogutozu","millikut","necatibey","kizilay","sihhiye","ulus","akm","akkopru","ivedik","yenimahalle","demetevler","hastane1","macunkoy","ostim","batikent","batimerkez","mesa","botanik","istanbulyolu","eryaman12","eryaman5","devletmh","harikalar","fatih","gop","torekent","sosb"],
+  M2: ["forum","ovacik","ufuktepe","sanatoryum","sehitler","dutluk","kuyubasi","mecidiye","belediye","meteoroloji","diskapi","aski","akm","gar","adliye","kizilay","esat","kugulu","dikmenvadisi","cetinemec","ovecler","dikmen","malazgirt","keklik","akpinar","ataturksitesi","oran","trt","ilkbahar","sancak","birlikM","kirkkonaklar"],
+  M3: ["konutkent","baskentu","baglica","alsancak","ahimesut","ahielvan","eryaman","sapka","devletmh","guzelkent","seyhsamil","atamh","saraysb1","saraysb","tusas"],
+  M4: ["gar","hastane7","demirb","siteler","gunesevler9","kuyubasi","kuzeyankara","pursaklar","saraykoy","fuar","esenboga","ybu"],
+  AX: ["gar","kuyubasi","esenboga"],
+  M5: ["sincan","plevne","sapka","optimum","sekerfab","hipodrom75","ybati","ergazi","batikent","ostimosb","iveosb","karsiyaka","kaletepe","sentepe","pamuklar","etlikm","incirli","ciceklim","belediye","aydinlikevler","siteler","onder","huseyingazi","mamak","misket","sahintepe","sirintepe","duralialic","natoyolu"],
+  M6: ["turgutozal","c1940","batikent","inonu","sasmaz","havaduragi","msblojman","mitmsb","umitkoy","beysukent","mutlukent","hacettepe","bilkentu","bilkentc","bsh","odtutk","odtum","yuzuncuyil","ehlibeyt","sokullu","dikmenvadisi","cinnah","gopc","byesat","asikpasa","akdere","tuzlucayir","mamak"],
+  R: ["batikent","ostimosb","iveosb","karsiyaka","kaletepe","sentepe","pamuklar","etlikm","incirli","ciceklim","belediye","aydinlikevler","siteler","onder","huseyingazi","mamak","tuzlucayir","akdere","asikpasa","byesat","gopc","cinnah","dikmenvadisi","sokullu","ehlibeyt","yuzuncuyil","odtum","odtutk","bsh","bilkentc","bilkentu","hacettepe","mutlukent","beysukent","umitkoy","mitmsb","msblojman","havaduragi","sasmaz","inonu","batikent"],
+  M7: ["gar","abb","akkopru","etlik","antares","etlikm","ayvali","yayla","ovacik7","forum","kanuni7","kafkas7","karakaya7"],
+  M9: ["iveosb","ivedikkoy","karsiyakam9","yukseltepe9","ovacik7","atapark9","kuscagiz9","sehitler","adnanm9","kuzeyankara","yesiltepe9","yildiztepe9","dogantepe9","baspinar9"],
+  M8: ["iveosb","serhat","macunkoy","gimat","marsandiz","aoc","bestepe","sogutozu","balgat","ehlibeyt","taurus","cigdem","gokkusagi","akpinar","aymy","tedk","golbasik"],
+  B1: ["kazan","akcaoren","yk2","yk1","sosb","sincan","lale","elvankent","eryaman","ozgunes","etimesgut","havaduragi","yildirim","behicbey","marsandiz","gazi","gazimh","hipodrom","gar","sihhiye","kurtulusb","cebeci","demirb","saimekadin","mamak","bagderesi","uregil","kostence","kayas","mavigol","gokceyurt","lalahan","hasanoglan","roketsan","elmadag"],
+  B1K: ["sosb","cezaevi","akinci","tusas","bitik","yildirimb","kahramankazan"],
+  T1: ["ybu","esenbogamerkez","guldarpi","sunlu","cubuksanayi","cubukmerkez"],
+  T3: ["mogan","karsiyakag","golbasik","golbasim","universiteler","karaoglan","aselsan","ogulbey","beynam"],
+  T2: ["siteler","ulubey","battalgazi9","ekin9","basak9","karapurcek9","altinkoy9","besikkaya9","baspinar9","solfasol","yildiztepe9","gunesevler9","seyfid","siteler"],
+  T4: ["umitkoy","galleria2","cayyolumh2","bangabandhu2","kislali1","dorapark1","alacaatli2","alacaatli1","dodurga1"],
+  T5: ["ahimesut","elvankentL","ayyildizL","oguzlarL","osmanliL","andicenL","pinarbasiL","malazgirtL","ataturkL","sincan","ahievranL","sdhL","torekent"],
+  T6: ["fuar","akyurtsan4","bugduz4","akyurt4"],
+  F1: ["kugulu","atakule","yildizF","sancak"],
+  G1: ["yenimahalle","yemreG","antenler","sentepeGM","sentepeG"],
+  G2: ["ataturkG","cumhuriyetG","sehitler"]
+};
+const NOTES = { sihhiye: "Sıhhiye (metro) ile Yenişehir (Başkentray) arasında yürüyerek aktarma", asti: "Şehirlerarası otobüs terminali", gar: "YHT yüksek hızlı trenler", eryaman: "YHT yüksek hızlı trenler" };
+
+// Line register: line, status, section, km, stations, phase, basis, cost type
+// Cost types (US$ million per km, 2026 prices, including systems and trains): T tunnelled metro, M tunnel plus surface or viaduct, S surface commuter or interurban rail, F fit-out of a built section, X no track of its own
+const UNIT = { T: [100, 150], M: [65, 95], L: [30, 50], S: [25, 45], R: [6, 14], C: [15, 30] };
+const FIXED = { F: [0.05, 0.10], X: [0, 0], J: [0.45, 0.75] };
+const SEC = [
+  ["A", "op", "AŞTİ – Kızılay – Dikimevi", 8.53, "11", "Operating", "Yayımlanmış"],
+  ["A", "uc", "Söğütözü – AŞTİ (yapıldı, sinyalizasyon bekliyor)", 0.78, "1", "1", "Yayımlanmış", "F"],
+  ["A", "uc", "Dikimevi – Natoyolu", 7.46, "8", "1", "Yayımlanmış", "T"],
+  ["A", "pr", "Natoyolu – Üreğil Millet Bahçesi – Şahap Gürler – Kayaş", 4.27, "3", "2", "Ölçülmüş", "T"],
+  ["A", "pr", "Söğütözü – Çukurambar – İşçi Blokları – ODTÜ Merkez", 3.95, "3", "2", "Ölçülmüş", "T"],
+  ["M1", "op", "Koru – Kızılay – Batıkent – OSB-Törekent (bugünkü M1, M2 ve M3)", 46.88, "34", "Operating", "Yayımlanmış"],
+  ["M1", "pl", "Koru – Konutkent – Yaşamkent", 5.47, "3", "1", "Yayımlanmış", "T"],
+  ["M1", "pr", "OSB-Törekent – Sincan OSB", 1.94, "1", "2", "Ölçülmüş", "T"],
+  ["M1", "pr", "Yaşamkent Merkez – Yaşamkent Siteler – Dodurga", 3.87, "2", "4", "Ölçülmüş", "M"],
+  ["M2", "op", "Kızılay – Gar – Keçiören – Şehitler (bugünkü M4)", 12.52, "12", "Operating", "Yayımlanmış"],
+  ["M2", "pl", "Şehitler – Sanatoryum – Ufuktepe – Ovacık – Forum", 7.69, "4", "1", "Yayımlanmış", "T"],
+  ["M2", "pl", "Kızılay – Dikmen – Oran Şehri – TRT – İlkbahar (M5 olarak planlanan, güzergâh değiştirildi)", 18.4, "13", "2", "Ölçülmüş", "T"],
+  ["M2", "pr", "İlkbahar – Sancak – Birlik – Kırkkonaklar", 5.12, "3", "3", "Ölçülmüş", "T"],
+  ["F1", "pl", "Kuğulu Park – Atakule – Yıldız (planlanan füniküler)", 3.2, "2", "2", "Ölçülmüş", "L"],
+  ["F1", "pr", "Yıldız – Sancak (M2 bağlantısı)", 1.48, "0", "3", "Ölçülmüş", "L"],
+  ["G1", "pr", "Yenimahalle – Yunus Emre – Antenler – Şentepe Metro – Şentepe Teleferik (kapalı teleferiğin yeniden açılması, M5 için yeni durak)", 3.58, "4", "1", "Ölçülmüş", "F"],
+  ["G2", "pr", "Atatürk – Cumhuriyet (kapalı teleferiğin yeniden açılması)", 1.65, "2", "1", "Yayımlanmış", "F"],
+  ["G2", "pr", "Cumhuriyet – Şehitler (teleferik uzatması)", 1.43, "0", "1", "Ölçülmüş", "C"],
+  ["M3", "pl", "Konutkent – Başkent Üniversitesi – Bağlıca (M2'nin Bağlıca kolu olarak planlanan)", 3.89, "2", "1", "Yayımlanmış", "T"],
+  ["M3", "pl", "Bağlıca – Alsancak – Ahimesut – Elvan – Eryaman YHT – Şapka Devrimi – Devlet Mahallesi (planlanan Çayyolu–Sincan hattı)", 12.5, "6", "1", "Yayımlanmış", "T"],
+  ["M3", "pr", "Devlet Mahallesi – Güzelkent – Şeyh Şamil – Ata Mahallesi", 4.6, "3", "4", "Ölçülmüş", "T"],
+  ["M3", "pr", "Ata Mahallesi – Saray OSB-1 – Saray OSB-2 – TUSAŞ", 8.61, "3", "4", "Ölçülmüş", "M"],
+  ["M4", "uc", "YHT Gar – Hastane – Siteler – Güneşevler–Solfasol – Kuyubaşı", 11.57, "5", "1", "Yayımlanmış, ölçümle bölünmüş", "T"],
+  ["M4", "uc", "Kuyubaşı – Kuzey Ankara – Pursaklar – Fuar – Esenboğa Havalimanı", 19.37, "6", "1", "Yayımlanmış, ölçümle bölünmüş", "M"],
+  ["M4", "uc", "Esenboğa Havalimanı – Yıldırım Beyazıt Ü.", 5.06, "1", "1", "Yayımlanmış, ölçümle bölünmüş", "M"],
+  ["AX", "pr", "M4 raylarında Havalimanı Ekspresi: Gar – Kuyubaşı – Esenboğa Havalimanı (yaklaşık 19 dk; her durakta duran trenler yaklaşık 27 dk)", 0, "3", "2", "M4 hattında", "X"],
+  ["M5", "pr", "Batıkent – Ostim OSB – İvedik OSB – Yahyalar – Kaletepe – Şentepe – Pamuklar – Etlik – İncirli – Çiçekli – Belediye", 16.5, "11", "3", "Ölçülmüş", "T"],
+  ["M5", "pr", "Belediye – Siteler – Mamak – Misket – Şahintepe – Şirintepe – Durali Alıç – Natoyolu", 15.14, "10", "2", "Ölçülmüş", "T"],
+  ["M5", "pr", "Batıkent – Ergazi – Yeni Batı – 75. Yıl Hipodromu – Şeker Fabrikası – Optimum – Şapka Devrimi – Plevne – Sincan", 15.22, "8", "4", "Ölçülmüş", "T"],
+  ["M6", "pl", "Turgut Özal – Batıkent – Havadurağı – Ümitköy", 18.62, "9", "2", "Yayımlanmış", "T"],
+  ["M6", "pr", "Ümitköy – Hacettepe – Bilkent – Bilkent Şehir Hastanesi – ODTÜ – Yüzüncüyıl – Ehlibeyt – Ayrancı", 21.65, "12", "3", "Ölçülmüş", "T"],
+  ["M6", "pr", "Ayrancı – Çankaya – Gaziosmanpaşa – Büyükesat – Akdere – Tuzluçayır – Mamak", 8.67, "7", "3", "Ölçülmüş", "T"],
+  ["R", "pr", "M5 ve M6 üzerinde her yönde 4 dakikada bir halka trenleri (bir tur 84 dk), Batıkent ve Mamak'ta katlı kavşaklarla", 0, "39", "3", "M5 ve M6 üzerinde", "J"],
+  ["M7", "pl", "YHT Gar – Ankara Büyükşehir Belediyesi – Akköprü – Etlik Şehir Hastanesi", 3.84, "4", "2", "Yayımlanmış, ölçümle bölünmüş", "T"],
+  ["M7", "pl", "Etlik Şehir Hastanesi – Antares – Etlik – Ayvalı – Yayla – Ovacık – Forum", 7.36, "6", "2", "Yayımlanmış, ölçümle bölünmüş", "T"],
+  ["M7", "pr", "Forum – Kanuni – Kafkas – Karakaya", 5.99, "3", "4", "Ölçülmüş", "T"],
+  ["M8", "pr", "İvedik OSB – Macunköy – Marşandiz – Söğütözü", 13.41, "8", "3", "Ölçülmüş", "T"],
+  ["M8", "pr", "Söğütözü – Balgat – Ehlibeyt – Taurus – Akpınar – Anayasa Mahkemesi–Yargıtay – TED Koleji – Gölbaşı Kuzey", 16.81, "9", "4", "Ölçülmüş", "M"],
+  ["M9", "pr", "İvedik OSB – İvedikköy – Karşıyaka Mezarlığı – Yükseltepe – Ovacık – Atapark – Kuşcağız – Şehitler – Adnan Menderes – Kuzey Ankara – Yeşiltepe – Yıldıztepe – Doğantepe – Başpınar (Keçiören merkezinde tünel, diğer yerlerde yüzey ya da viyadük)", 23.5, "9", "3", "Ölçülmüş", "M"],
+  ["B1", "op", "Sincan – Gar – Kayaş", 37.47, "24", "Operating", "Yayımlanmış"],
+  ["B1", "uc", "Sincan – Sincan OSB – Yenikent", 12, "3", "1", "Yayımlanmış", "S"],
+  ["B1", "uc", "Yenikent – Akçaören – Kazan Soda Fabrikası (yapımı süren yük bağlantısı, yolcu istasyonu eklenerek)", 8.65, "2", "1", "Ölçülmüş", "S"],
+  ["T1", "pl", "Yıldırım Beyazıt Ü. – Esenboğa Merkez – Güldarpı – Sünlü – Çubuk Sanayi – Çubuk Merkez (Çubuk yolu boyunca hafif raylı, yaklaşık 17 dk)", 15.84, "6", "2", "Yayımlanmış (Bakanlık, 2019)", "L"],
+  ["T3", "pr", "Mogan – Karşıyaka Mahallesi – Gölbaşı Kuzey – Gölbaşı Merkez – Üniversiteler – Karaoğlan – ASELSAN – Oğulbey – Beynam (hafif raylı)", 26.07, "8", "4", "Ölçülmüş", "L"],
+  ["B1", "pr", "Kayaş – Mavi Göl – Gökçeyurt – Lalahan – Hasanoğlan – Roketsan – Elmadağ (mevcut demiryolu üzerinden aktarmasız)", 30.55, "6", "3", "Ölçülmüş", "R"],
+  ["B1", "pr", "Kahramankazan kolu: Sincan OSB – Sincan Cezaevi – Akıncı – TUSAŞ", 13.53, "3", "4", "Ölçülmüş", "S"],
+  ["B1", "pr", "Kahramankazan kolu: TUSAŞ – Bitik – Yıldırımbeyazıt – Kahramankazan", 18.81, "3", "4", "Ölçülmüş", "S"],
+  ["T2", "pr", "Siteler – Ulubey – Battalgazi – Ekin – Başak – Karapürçek – Altınköy – Beşikkaya – Başpınar – Hacı Bayram Veli – Yıldıztepe – Güneşevler–Solfasol – Seyfi Demirsoy – Siteler (hafif raylı halka)", 18.54, "10", "3", "Ölçülmüş", "L"],
+  ["T4", "pr", "Ümitköy – Galleria – Çayyolu Mahallesi – Bangabandhu – Ahmet Taner Kışlalı – Dora Park – Alacaatlı – Alacaatlı Kümeevler – Dodurga (hafif raylı)", 9.92, "7", "3", "Ölçülmüş", "L"],
+  ["T5", "pr", "Ahimesut – Elvankent – Ayyıldız – Oğuzlar – Osmanlı – Andiçen – Pınarbaşı – Malazgirt – Atatürk – Sincan – Ahi Evran – Sincan Devlet Hastanesi – OSB-Törekent (hafif raylı)", 16.58, "10", "3", "Ölçülmüş", "L"],
+  ["T6", "pr", "Fuar – Akyurt Sanayi – Büğdüz – Akyurt, Çankırı yolu boyunca (hafif raylı)", 13.06, "3", "4", "Ölçülmüş", "L"]
+];
+const RIDE = { catch: "4,47 milyon", day: "3,20 milyon", wkday: "3,81 milyon", year: "1.167 milyon", range: "963–1.384 milyon", perkm: "5.410", today: "201,5 milyon" };
+const STN = {"odtum":[0,0,7300],"iscibl":[10300,0,5100],"cansera":[8700,0,9900],"sogutozu":[3000,0,19800],"asti":[9200,0,12500],"emek":[11000,0,6100],"bahcelievler":[14100,0,7800],"besevler":[11600,400,6800],"anadolu":[2100,0,2300],"maltepe":[6500,0,9200],"demirtepe":[9700,0,13900],"kizilay":[3700,0,56500],"kolej":[15400,700,18400],"kurtulusa":[11100,0,7600],"dikimevi":[9600,0,6700],"abidinpasa":[20400,0,12900],"asikveysel":[29000,0,18000],"tuzlucayir":[33900,900,28200],"gzd":[51900,7000,31800],"fahri":[21500,5900,13100],"cengizhan":[24900,6400,14200],"aksemsettin":[23300,900,12300],"natoyolu":[23700,8300,16800],"uregilmb":[13100,1400,6500],"sahap":[10300,16600,6400],"kayas":[12200,21700,10400],"dodurga1":[14100,40600,9200],"yassit1":[2400,1000,2300],"yasm":[18400,24900,9500],"yasg":[7500,1300,3000],"konutkent":[6700,100,4500],"koru":[8800,1800,5300],"cayyolu":[8300,500,4300],"umitkoy":[2700,100,4700],"beytepe":[0,900,3800],"tarim":[700,0,4100],"bilkent":[5700,500,6600],"odtu":[500,0,5100],"mta":[6200,0,6600],"millikut":[19600,800,16200],"necatibey":[4300,1200,11500],"sihhiye":[1500,0,18700],"ulus":[2000,100,20500],"akm":[2600,0,11900],"akkopru":[4500,0,5300],"ivedik":[9000,0,7000],"yenimahalle":[34600,1700,25000],"demetevler":[65400,3000,45000],"hastane1":[44900,5300,31000],"macunkoy":[25000,500,25800],"ostim":[2700,4400,17400],"batikent":[42800,100,47000],"batimerkez":[23800,2500,16100],"mesa":[20300,5100,13700],"botanik":[14800,2800,9800],"istanbulyolu":[15300,12400,11000],"eryaman12":[22600,23600,16000],"eryaman5":[16600,1500,10000],"devletmh":[23800,0,16800],"harikalar":[12100,2700,7500],"fatih":[33300,12600,18600],"gop":[11000,10600,7300],"torekent":[3600,15000,5300],"sosb":[100,2600,13700],"forum":[6000,100,9100],"ovacik":[20900,0,10000],"ufuktepe":[50800,13300,27200],"sanatoryum":[32900,300,18200],"sehitler":[34000,0,24700],"dutluk":[37800,5200,24700],"kuyubasi":[41500,1200,36500],"mecidiye":[32000,800,22000],"belediye":[26700,100,25700],"meteoroloji":[28600,5600,20400],"diskapi":[5700,3200,12000],"aski":[14400,400,10500],"gar":[400,0,17200],"adliye":[900,0,8500],"esat":[31500,300,21300],"kugulu":[14200,300,13000],"dikmenvadisi":[18600,500,14600],"cetinemec":[22500,0,13000],"ovecler":[30800,0,16700],"dikmen":[31800,600,16300],"malazgirt":[29400,3300,14600],"keklik":[22500,3400,10900],"akpinar":[18200,400,10500],"ataturksitesi":[1900,8600,2600],"oran":[2800,8600,2700],"trt":[11800,3400,4900],"ilkbahar":[18800,11700,7500],"sancak":[15900,800,5300],"birlikM":[23700,500,6400],"kirkkonaklar":[21800,200,5400],"baskentu":[3200,700,4200],"baglica":[26100,26600,12600],"alsancak":[14900,4500,7800],"ahimesut":[38700,11400,24400],"ahielvan":[56500,5500,28300],"eryaman":[20300,0,15000],"sapka":[29500,100,20300],"guzelkent":[24300,5100,12200],"seyhsamil":[24300,20000,12000],"atamh":[4200,30700,4900],"saraysb1":[0,0,3100],"saraysb":[600,500,6200],"tusas":[0,5800,7200],"hastane7":[10800,700,13800],"demirb":[31400,10700,24000],"siteler":[3800,8100,17600],"gunesevler9":[38700,100,28700],"kuzeyankara":[13600,10600,11500],"pursaklar":[63400,95200,39600],"saraykoy":[2800,45300,6200],"fuar":[100,10800,1200],"esenboga":[400,700,19900],"ybu":[1400,5500,3400],"sincan":[45500,500,37300],"plevne":[39000,1200,20300],"optimum":[5700,800,6000],"sekerfab":[12600,4800,8000],"hipodrom75":[8900,5700,5700],"ybati":[7500,4700,6200],"ergazi":[11900,1600,8100],"ostimosb":[0,0,10300],"iveosb":[0,2700,16700],"karsiyaka":[6100,1300,6000],"kaletepe":[42300,1500,31100],"sentepe":[63800,0,47400],"pamuklar":[42800,0,31700],"etlikm":[32200,1000,27900],"incirli":[44600,800,33700],"ciceklim":[45500,3100,35000],"aydinlikevler":[40000,7600,31200],"onder":[6200,200,6300],"huseyingazi":[31800,4700,23900],"mamak":[18400,100,16200],"misket":[16100,0,9500],"sahintepe":[13300,0,7600],"sirintepe":[22400,300,11400],"duralialic":[31300,0,14800],"turgutozal":[52500,7300,22600],"c1940":[7800,5700,5100],"inonu":[21500,9800,14800],"sasmaz":[11800,300,10800],"havaduragi":[0,100,2300],"msblojman":[10900,9400,6800],"mitmsb":[0,3000,3900],"beysukent":[10700,1100,5600],"mutlukent":[6900,400,3800],"hacettepe":[2100,18200,6300],"bilkentu":[0,3500,4600],"bilkentc":[15100,6500,9700],"bsh":[6700,4300,9200],"odtutk":[0,200,4700],"yuzuncuyil":[7100,0,4300],"ehlibeyt":[9000,0,6700],"sokullu":[15900,1900,9200],"cinnah":[15400,0,9200],"gopc":[13000,100,8100],"byesat":[17300,200,10600],"asikpasa":[37000,13000,23400],"akdere":[35900,2900,22500],"abb":[0,0,5400],"etlik":[10300,5100,14800],"antares":[25300,300,16500],"ayvali":[24700,4000,14500],"yayla":[43000,5000,23700],"ovacik7":[1400,0,2800],"kanuni7":[33500,200,14200],"kafkas7":[29800,1100,11700],"karakaya7":[7200,23000,5500],"serhat":[23700,0,11700],"gimat":[10600,10700,8400],"marsandiz":[0,0,5000],"aoc":[200,0,900],"bestepe":[8800,100,6300],"balgat":[7300,0,10900],"taurus":[12000,0,8900],"cigdem":[17300,0,7800],"gokkusagi":[16100,400,7100],"aymy":[0,0,1000],"tedk":[900,19000,2800],"golbasik":[8900,21700,5600],"ivedikkoy":[1500,12800,3200],"karsiyakam9":[9800,2300,6000],"yukseltepe9":[28500,12200,14800],"atapark9":[18500,0,9600],"kuscagiz9":[48200,300,24200],"adnanm9":[30900,200,15800],"yesiltepe9":[23700,10100,12700],"yildiztepe9":[39400,1300,26400],"dogantepe9":[13300,0,6300],"baspinar9":[25800,0,15900],"ulubey":[7400,0,5700],"battalgazi9":[41100,300,24000],"ekin9":[15300,400,9400],"basak9":[24800,14700,15500],"karapurcek9":[83100,15700,45400],"altinkoy9":[30400,1400,16300],"besikkaya9":[22300,13900,13400],"solfasol":[3600,13300,4800],"seyfid":[10400,2600,7500],"galleria2":[5600,0,2500],"cayyolumh2":[3700,0,1700],"bangabandhu2":[1900,0,1200],"kislali1":[7900,100,2900],"dorapark1":[10700,0,3300],"alacaatli2":[300,0,800],"alacaatli1":[35400,19300,10400],"elvankentL":[20300,700,10000],"ayyildizL":[26600,17800,14500],"oguzlarL":[29200,6400,15500],"osmanliL":[46100,6000,24200],"andicenL":[28400,4900,16000],"pinarbasiL":[45200,32400,27900],"malazgirtL":[44000,16300,26700],"ataturkL":[30200,3200,17600],"ahievranL":[19500,2600,11000],"sdhL":[5300,500,3800],"akyurtsan4":[0,0,1100],"bugduz4":[0,0,100],"akyurt4":[15300,44800,3500],"atakule":[4300,0,2700],"yildizF":[8200,900,2200],"yemreG":[7400,0,3600],"antenler":[10500,0,4700],"sentepeGM":[0,0,1500],"sentepeG":[28100,16800,10300],"ataturkG":[200,0,1300],"cumhuriyetG":[0,0,1100],"lale":[43700,0,24300],"elvankent":[22500,200,13100],"ozgunes":[30400,1900,17600],"etimesgut":[32800,7300,19400],"yildirim":[200,4600,2200],"behicbey":[5200,0,3700],"gazi":[5800,1000,4100],"gazimh":[3300,0,3000],"hipodrom":[200,0,4200],"kurtulusb":[5500,0,4300],"cebeci":[6600,0,7700],"saimekadin":[51900,4300,29400],"bagderesi":[5600,1200,4000],"uregil":[6800,800,4200],"kostence":[700,3100,1200],"kazan":[0,200,300],"akcaoren":[0,0,100],"yk2":[8400,36200,5100],"yk1":[0,72400,5900],"mavigol":[5700,22900,3000],"gokceyurt":[500,1800,300],"lalahan":[2300,4000,800],"hasanoglan":[8100,5400,1900],"roketsan":[0,200,1000],"elmadag":[15800,7400,3200],"kahramankazan":[30200,33300,7900],"yildirimb":[700,1600,700],"bitik":[200,1700,400],"akinci":[0,8500,2000],"cezaevi":[3600,34000,4300],"esenbogamerkez":[4600,900,3100],"guldarpi":[700,0,1200],"sunlu":[2200,0,1100],"cubuksanayi":[5700,15100,3100],"cubukmerkez":[12700,52300,5700],"mogan":[0,8000,700],"karsiyakag":[9700,0,3100],"golbasim":[6900,17300,5900],"universiteler":[14100,49800,10900],"karaoglan":[16000,3200,6800],"aselsan":[5100,0,8200],"ogulbey":[17900,600,7600],"beynam":[12000,0,5600]};
+// Residents within 1 km in 2053 (with growth and new development) and entries a day in 2053, central estimate
+const RL = {"order":["A","M1","M2","M3","M4","AX","M5","M6","R","M7","M8","M9","B1","T1","T2","T3","T4","T5","T6","F1","G1","G2"],"rows":{"A":[142,373,397,388,319,386,401,324,484],"M1":[441,742,757,693,557,672,719,587,860],"M2":[75,330,591,601,433,616,638,520,766],"M3":[0,147,147,154,149,212,229,193,267],"M4":[0,186,198,217,147,216,241,203,283],"AX":[0,0,25,25,11,28,28,24,33],"M5":[0,0,180,440,457,628,649,526,780],"M6":[0,0,105,264,208,268,283,232,337],"R":[0,0,0,243,138,250,261,212,314],"M7":[0,0,160,162,130,220,231,189,276],"M8":[0,0,0,74,126,192,207,172,245],"M9":[0,0,0,178,116,196,206,171,243],"T2":[0,0,0,257,140,277,287,238,338],"T4":[0,0,0,45,17,37,41,35,47],"T5":[0,0,0,229,129,247,262,221,303],"T6":[0,0,0,0,3,6,9,7,11],"B1":[94,295,367,399,159,401,436,366,510],"T1":[0,0,15,19,6,15,20,17,25],"T3":[0,0,0,0,19,55,65,56,75],"F1":[0,0,12,12,10,12,13,11,15],"G1":[0,62,64,39,38,43,44,36,52],"G2":[0,8,9,4,3,4,5,4,6]},"km":{"A":24.99,"M1":58.16,"M2":43.73,"M3":29.6,"M4":36,"AX":0,"M5":46.86,"M6":48.94,"R":0,"M7":17.19,"M8":30.22,"B1":121.01,"T1":15.84,"T3":26.07,"M9":23.5,"T2":18.54,"T4":9.92,"T5":16.58,"T6":13.06,"F1":4.68,"G1":3.58,"G2":3.08},"board":[753,2143,3026,4444,3315,4980,5275,4360,6246],"jour":[552,1493,1950,2730,2122,3021,3198,2638,3793],"sk":{"AX":30.94,"R":69.99}};
+const cost = s => { const t = s[7]; if (!t) return null; if (FIXED[t]) return FIXED[t]; return UNIT[t].map(u => s[3] * u / 1000); };
+
+const PHASES = [
+  { n: "1", when: "2026 – 2032", title: "Süren işleri bitir", why: "Finansmanı ayrılmış, ihalesi yapılmış ya da yapımı süren projeler: Gar'dan Esenboğa'ya ve Yıldırım Beyazıt Ü.'ye M4 (2031'de açılış), batıda M3, Yaşamkent'e M1, kuzeyde Forum'a M2, Natoyolu'na Ankaray ve Kazan Soda'ya Başkentray. Kapalı Yenimahalle–Şentepe ve Keçiören teleferikleri yeniden açılır; Keçiören teleferiği Şehitler'e uzatılır." },
+  { n: "2", when: "2032 – 2038", title: "Resmi planları tamamla", why: "ABB ve Bakanlık planlarındaki diğer hatlar: güneyde İlkbahar'a M2, Gar–Etlik–Forum M7, Turgut Özal–Ümitköy M6 ve Çubuk hafif raylısı; ayrıca Belediye'den Natoyolu'na M5, iki Ankaray uzatması, Sincan OSB'ye M1, Havalimanı Ekspresi ve planlanan Kuğulu–Atakule–Yıldız füniküleri." },
+  { n: "3", when: "2038 – 2046", title: "Çapraz hatların çekirdeği", why: "Batıkent'ten Belediye'ye M5 ve Ümitköy'den yerleşkeler üzerinden Mamak'a M6, halka trenleri için döngüyü kapatır; M8 İvedik OSB'yi Söğütözü'ne bağlar, M9 kuzey Keçiören'e hizmet eder, Altındağ, Sincan ve Çayyolu hafif raylıları metroyu besler. M2, İlkbahar'dan Sancak, Birlik ve Kırkkonaklar'a uzanır; füniküler M2'ye Sancak'ta bağlanır. Elmadağ'a doğrudan trenler başlar." },
+  { n: "4", when: "2046 – 2053", title: "Büyüme alanları", why: "Yolcusu henüz gelmemiş büyümeye bağlı hatlar: Gölbaşı'na M8 ve Beynam'a Gölbaşı hafif raylısı, M5'in Sincan kolu, TUSAŞ'a M3, Kahramankazan kolu, Karakaya'ya M7, Dodurga'ya M1 ve Akyurt hafif raylısı. M8 gelene kadar Konya Yolu'nda otobüs şeridi Gölbaşı yolcularını taşır." }
+];
+
+const STATUS = { op: ["İşletmede", "s-op"], uc: ["Yapım aşamasında", "s-uc"], pl: ["Planlanan", "s-pl"], pr: ["Bu planda önerilen", "s-pr"] };
+const RANK = { op: 0, uc: 1, pl: 2, pr: 3 };
+const NS = "http://www.w3.org/2000/svg";
+let focus = null;
+
+function el(tag, attrs, parent, text) {
+  const n = document.createElementNS(NS, tag);
+  for (const k in attrs) n.setAttribute(k, attrs[k]);
+  if (text != null) n.textContent = text;
+  if (parent) parent.appendChild(n);
+  return n;
+}
+const pt = p => Array.isArray(p) ? p : [N[p][0], N[p][1]];
+
+// Which lines and best status touch each station
+const AT = {};
+PATHS.forEach(([line, st, path]) => path.forEach(p => {
+  if (Array.isArray(p)) return;
+  AT[p] = AT[p] || {};
+  if (!(line in AT[p]) || RANK[st] < RANK[AT[p][line]]) AT[p][line] = st;
+}));
+function transfers(id, own) {
+  const set = new Set(Object.keys(AT[id] || {}));
+  LINKS.forEach(([a, b]) => { if (a === id) Object.keys(AT[b]).forEach(l => set.add(l)); if (b === id) Object.keys(AT[a]).forEach(l => set.add(l)); });
+  set.delete(own);
+  return [...set];
+}
+const isInter = id => transfers(id, null).length > 1;
+
+function drawMap() {
+  const svg = document.getElementById("map");
+  const root = el("g", {}, svg);
+  const areaG = el("g", {}, root), lines = el("g", {}, root), stns = el("g", {}, root), labels = el("g", {}, root), deco = el("g", {}, root);
+  const order = ["B1", "T1", "T3", "T6", "T5", "T4", "M3", "M6", "M1", "M4", "AX", "M2", "M7", "M9", "A", "M8", "M5", "T2", "R", "F1", "G1", "G2"];
+  const segs = [];
+  order.forEach(code => PATHS.filter(p => p[0] === code).forEach(([line, st, path, opts]) => {
+    const P = path.map(pt);
+    for (let i = 1; i < P.length; i++) segs.push([P[i - 1], P[i], path[i - 1], path[i]]);
+    let Q = P;
+    const off = (opts && opts.off) || 0;
+    if (off) {
+      Q = P.map((p, i) => {
+        const nrm = (a, b) => { const dx = b[0] - a[0], dy = b[1] - a[1], l = Math.hypot(dx, dy) || 1; return [-dy / l, dx / l]; };
+        const n1 = i > 0 ? nrm(P[i - 1], p) : null, n2 = i < P.length - 1 ? nrm(p, P[i + 1]) : null;
+        let n = n1 && n2 ? [n1[0] + n2[0], n1[1] + n2[1]] : (n1 || n2);
+        const l = Math.hypot(n[0], n[1]) || 1; n = [n[0] / l, n[1] / l];
+        const k = n1 && n2 ? off / Math.max(0.5, n[0] * n1[0] + n[1] * n1[1]) : off;
+        return [p[0] + n[0] * k, p[1] + n[1] * k];
+      });
+    }
+    const pts = Q.map(p => p.map(v => v.toFixed(1)).join(",")).join(" ");
+    const col = `var(${LINES[line].color})`;
+    const g = el("g", { class: "ln", "data-line": line }, lines);
+    const base = { points: pts, fill: "none", "stroke-linejoin": "round", "stroke-linecap": "round" };
+    if (line === "AX" || line === "R") {
+      el("polyline", { ...base, stroke: col, "stroke-width": 3.4 }, g);
+    } else if (line === "B1" && st !== "pr") {
+      el("polyline", { ...base, stroke: col, "stroke-width": 6.5 }, g);
+      el("polyline", { ...base, stroke: "var(--paper)", "stroke-width": 1.8, "stroke-dasharray": st === "op" ? "none" : "7 6", "stroke-linecap": "butt" }, g);
+    } else if (line[0] === "G") {
+      el("polyline", { ...base, stroke: col, "stroke-width": 3.2, "stroke-dasharray": "6 4", "stroke-linecap": "butt" }, g);
+    } else if (line[0] === "T") {
+      el("polyline", { ...base, stroke: col, "stroke-width": 5, "stroke-dasharray": "0.1 8" }, g);
+    } else if (st === "op") {
+      el("polyline", { ...base, stroke: col, "stroke-width": 7 }, g);
+    } else if (st === "uc") {
+      el("polyline", { ...base, stroke: col, "stroke-width": 7 }, g);
+      el("polyline", { ...base, stroke: "var(--paper)", "stroke-width": 2.3, "stroke-dasharray": "7 5", "stroke-linecap": "butt" }, g);
+    } else if (st === "pl") {
+      el("polyline", { ...base, stroke: col, "stroke-width": 6, "stroke-dasharray": "12 6", "stroke-linecap": "butt" }, g);
+    } else {
+      el("polyline", { ...base, stroke: col, "stroke-width": 7.5, "stroke-dasharray": "0.1 11" }, g);
+    }
+    el("title", {}, g, `${LINES[line].badge}: ${STATUS[st][0].toLocaleLowerCase("tr-TR")}`);
+  }));
+
+  LINKS.forEach(([a, b]) => {
+    const [x1, y1] = pt(a), [x2, y2] = pt(b);
+    const g = el("g", { class: "st", "data-lines": [...new Set([...Object.keys(AT[a]), ...Object.keys(AT[b])])].join(" ") }, stns);
+    el("line", { x1, y1, x2, y2, stroke: "var(--ink)", "stroke-width": 12, "stroke-linecap": "round" }, g);
+    el("line", { x1, y1, x2, y2, stroke: "var(--paper)", "stroke-width": 6.5, "stroke-linecap": "round" }, g);
+  });
+  const ids = Object.keys(N).filter(id => AT[id]);
+  const circles = [];
+  ids.forEach(id => {
+    const [x, y, name, , flags] = N[id];
+    const lineCodes = Object.keys(AT[id]);
+    const inter = isInter(id);
+    const all = [...new Set([...lineCodes, ...transfers(id, null)])].join(" ");
+    const g = el("g", { class: "st", "data-lines": all }, stns);
+    const r = inter ? 7 : 4.2;
+    if (inter) el("circle", { cx: x, cy: y, r, fill: "var(--paper)", stroke: "var(--ink)", "stroke-width": 2.6 }, g);
+    else el("circle", { cx: x, cy: y, r, fill: "var(--paper)", stroke: `var(${LINES[lineCodes[0]].color})`, "stroke-width": 2.5 }, g);
+    el("title", {}, g, `${name} · ${all.split(" ").map(c => LINES[c].badge).join(", ")}${NOTES[id] ? " · " + NOTES[id] : ""}`);
+    circles.push({ id, x, y, r: r + 1.5 });
+  });
+
+  // Line badges at the outer ends, so each line can be followed to where it goes
+  const placed = [];
+  const ENDS = { A: ["odtum", "kayas"], M1: ["dodurga1", "sosb"], M2: ["forum", "kirkkonaklar"], F1: ["sancak"], M3: ["konutkent", "tusas"], M4: ["ybu"], M5: ["sincan", "natoyolu"], M6: ["turgutozal", "mamak"], M7: ["karakaya7"], M9: ["iveosb", "baspinar9"], T4: ["umitkoy", "dodurga1"], T5: ["ahimesut", "torekent"], T6: ["akyurt4"], M8: ["iveosb", "golbasik"], B1: ["kazan", "kahramankazan", "elmadag"], T1: ["cubukmerkez"], T3: ["beynam"] };
+  const endCount = {};
+  Object.entries(ENDS).forEach(([code, list]) => list.forEach(id => {
+    const path = PATHS.filter(p => p[0] === code).map(p => p[2]).find(p => p[0] === id || p[p.length - 1] === id);
+    if (!path) return;
+    const prev = pt(path[0] === id ? path[1] : path[path.length - 2]), [x, y] = pt(id);
+    let dx = x - prev[0], dy = y - prev[1]; const l = Math.hypot(dx, dy) || 1; dx /= l; dy /= l;
+    const k = endCount[id] = (endCount[id] || 0) + 1;
+    const lab = LINES[code].badge, bw = 10 + 8 * lab.length, bh = 17;
+    const cx = x + dx * (22 + bw / 2) - dy * (k - 1) * 21, cy = y + dy * 22 + dx * (k - 1) * 21 + (Math.abs(dy) > 0.5 ? Math.sign(dy) * 6 : 0);
+    const g = el("g", { class: "st", "data-lines": code }, deco);
+    el("rect", { x: cx - bw / 2, y: cy - bh / 2, width: bw, height: bh, rx: 4, fill: `var(${LINES[code].color})` }, g);
+    el("text", { x: cx, y: cy + 4, "text-anchor": "middle", "font-size": 11.5, "font-weight": 700, fill: LINES[code].fg || "#fff" }, g, lab);
+    placed.push({ x: cx - bw / 2 - 2, y: cy - bh / 2 - 2, w: bw + 4, h: bh + 4 });
+  }));
+  // Long names on two lines
+  const splitName = (name, force) => {
+    if (name.length <= 14 && !force) return [name];
+    const cands = []; for (let i = 2; i < name.length - 2; i++) if (" –-/".includes(name[i])) cands.push(i);
+    if (!cands.length) return [name];
+    const mid = name.length / 2, i = cands.reduce((a, b) => (Math.abs(b - mid) < Math.abs(a - mid) ? b : a));
+    return name[i] === " " ? [name.slice(0, i), name.slice(i + 1)] : [name.slice(0, i + 1).trim(), name.slice(i + 1).trim()];
+  };
+  // Automatic label placement: try positions around each station, avoid other labels, stations and track
+  const H = 14;
+  const hitBox = (a, b) => a.x < b.x + b.w && b.x < a.x + a.w && a.y < b.y + b.h && b.y < a.y + a.h;
+  const segHit = (b, p, q) => {
+    const inside = ([x, y]) => x >= b.x && x <= b.x + b.w && y >= b.y && y <= b.y + b.h;
+    if (inside(p) || inside(q)) return true;
+    const cr = (a, c, d) => (c[0] - a[0]) * (d[1] - a[1]) - (c[1] - a[1]) * (d[0] - a[0]);
+    const inter = (a, c, d, e) => (cr(a, c, d) * cr(a, c, e) < 0) && (cr(d, e, a) * cr(d, e, c) < 0);
+    const C = [[b.x, b.y], [b.x + b.w, b.y], [b.x + b.w, b.y + b.h], [b.x, b.y + b.h]];
+    for (let i = 0; i < 4; i++) if (inter(p, q, C[i], C[(i + 1) % 4])) return true;
+    return false;
+  };
+  const dens = id => circles.filter(c => Math.hypot(c.x - N[id][0], c.y - N[id][1]) < 70).length;
+  const ordered = ids.slice().sort((a, b) => (isInter(b) - isInter(a)) || (dens(b) - dens(a)));
+  const DIRS = [[1, 0, 0], [-1, 0, 0.4], [0, -1, 0.6], [0, 1, 0.6], [1, -1, 0.3], [1, 1, 0.3], [-1, -1, 0.5], [-1, 1, 0.5]];
+  const FORCE = { kugulu: "W", cetinemec: "W", ataturkG: "S0", sentepeG: "E", sentepeGM: "W", pamuklar: "S0", yemreG: "W", antenler: "W", ciceklim: "W", cumhuriyetG: "W", yayla: "W", dutluk: "SW", etlik: "NE", antares: "W", yenimahalle: "N2", ulubey: "S0", basak9: "S0", onder: "S0", andicenL: "S0", pinarbasiL: "N0", malazgirtL: "S0", mogan: "W", karsiyakag: "N", yildiztepe9: "NE", yesiltepe9: "N", ergazi: "S0", ybati: "N0", optimum: "S0", beynam: "S0", mavigol: "N0", ekin9: "S0", battalgazi9: "N0", elvankentL: "S0", oguzlarL: "W", ayyildizL: "N0", akyurtsan4: "N0", oran: "N0", tedk: "NW", ataturksitesi: "S0", baskentu: "S0", cayyolu: "N0", koru: "NW", hipodrom75: "S0", sekerfab: "N0", eryaman12: "N0", istanbulyolu: "S0", dikmenvadisi: "NW", hipodrom: "N0", gazimh: "S0", macunkoy: "SW", hastane1: "N0", galleria2: "W", cayyolumh2: "W", bangabandhu2: "W", sdhL: "NE", ovacik7: "NW", atapark9: "N", kuscagiz9: "S", sehitler: "NW", adnanm9: "NEs", sihhiye: "NE", demetevler: "S0", yenimahalle: "N0", kaletepe: "S0", sentepe: "NE1", bilkentu: "SE1", beytepe: "N0", tarim: "N0", bilkent: "S0", trt: "S0", ilkbahar: "S0", roketsan: "S0", elmadag: "S0", huseyingazi: "W", aydinlikevler: "S0", gopc: "NW", byesat: "W", asikpasa: "W", akdere: "W", karsiyaka: "S0", yunusemre: "S0", hacettepe: "SW1", ahievranL: "NE",  esenbogamerkez: "W", guldarpi: "E", sunlu: "E", cubuksanayi: "E", gop: "S", fatih: "N", harikalar: "S", eryaman5: "S", yuzuncuyil: "N", odtum: "SW1", emek: "rdl", bahcelievler: "rdl", besevler: "rdl", anadolu: "rdl", maltepe: "rdl", demirtepe: "rdl",
+    kurtulusa: "rdl", dikimevi: "rdl", abidinpasa: "rdl", asikveysel: "rdl",
+    gazi: "S", kurtulusb: "S", cebeci: "S", saimekadin: "S", bagderesi: "S", uregil: "S", kostence: "S" };
+  const DIRCODE = { E: [1, 0], W: [-1, 0], N: [0, -1], S: [0, 1], NE: [1, -1], NW: [-1, -1], SE: [1, 1], SW: [-1, 1] };
+  ordered.forEach(id => {
+    const [x, y, name, , flags] = N[id];
+    if (flags.includes("n")) return;
+    const inter = isInter(id);
+    const all = [...new Set([...Object.keys(AT[id]), ...transfers(id, null)])].join(" ");
+    const t = el("text", { class: "lbl" + (inter ? " x" : "") + (flags.includes("i") ? " i" : ""), "data-lines": all, x: 0, y: 0 }, labels, name);
+    const fs = FORCE[id] && FORCE[id] !== "rdl" ? FORCE[id].match(/^([NSEW]{1,2})(\d?)(s?)$/) : null;
+    const parts = FORCE[id] === "rdl" ? [name] : splitName(name, fs && fs[3]);
+    let w = t.getComputedTextLength() + 2;
+    if (parts.length > 1) {
+      w = Math.max(...parts.map(p => { t.textContent = p; return t.getComputedTextLength(); })) + 2;
+      t.textContent = ""; parts.forEach(p => el("tspan", { x: 0, y: 0 }, t, p));
+    }
+    const Hb = parts.length > 1 ? 2 * H - 1 : H;
+    const r0 = inter ? 8 : 5;
+    let best = null;
+    if (FORCE[id] === "rdl") {
+      const ox = x - 6, oy = y + 10;
+      t.setAttribute("x", ox); t.setAttribute("y", oy); t.setAttribute("text-anchor", "end");
+      t.setAttribute("dominant-baseline", "middle"); t.setAttribute("transform", `rotate(-45 ${ox} ${oy})`);
+      placed.push({ x: ox - w * 0.71, y: oy, w: w * 0.71, h: w * 0.71 });
+      return;
+    }
+    const dirs = fs ? [[...DIRCODE[fs[1]], 0]] : DIRS;
+    const gaps = [r0 + 4, r0 + 12, r0 + 24];
+    (fs && fs[2] ? [gaps[+fs[2]]] : gaps).forEach((gap, gi) => dirs.forEach(([dx, dy, pref]) => {
+      const gx = dx && dy ? gap * 0.72 : gap, gy = dx && dy ? gap * 0.72 : gap;
+      const b = {
+        x: dx > 0 ? x + gx : dx < 0 ? x - gx - w : x - w / 2,
+        y: dy < 0 ? y - gy - Hb : dy > 0 ? y + gy : y - Hb / 2, w, h: Hb
+      };
+      let s = gi * 3 + pref;
+      placed.forEach(p => { if (hitBox(b, p)) s += 100; });
+      circles.forEach(c => { if (c.id !== id && hitBox(b, { x: c.x - c.r, y: c.y - c.r, w: 2 * c.r, h: 2 * c.r })) s += 60; });
+      segs.forEach(([p, q]) => { if (segHit({ x: b.x - 1, y: b.y + 2, w: b.w + 2, h: b.h - 4 }, p, q)) s += 9; });
+      if (parts.length > 1) s += 0.2;
+      if (!best || s < best.s) best = { s, b };
+    }));
+    placed.push(best.b);
+    if (parts.length > 1) {
+      const right = best.b.x + best.b.w - 1, anchorEnd = best.b.x + best.b.w < x;
+      [...t.children].forEach((sp, i) => { sp.setAttribute("x", anchorEnd ? right : best.b.x + 1); sp.setAttribute("y", best.b.y + H - 3 + i * (H - 1)); });
+      if (anchorEnd) t.setAttribute("text-anchor", "end");
+    } else {
+      t.setAttribute("x", best.b.x + 1);
+      t.setAttribute("y", best.b.y + H - 3);
+    }
+  });
+
+  const bb2 = root.getBBox();
+  const pad = 24;
+  svg.setAttribute("viewBox", `${Math.floor(bb2.x - pad)} ${Math.floor(bb2.y - pad)} ${Math.ceil(bb2.width + pad * 2)} ${Math.ceil(bb2.height + pad * 2)}`);
+  svg.dataset.w = Math.ceil(bb2.width + pad * 2);
+  svg.dataset.h = Math.ceil(bb2.height + pad * 2);
+}
+
+let scale = 1;
+function setScale(s) {
+  const svg = document.getElementById("map"), box = document.getElementById("mapscroll");
+  const fit = (box.clientWidth - 2) / +svg.dataset.w;
+  scale = Math.max(Math.min(s, 1.6), Math.min(fit, 0.3));
+  svg.setAttribute("width", Math.round(+svg.dataset.w * scale));
+  svg.setAttribute("height", Math.round(+svg.dataset.h * scale));
+  document.getElementById("zoomlabel").textContent = `Yakınlaştırma %${Math.round(scale * 100)}`;
+}
+function initZoom() {
+  const svg = document.getElementById("map"), box = document.getElementById("mapscroll");
+  const fit = () => (box.clientWidth - 2) / +svg.dataset.w;
+  setScale(Math.max(fit(), Math.min(0.78, 1)));
+  document.getElementById("zin").addEventListener("click", () => setScale(scale * 1.25));
+  document.getElementById("zout").addEventListener("click", () => setScale(scale / 1.25));
+  document.getElementById("zfit").addEventListener("click", () => setScale(fit()));
+  let drag = null;
+  box.addEventListener("pointerdown", e => { if (e.pointerType !== "mouse") return; drag = { x: e.clientX, y: e.clientY, l: box.scrollLeft, t: box.scrollTop }; box.classList.add("drag"); });
+  window.addEventListener("pointermove", e => { if (!drag) return; box.scrollLeft = drag.l - (e.clientX - drag.x); box.scrollTop = drag.t - (e.clientY - drag.y); });
+  window.addEventListener("pointerup", () => { drag = null; box.classList.remove("drag"); });
+  const k = N.kizilay;
+  const vb = svg.getAttribute("viewBox").split(" ").map(Number);
+  box.scrollLeft = (k[0] - vb[0]) * scale - box.clientWidth / 2;
+  box.scrollTop = (k[1] - vb[1]) * scale - box.clientHeight / 2;
+}
+
+function applyFocus() {
+  document.querySelectorAll(".ln").forEach(n => { n.style.opacity = !focus || n.dataset.line === focus ? 1 : 0.12; });
+  document.querySelectorAll(".st, .lbl").forEach(n => { n.style.opacity = !focus || (n.dataset.lines || "").split(" ").includes(focus) ? 1 : 0.15; });
+  document.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", c.dataset.line === focus ? "true" : "false"));
+}
+function setFocus(code) { focus = focus === code ? null : code; applyFocus(); }
+const badge = (code, sm) => `<span class="badge${sm ? " sm" : ""}" style="background:var(${LINES[code].color});color:${LINES[code].fg || "#fff"}">${LINES[code].badge}</span>`;
+
+function build() {
+  const legend = document.getElementById("legend");
+  Object.keys(LINES).forEach(code => {
+    const b = document.createElement("button");
+    b.className = "chip"; b.type = "button"; b.dataset.line = code; b.setAttribute("aria-pressed", "false");
+    b.innerHTML = `${badge(code)}${LINES[code].short}`;
+    b.addEventListener("click", () => setFocus(code));
+    legend.appendChild(b);
+  });
+
+  const rows = document.getElementById("rows");
+  const r = n => (Math.round(n * 10) / 10).toLocaleString("tr-TR");
+  const km2 = n => n.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const bn = n => n < 1 ? n.toFixed(2) : n.toFixed(1);
+  const money = c => { if (!c) return "–"; if (c[1] === 0) return "M4'e dahil"; const d = c[1] < 1 ? 2 : 1; const f = v => v.toFixed(d).replace(".", ","); return `${f(c[0])}–${f(c[1])} milyar $`; };
+  const addC = (acc, c) => c ? [acc[0] + c[0], acc[1] + c[1]] : acc;
+  const goRow = (tr, code) => {
+    tr.className = "row"; tr.tabIndex = 0;
+    tr.addEventListener("click", () => { setFocus(code); document.getElementById("map-h").scrollIntoView({ behavior: "smooth" }); });
+    tr.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setFocus(code); } });
+  };
+  Object.keys(LINES).forEach(code => {
+    const secs = SEC.filter(x => x[0] === code);
+    if (!secs.length) return;
+    const tkm = secs.reduce((t, x) => t + x[3], 0);
+    const tc = secs.reduce((t, x) => addC(t, cost(x)), [0, 0]);
+    const head = document.createElement("tr");
+    head.innerHTML = `<td>${badge(code)}</td><td colspan="2"><b>${LINES[code].name}</b></td><td class="num"><b>${km2(tkm)}</b></td><td class="num"><b>${new Set(ORDER[code]).size + (ORDER[code + "K"] ? ORDER[code + "K"].length - 1 : 0)}</b></td><td></td><td></td><td class="num"><b>${tc[1] ? money(tc) : ""}</b></td>`;
+    goRow(head, code); head.classList.add("linehead");
+    rows.appendChild(head);
+    secs.forEach(x => {
+      const [, st, label, km, stn, phase, basis] = x;
+      const tr = document.createElement("tr");
+      tr.innerHTML = `<td></td><td class="secl">${label}</td><td><span class="status"><span class="dot ${STATUS[st][1]}"></span>${STATUS[st][0]}</span></td>` +
+        `<td class="num">${km2(km)}</td><td class="num">${stn}</td><td class="note">${basis}</td><td>${phase === "Operating" ? "–" : phase}</td><td class="num">${money(cost(x))}</td>`;
+      goRow(tr, code);
+      rows.appendChild(tr);
+    });
+  });
+  const metro = SEC.filter(s => !["B1", "AX", "R", "F1", "G1", "G2"].includes(s[0]));
+  const sum = f => metro.filter(f).reduce((a, s) => a + (s[3] || 0), 0);
+  const op = sum(s => s[1] === "op"), uc = sum(s => s[1] === "uc"), pl = sum(s => s[1] === "pl"), pr = sum(s => s[1] === "pr");
+  const total = op + uc + pl + pr;
+  const lrt = SEC.filter(s => s[0][0] === "T").reduce((a, s) => a + (s[3] || 0), 0);
+  const cab = SEC.filter(s => /^[FG]/.test(s[0])).reduce((a, s) => a + (s[3] || 0), 0);
+  const b1 = SEC.filter(s => ["B1"].includes(s[0])).reduce((a, s) => a + (s[3] || 0), 0);
+  const allCost = SEC.reduce((t, x) => addC(t, cost(x)), [0, 0]);
+  const newKm = SEC.filter(x => x[1] !== "op").reduce((t, x) => t + x[3], 0);
+  document.getElementById("foot").innerHTML =
+    `<tr><td></td><td colspan="2">Metro ve hafif raylı, 2053<div class="note" style="font-weight:400">${km2(op)} işletmede · ${km2(uc)} yapımda ya da tamamlanmış · ${km2(pl)} planlanan · ${km2(pr)} önerilen</div></td><td class="num">${km2(total)}</td><td></td><td></td><td></td><td></td></tr>` +
+    `<tr><td></td><td colspan="2">Kahramankazan kolu ve Elmadağ kesimiyle Başkentray</td><td class="num">${km2(b1)}</td><td></td><td></td><td></td><td></td></tr>` +
+    `<tr><td></td><td colspan="2">Füniküler ve teleferikler (F1, G1, G2)</td><td class="num">${km2(cab)}</td><td></td><td></td><td></td><td></td></tr>` +
+    `<tr><td></td><td colspan="2">Tüm kentsel raylı sistem, 2053</td><td class="num">${km2(total + b1 + cab)}</td><td></td><td></td><td></td><td class="num">${money(allCost)}</td></tr>`;
+
+  const metroStations = Object.keys(AT).filter(id => Object.keys(AT[id]).some(l => !["B1", "AX", "R", "F1", "G1", "G2"].includes(l))).length;
+  const nfY = v => Math.round(v * 365 / 1000).toLocaleString("tr-TR");
+  const fig = f => `<div class="fig"><b>${f[0]}</b><span>${f[1]}</span></div>`;
+  document.getElementById("figs").innerHTML =
+    `<div class="figrow"><div class="eyebrow">Ağ 2053</div><div class="figs">` + [
+      [`${r(op)} km`, "bugün işletmedeki metro"],
+      [`${r(total - lrt)} km`, "2053'te metro (Ankaray, M1–M9)"],
+      [`${r(lrt)} km`, "2053'te hafif raylı (T1–T6)"],
+      [`${r(b1)} km`, "banliyö demiryolu"],
+      [`${r(cab)} km`, "füniküler ve teleferikler"],
+      [`${r(total + b1 + cab)} km`, "tüm kentsel raylı sistem"],
+      ["10 + 6 + 1 + 3", "metro hattı (Ankaray, M1–M9), hafif raylı (T1–T6), banliyö hattı, füniküler ve iki teleferik"],
+      [`${metroStations}`, "metro ve hafif raylı istasyonu"],
+      [`${Math.round(allCost[0])}–${Math.round(allCost[1])} milyar $`, `${r(newKm)} km yeni hat, 2026 fiyatlarıyla`]
+    ].map(fig).join("") + `</div></div>` +
+    (() => { window.MET = ["A", "M1", "M2", "M3", "M4", "AX", "M5", "M6", "R", "M7", "M8", "M9"]; window.LRT = ["T1", "T2", "T3", "T4", "T5", "T6"]; window.COM = ["B1"]; window.CAB = ["F1", "G1", "G2"]; window.sumCol = (ls, i) => ls.reduce((t, l) => t + (RL.rows[l] ? RL.rows[l][i] : 0), 0); return ""; })() +
+    `<div class="figrow"><div class="eyebrow">Yolcu sayısı 2053, orta tahmin</div><div class="figs">` + [
+      [RIDE.catch, "kişi 15 dakikalık yürüme mesafesinde"],
+      [RIDE.day, "günlük yolculuk"],
+      [RIDE.wkday, "hafta içi günlük yolculuk"],
+      [RIDE.year, `yıllık yolculuk (aralık ${RIDE.range})`],
+      [RIDE.perkm, "km başına günlük yolculuk"],
+      [`${nfY(RL.board[6])} milyon`, "tüm hatlarda yıllık biniş"],
+      [RIDE.today, "2025'te yolculuk (173,8 milyon metro, 27,7 milyon Başkentray)"]
+    ].map(fig).join("") + `</div></div>`;
+
+
+  // Ridership by line
+  const nf = n => n.toLocaleString("tr-TR");
+  const lr = document.getElementById("lrbody");
+  RL.order.forEach(l => {
+    const v = RL.rows[l], c = v[6];
+    const cells = v.map((x, i) => `<td class="num${i === 6 ? " hl" : ""}">${x ? nf(x) : "–"}</td>`).join("");
+    const kk = RL.km[l] || (RL.sk && RL.sk[l]); const perkm = kk ? nf(Math.round(c * 1000 / kk / 10) * 10) : "–";
+    lr.insertAdjacentHTML("beforeend", `<tr><td>${badge(l, true)}</td><td class="num">${RL.km[l] ? km2(RL.km[l]) : RL.sk && RL.sk[l] ? "(" + km2(RL.sk[l]) + ")" : "–"}</td>${cells}<td class="num">${perkm}</td><td class="num">${nf(Math.round(c * 365 / 1000))}</td></tr>`);
+  });
+  const subRow = (label, ls) => { const km = ls.reduce((t, l) => t + (RL.km[l] || 0), 0); const v = RL.rows[ls[0]].map((_, i) => sumCol(ls, i));
+    return `<tr class="subrow"><td colspan="2">${label} · ${km2(km)} km</td>${v.map((x, i) => `<td class="num${i === 6 ? " hl" : ""}">${nf(x)}</td>`).join("")}<td class="num">${nf(Math.round(v[6] * 1000 / km / 10) * 10)}</td><td class="num">${nf(Math.round(v[6] * 365 / 1000))}</td></tr>`; };
+  const subs = subRow("Metro (Ankaray, M1–M9, Havalimanı Ekspresi)", MET) + subRow("Banliyö (B1)", COM) + subRow("Hafif raylı (T1–T6)", LRT) + subRow("Füniküler ve teleferikler (F1, G1, G2)", CAB);
+  document.getElementById("lrfoot").innerHTML = subs +
+    `<tr><td colspan="2">Tüm hatlar, biniş</td>${RL.board.map((x, i) => `<td class="num${i === 6 ? " hl" : ""}">${nf(x)}</td>`).join("")}<td></td><td class="num">${nf(Math.round(RL.board[6] * 365 / 1000))}</td></tr>` +
+    `<tr><td colspan="2" style="font-weight:400">Yolculuk (aktarma bir kez sayılır)</td>${RL.jour.map((x, i) => `<td class="num${i === 6 ? " hl" : ""}" style="font-weight:400">${nf(x)}</td>`).join("")}<td></td><td class="num" style="font-weight:400">${nf(Math.round(RL.jour[6] * 365 / 1000))}</td></tr>`;
+
+  // Build order with costs
+  const pb = document.getElementById("phasebody");
+  let grand = [0, 0], gkm = 0;
+  PHASES.forEach(ph => {
+    const secs = SEC.filter(x => x[5] === ph.n);
+    const pk = secs.reduce((t, x) => t + x[3], 0);
+    const pc = secs.reduce((t, x) => addC(t, cost(x)), [0, 0]);
+    grand = addC(grand, pc); gkm += pk;
+    const yrs = +ph.when.split("–")[1] - +ph.when.split("–")[0];
+    pb.insertAdjacentHTML("beforeend",
+      `<tr class="phasehead"><td colspan="3"><div class="when">${ph.n}. aşama · ${ph.when}</div><b>${ph.title}</b><div class="note">${ph.why}</div></td><td class="num"><b>${km2(pk)}</b></td><td class="num"><b>${money(pc)}</b><div class="note">yılda ${money([pc[0] / yrs, pc[1] / yrs])}</div></td></tr>` +
+      secs.map(x => `<tr><td>${badge(x[0])}</td><td>${x[2]}</td><td><span class="status"><span class="dot ${STATUS[x[1]][1]}"></span>${STATUS[x[1]][0]}</span></td><td class="num">${km2(x[3])}</td><td class="num">${money(cost(x))}</td></tr>`).join(""));
+  });
+  document.getElementById("phasefoot").innerHTML = `<tr><td></td><td colspan="2">Dört aşamanın toplamı, 2026 – 2053</td><td class="num">${km2(gkm)}</td><td class="num">${money(grand)}</td></tr>`;
+
+  const dir = document.getElementById("dir");
+  const PRS = new Set(["koru", "millikut", "macunkoy", "torekent", "sosb", "yasm", "golbasim", "forum", "esenbogamerkez", "kayas", "natoyolu", "cubukmerkez", "beynam", "kahramankazan", "elmadag", "ilkbahar", "yassit1", "dodurga1", "karakaya7", "alacaatli1", "kislali1", "akyurt4"]);
+  const fmtP = n => (n == null ? "–" : n < 50 ? "0" : (n / 1000).toLocaleString("tr-TR", { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + (n >= 0 ? " bin" : ""));
+  // Distances between stations: from station positions (+20% for curves), scaled so each line matches its register length
+  const hk = (a, b) => Math.hypot((G[a][0] - G[b][0]) * 111, (G[a][1] - G[b][1]) * 85.3) * 1.2;
+  // EGO's published station-to-station distances (km), and published section lengths (km) that the remaining gaps are scaled to
+  const OFF = {"batikent>batimerkez":0.63327,"batimerkez>mesa":1.17211,"mesa>botanik":1.28232,"botanik>istanbulyolu":2.74691,"istanbulyolu>eryaman12":1.135,"eryaman12>eryaman5":1.61,"eryaman5>devletmh":1.07,"devletmh>harikalar":1.135,"harikalar>fatih":0.977,"fatih>gop":0.825,"gop>torekent":1.223,"akm>ulus":0.83735,"ostim>macunkoy":1.8775,"sogutozu>mta":0.803,"beytepe>umitkoy":1.99};
+  const SPAN = {
+    A: [["odtum","sogutozu",3.95],["sogutozu","asti",0.78],["asti","dikimevi",8.527],["dikimevi","natoyolu",7.46],["natoyolu","kayas",4.27]],
+    M1: [["dodurga1","yasm",3.87],["yasm","koru",5.47],["koru","kizilay",16.59],["kizilay","batikent",14.661],["torekent","sosb",1.94]],
+    M2: [["forum","sehitler",7.69],["sehitler","kizilay",12.52],["kizilay","ilkbahar",18.4],["ilkbahar","kirkkonaklar",5.12]],
+    M3: [["konutkent","baglica",3.89],["baglica","devletmh",12.5],["devletmh","atamh",4.6],["atamh","tusas",8.61]],
+    M4: [["gar","kuyubasi",11.57],["kuyubasi","esenboga",19.37],["esenboga","ybu",5.06]],
+    M5: [["sincan","batikent",15.22],["batikent","belediye",16.5],["belediye","natoyolu",15.14]],
+    M6: [["turgutozal","umitkoy",18.62],["umitkoy","dikmenvadisi",21.65],["dikmenvadisi","mamak",8.67]],
+    M7: [["gar","etlik",3.84],["etlik","forum",7.36],["forum","karakaya7",5.99]],
+    M9: [["iveosb","baspinar9",23.5]], T2: [["siteler","seyfid",17.28]], T4: [["umitkoy","dodurga1",9.92]], T5: [["ahimesut","torekent",16.58]], T6: [["fuar","akyurt4",13.06]],
+    M8: [["iveosb","sogutozu",13.41],["sogutozu","golbasik",16.81]],
+    B1: [["kazan","yk2",8.65],["yk2","sincan",12],["sincan","kayas",37.472],["kayas","elmadag",30.55]],
+    B1K: [["sosb","tusas",13.53],["tusas","kahramankazan",18.81]],
+    T1: [["ybu","cubukmerkez",15.84]], T3: [["mogan","beynam",26.07]],
+    F1: [["kugulu","sancak",4.68]], G1: [["yenimahalle","sentepeG",3.58]], G2: [["ataturkG","sehitler",3.08]]
+  };
+  const CUM = {}, OFFG = {};
+  Object.keys(SPAN).forEach(code => {
+    const ids = ORDER[code].map(o => Array.isArray(o) ? o[0] : o);
+    const gap = ids.map((id, i) => i ? hk(ids[i - 1], id) : 0);
+    const off = ids.map((id, i) => i ? (OFF[ids[i - 1] + ">" + id] ?? OFF[id + ">" + ids[i - 1]]) : undefined);
+    SPAN[code].forEach(([a, b, km]) => {
+      let i = ids.indexOf(a), j = ids.indexOf(b); if (i > j) [i, j] = [j, i];
+      let fixed = 0, free = 0;
+      for (let g = i + 1; g <= j; g++) { if (off[g] != null) fixed += off[g]; else free += gap[g]; }
+      const k = free ? (km - fixed) / free : 0;
+      for (let g = i + 1; g <= j; g++) gap[g] = off[g] != null ? off[g] : gap[g] * k;
+    });
+    off.forEach((x, g) => { if (x != null) gap[g] = x; });
+    let c = 0; CUM[code] = gap.map(x => (c += x)); OFFG[code] = off.map(x => x != null);
+  });
+  { const m4 = ORDER.M4; CUM.AX = ORDER.AX.map(id => CUM.M4[m4.indexOf(id)]); OFFG.AX = []; }
+  { const gm = {}; Object.keys(SPAN).forEach(c => ORDER[c].forEach((id, i) => { if (i) { const d = CUM[c][i] - CUM[c][i - 1], p = ORDER[c][i - 1]; gm[p + ">" + id] = d; gm[id + ">" + p] = d; } }));
+    let c = 0; CUM.R = ORDER.R.map((id, i) => (c += i ? gm[ORDER.R[i - 1] + ">" + id] : 0)); OFFG.R = []; }
+  Object.keys(ORDER).forEach(code => {
+    const own = code.endsWith("K") ? code.slice(0, -1) : code;
+    const card = document.createElement("article");
+    card.className = "card"; card.style.setProperty("--c", `var(${LINES[own].color})`);
+    const items = ORDER[code].map(o => Array.isArray(o) ? o : [o, null]);
+    let body = "";
+    items.forEach(([id, sub], i) => {
+      const s = N[id]; const name = s[2];
+      const cum = CUM[code][i], prev = i ? cum - CUM[code][i - 1] : null;
+      const st = AT[id][own] || (own === "R" ? "pr" : "pl");
+      const xs = transfers(id, own);
+      const extra = [];
+      if ((s[4] || "").includes("y")) extra.push(`<span class="sub">YHT</span>`);
+      if (id === "sihhiye") extra.push(`<span class="sub">yürüme</span>`);
+      if (id === "asti") extra.push(`<span class="sub">otogar</span>`);
+      if (PRS.has(id)) extra.push(`<span class="sub" title="Park et devam et">P+R</span>`);
+      const subs = [sub, id === "sihhiye" ? (code === "B1" ? "Yenişehir" : "Sıhhiye") : null].filter(Boolean).join(" · ");
+      body += `<tr><td>${i + 1}</td><td><span class="stn${(s[4] || "").includes("i") ? " i" : ""}">${name}</span>${subs ? `<div class="sub">${subs}</div>` : ""}</td>` +
+        `<td class="num">${km2(cum)}${prev != null ? `<div class="sub">+${km2(prev)}${OFFG[code][i] ? " ●" : ""}</div>` : ""}</td>` +
+        `<td><div class="xfer">${xs.map(c => badge(c, true)).join("")}${extra.join("")}</div></td>` +
+        `<td class="num">${fmtP(STN[id] && STN[id][0])}</td><td class="num">${fmtP(STN[id] && STN[id][1])}</td><td class="num">${fmtP(STN[id] && STN[id][2])}</td>` +
+        `<td><span class="status" title="${STATUS[st][0]}"><span class="dot ${STATUS[st][1]}"></span><span class="vh">${STATUS[st][0]}</span></span></td></tr>`;
+    });
+    card.innerHTML = `<header>${badge(own)}<div><b>${own !== code ? "Başkentray Kahramankazan kolu: Sincan OSB – TUSAŞ – Kahramankazan" : LINES[code].name}</b><span>${own !== code ? `Sincan OSB sonrasında ${items.length - 1} istasyon` : `${new Set(items.map(x => x[0])).size} istasyon`} · ${km2(CUM[code][CUM[code].length - 1])} km</span></div></header>` +
+      `<div class="tablebox" style="border:none;border-radius:0"><table><thead><tr><th>#</th><th>İstasyon</th><th class="num">km</th><th>Aktarma</th><th class="num" title="1 km içinde yaşayanlar">Yürüme</th><th class="num" title="1–5 km uzakta yaşayanlar">Besleme</th><th class="num">Giriş/gün</th><th></th></tr></thead><tbody>${body}</tbody></table></div>`;
+    dir.appendChild(card);
+  });
+
+  drawMap();
+  initZoom();
+}
+build();
+</script>
+
+</body></html>
