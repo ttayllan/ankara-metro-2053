@@ -38,9 +38,10 @@ input[type=search]{width:100%;font:inherit;padding:7px 9px;border:1px solid var(
 #offnote{position:absolute;z-index:1002;left:50%;bottom:28px;transform:translateX(-50%);width:min(440px,calc(100% - 24px));background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 36px 10px 12px;font-size:12.5px;box-shadow:0 4px 14px rgba(0,0,0,.15)}
 #offnote button{position:absolute;top:6px;right:6px;border:0;background:none;color:var(--mute);font-size:18px;line-height:1;cursor:pointer;padding:4px}
 </style>
-</head>
+<style>.sitebar{position:absolute;z-index:1001;top:12px;right:56px;display:flex;gap:6px}.sitebar a{font:600 13px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 12px;box-shadow:0 2px 8px rgba(0,0,0,.12);white-space:nowrap}.sitebar a:hover{border-color:currentColor}</style></head>
 <body>
 <div id="map"></div>
+<nav class="sitebar" aria-label="Site"><a href="tr.html">← Plan</a><a href="map.html" lang="en" hreflang="en">English</a></nav>
 <div id="offnote" hidden>Harita arka planı burada yüklenemedi; büyük olasılıkla bu görüntüleyici harita sunucularından gelen görselleri engelliyor. Bunun yerine nüfusun yaşadığı yerleri gösteren yerleşik bir taslak gösteriliyor. Tam harita için dosyayı telefonunuzun web tarayıcısında açın.<button aria-label="Kapat" onclick="this.parentNode.hidden=true">×</button></div>
 <button class="tog" id="tog">Harita açıklaması</button>
 <div class="panel" id="panel">
